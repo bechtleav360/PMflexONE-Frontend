@@ -1,0 +1,1 @@
+export { RequirementScopeBadge } from './RequirementScopeBadge'

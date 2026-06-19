@@ -1,0 +1,52 @@
+# Auto-detect text vs binary; normalize text to LF in repo
+* text=auto eol=lf
+
+# --- Source / config (force LF) ---
+*.ts         text eol=lf
+*.tsx        text eol=lf
+*.js         text eol=lf
+*.jsx        text eol=lf
+*.mjs        text eol=lf
+*.cjs        text eol=lf
+*.graphqls   text eol=lf
+
+# --- Markup / data (force LF) ---
+*.md         text eol=lf
+*.json       text eol=lf
+*.yaml       text eol=lf
+*.yml        text eol=lf
+*.toml       text eol=lf
+*.html       text eol=lf
+*.css        text eol=lf
+
+# --- Shell / dotfiles (force LF — required for execution on Unix) ---
+*.sh         text eol=lf
+Dockerfile   text eol=lf
+.gitignore        text eol=lf
+.gitattributes    text eol=lf
+.dockerignore     text eol=lf
+.editorconfig     text eol=lf
+.env*             text eol=lf
+
+# --- Windows-only scripts (force CRLF — required by cmd.exe / PowerShell) ---
+*.bat        text eol=crlf
+*.cmd        text eol=crlf
+*.ps1        text eol=crlf
+
+# --- Binary (never normalize) ---
+*.svg        text eol=lf
+*.png        binary
+*.jpg        binary
+*.jpeg       binary
+*.gif        binary
+*.ico        binary
+*.webp       binary
+*.avif       binary
+*.woff       binary
+*.woff2      binary
+*.ttf        binary
+*.eot        binary
+*.pdf        binary
+*.zip        binary
+*.gz         binary
+*.tar        binary

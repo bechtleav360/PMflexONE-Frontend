@@ -1,0 +1,128 @@
+# GraphQL Contract — Deliverables Creation and Management (FA10)
+# Module: deliverable-impl
+# Spec: specs/012-liefergegenstaende-anlage-verwaltung/spec.md
+#
+# Breaking changes applied 2026-05-27:
+#   - DeliverableFilter: projectId → scopeId + scopeType (required)
+#   - CreateDeliverableInput: projectId → scopeId + scopeType (required)
+#   - Deliverable type: flat scopeId/scopeType fields → scope: Scope!
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Enums
+# ─────────────────────────────────────────────────────────────────────────────
+
+enum ScopeType {
+  Portfolio
+  Program
+  Project
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Core Types
+# ─────────────────────────────────────────────────────────────────────────────
+
+type Scope {
+  id: ID!
+  name: String!
+  scopeType: ScopeType!
+}
+
+type Deliverable {
+  id: ID!
+  version: Int!
+  name: String!
+  businessId: String
+  description: String
+  otherInformation: String
+  position: Int!
+  scope: Scope!
+  createdAt: String!
+  updatedAt: String!
+  parent: DeliverableParentEdge
+  children: [DeliverableChildEdge!]!
+  owner: DeliverableOwnerEdge
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Edge Types
+# ─────────────────────────────────────────────────────────────────────────────
+
+type DeliverableChildEdge {
+  node: Deliverable!
+}
+
+type DeliverableParentEdge {
+  node: Deliverable!
+}
+
+type DeliverableOwnerEdge {
+  node: Person!
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Result Types
+# ─────────────────────────────────────────────────────────────────────────────
+
+type DeleteDeliverableResult {
+  deletedDescendantCount: Int!
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Queries
+# ─────────────────────────────────────────────────────────────────────────────
+
+extend type Query {
+  deliverables(filter: DeliverableFilter): [Deliverable!]! @authScope(scope: TOP_LEVEL)
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Mutations
+# ─────────────────────────────────────────────────────────────────────────────
+
+extend type Mutation {
+  createDeliverable(input: CreateDeliverableInput!): Deliverable! @authScope(scope: TOP_LEVEL)
+  updateDeliverable(id: ID!, input: UpdateDeliverableInput!): Deliverable!
+    @authScope(scope: TOP_LEVEL)
+  moveDeliverable(id: ID!, input: MoveDeliverableInput!): Deliverable! @authScope(scope: TOP_LEVEL)
+  deleteDeliverable(id: ID!, version: Int!): DeleteDeliverableResult! @authScope(scope: TOP_LEVEL)
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Filter Input
+# ─────────────────────────────────────────────────────────────────────────────
+
+input DeliverableFilter {
+  scopeId: ID
+  scopeType: ScopeType
+  ids: [ID!]
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Create / Update / Move Inputs
+# ─────────────────────────────────────────────────────────────────────────────
+
+input CreateDeliverableInput {
+  name: String!
+  scopeId: ID!
+  scopeType: ScopeType!
+  businessId: String
+  description: String
+  otherInformation: String
+  parentId: ID
+  ownerId: ID
+}
+
+input UpdateDeliverableInput {
+  version: Int!
+  name: String
+  businessId: String
+  description: String
+  otherInformation: String
+  ownerId: ID
+}
+
+input MoveDeliverableInput {
+  version: Int!
+  newParentId: ID
+  newPosition: Int!
+}

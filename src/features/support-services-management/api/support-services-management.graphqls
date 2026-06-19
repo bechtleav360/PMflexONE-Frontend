@@ -1,0 +1,205 @@
+# GraphQL Contract — Support Services Register (FA-11)
+# Module: support-service-impl
+# Spec: p1ng-spec-prd/docs/output/backlog/specs/fa11-support-services-management/spec.md
+#
+# Shared types referenced but not defined here (defined in shared schema):
+#   Scope, ScopeType, Person, Pagination, OrderBy, ChangeHistoryEntry
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Core Types
+# ─────────────────────────────────────────────────────────────────────────────
+
+type SupportService {
+  id: ID!
+  version: Int!
+  name: String!
+  description: String
+  otherInformation: String
+  estimatedEffort: Float
+  position: Int!
+  scope: Scope!
+  createdAt: String!
+  updatedAt: String!
+  creator: Person
+  updater: Person
+  metadata: String
+  parent: SupportServiceParentEdge
+  children: [SupportServiceChildEdge!]!
+  assignee: SupportServiceAssigneeEdge
+}
+
+type PlanningRole {
+  id: ID!
+  version: Int!
+  name: String!
+  capacityPerWeek: Float!
+  assigned: Float!
+  unassigned: Float!
+  scope: Scope!
+  createdAt: String!
+  updatedAt: String!
+  creator: Person
+  updater: Person
+  metadata: String
+  userAssignments: [PlanningRoleUserAssignment!]!
+}
+
+type PlanningRoleUserAssignment {
+  id: ID!
+  person: Person
+  assignedCapacity: Float!
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Edge Types
+# ─────────────────────────────────────────────────────────────────────────────
+
+type SupportServiceChildEdge {
+  node: SupportService!
+}
+
+type SupportServiceParentEdge {
+  node: SupportService!
+}
+
+type SupportServiceAssigneeEdge {
+  node: PlanningRole!
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Enum Types
+# ─────────────────────────────────────────────────────────────────────────────
+
+enum SupportServiceDeleteMode {
+  CASCADE_DELETE
+  PROMOTE_CHILDREN
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Result Types
+# ─────────────────────────────────────────────────────────────────────────────
+
+type DeleteSupportServiceResult {
+  deletedDescendantCount: Int!
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Project Type Extensions
+# ─────────────────────────────────────────────────────────────────────────────
+
+extend type Project {
+  supportServices(
+    filter: SupportServiceFilter
+    pagination: Pagination
+    orderBy: OrderBy
+  ): [SupportService!]!
+  supportServiceTree: [SupportService!]!
+  planningRoles: [PlanningRole!]!
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Queries
+# ─────────────────────────────────────────────────────────────────────────────
+
+extend type Query {
+  supportServices(
+    filter: SupportServiceFilter
+    pagination: Pagination
+    orderBy: OrderBy
+  ): [SupportService!]! @authScope(scope: TOP_LEVEL)
+
+  supportService(id: ID!): SupportService @authScope(scope: DOMAIN_OBJECT, arg: "id")
+
+  supportServiceChangeHistory(supportServiceId: ID!): [ChangeHistoryEntry!]!
+    @authScope(scope: DOMAIN_OBJECT, arg: "supportServiceId")
+
+  planningRoles(projectId: ID!): [PlanningRole!]! @authScope(scope: DOMAIN_OBJECT, arg: "projectId")
+
+  planningRole(id: ID!): PlanningRole @authScope(scope: DOMAIN_OBJECT, arg: "id")
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Mutations
+# ─────────────────────────────────────────────────────────────────────────────
+
+extend type Mutation {
+  createSupportService(input: CreateSupportServiceInput!): SupportService!
+    @authScope(scope: DOMAIN_OBJECT, arg: "input.projectId")
+
+  updateSupportService(id: ID!, input: UpdateSupportServiceInput!): SupportService!
+    @authScope(scope: DOMAIN_OBJECT, arg: "id")
+
+  moveSupportService(id: ID!, version: Int!, parentId: ID, position: Int!): SupportService!
+    @authScope(scope: DOMAIN_OBJECT, arg: "id")
+
+  deleteSupportService(
+    id: ID!
+    version: Int!
+    deleteMode: SupportServiceDeleteMode!
+  ): DeleteSupportServiceResult! @authScope(scope: DOMAIN_OBJECT, arg: "id")
+
+  createPlanningRole(input: CreatePlanningRoleInput!): PlanningRole!
+    @authScope(scope: DOMAIN_OBJECT, arg: "input.projectId")
+
+  updatePlanningRole(id: ID!, input: UpdatePlanningRoleInput!): PlanningRole!
+    @authScope(scope: DOMAIN_OBJECT, arg: "id")
+
+  deletePlanningRole(id: ID!, version: Int!): Boolean! @authScope(scope: DOMAIN_OBJECT, arg: "id")
+
+  addUserToPlanningRole(roleId: ID!, userId: ID!, assignedCapacity: Float!): PlanningRole!
+    @authScope(scope: DOMAIN_OBJECT, arg: "roleId")
+
+  updatePlanningRoleUserAssignment(
+    roleId: ID!
+    assignmentId: ID!
+    assignedCapacity: Float!
+  ): PlanningRole! @authScope(scope: DOMAIN_OBJECT, arg: "roleId")
+
+  removeUserFromPlanningRole(roleId: ID!, assignmentId: ID!): PlanningRole!
+    @authScope(scope: DOMAIN_OBJECT, arg: "roleId")
+}
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Input Types
+# ─────────────────────────────────────────────────────────────────────────────
+
+input CreateSupportServiceInput {
+  projectId: ID!
+  name: String!
+  description: String
+  otherInformation: String
+  parentId: ID
+  assigneeId: ID
+  estimatedEffort: Float
+}
+
+input UpdateSupportServiceInput {
+  version: Int!
+  name: String
+  description: String
+  otherInformation: String
+  parentId: ID
+  clearAssignee: Boolean
+  assigneeId: ID
+  estimatedEffort: Float
+}
+
+input SupportServiceFilter {
+  scopeId: ID
+  scopeType: ScopeType
+  parentId: ID
+  assigneeId: ID
+  ids: [ID!]
+}
+
+input CreatePlanningRoleInput {
+  projectId: ID!
+  name: String!
+  capacityPerWeek: Float!
+}
+
+input UpdatePlanningRoleInput {
+  version: Int!
+  name: String
+  capacityPerWeek: Float
+}

@@ -1,0 +1,1 @@
+export { IssueEntryScoreSection } from './IssueEntryScoreSection'

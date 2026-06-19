@@ -1,0 +1,7 @@
+{
+  "telemetry": {
+    "enabled": false,
+    "serviceName": "p1ng-frontend"
+  },
+  "attachmentUploadUrl": ""
+}

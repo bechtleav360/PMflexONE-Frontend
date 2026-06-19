@@ -1,0 +1,39 @@
+{
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "theme",
+          "layer",
+          "import",
+          "source",
+          "variant",
+          "custom-variant",
+          "utility"
+        ]
+      }
+    ],
+    "at-rule-disallowed-list": ["apply"],
+    "color-named": "never",
+    "function-disallowed-list": [
+      "rgb",
+      "rgba",
+      "hsl",
+      "hsla",
+      "hwb",
+      "lch",
+      "oklch",
+      "lab",
+      "oklab"
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["src/index.css"],
+      "rules": {
+        "function-disallowed-list": null
+      }
+    }
+  ]
+}

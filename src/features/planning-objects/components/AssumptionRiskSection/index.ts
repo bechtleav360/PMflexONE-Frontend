@@ -1,0 +1,1 @@
+export { AssumptionRiskSection } from './AssumptionRiskSection'

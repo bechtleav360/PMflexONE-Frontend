@@ -1,0 +1,1 @@
+export { MatrixTable } from './MatrixTable'

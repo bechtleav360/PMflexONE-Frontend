@@ -1,0 +1,1 @@
+export { SidebarOnboardingHint } from './SidebarOnboardingHint'

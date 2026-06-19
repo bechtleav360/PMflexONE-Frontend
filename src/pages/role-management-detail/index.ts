@@ -1,0 +1,1 @@
+export { RoleManagementDetailPage } from './RoleManagementDetailPage'

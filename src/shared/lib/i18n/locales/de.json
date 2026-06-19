@@ -1,0 +1,2616 @@
+{
+  "auth": {
+    "sessionExpired": {
+      "description": "Ihre Sitzung ist abgelaufen. Melden Sie sich erneut an – Ihre aktuellen Daten gehen dabei nicht verloren.",
+      "popupBlocked": "Das Anmelde-Popup wurde blockiert. Bitte erlauben Sie Popups und versuchen Sie es erneut.",
+      "signIn": "Anmelden",
+      "signingIn": "Anmeldung wird geöffnet…",
+      "title": "Sitzung abgelaufen",
+      "verifyError": "Anmeldung konnte nicht bestätigt werden. Bitte erneut versuchen.",
+      "verifying": "Wird überprüft…"
+    }
+  },
+  "common": {
+    "cancel": "Abbrechen",
+    "clear": "Zurücksetzen",
+    "close": "Schließen",
+    "confirm": "Bestätigen",
+    "delete": "Löschen",
+    "deleting": "Wird gelöscht…",
+    "download": "Herunterladen",
+    "edit": "Bearbeiten",
+    "loading": "Wird geladen…",
+    "save": "Speichern",
+    "saving": "Wird gespeichert…",
+    "unitPt": "PT",
+    "unknown": "Unbekannt"
+  },
+  "entities": {
+    "project": {
+      "errors": {
+        "endDateBeforeStartDate": "Das Enddatum muss am oder nach dem Startdatum liegen",
+        "endDateRequired": "Enddatum ist erforderlich",
+        "nameRequired": "Projektname ist erforderlich",
+        "sizeClassificationRequired": "Größenklassifizierung ist erforderlich",
+        "startDateRequired": "Startdatum ist erforderlich"
+      }
+    },
+    "workItem": {
+      "copyId": "Aufgaben-ID kopieren",
+      "fields": {
+        "assignee": "Zuständig",
+        "column": "Spalte",
+        "copied": "Kopiert!",
+        "createdAt": "Erstellt am",
+        "createdBy": "Erstellt von",
+        "description": "Beschreibung",
+        "dueDate": "Fälligkeitsdatum",
+        "id": "Task-ID",
+        "labels": "Labels",
+        "priority": "Priorität",
+        "updatedAt": "Geändert am",
+        "updatedBy": "Geändert von"
+      },
+      "priority": {
+        "HIGH": "Hoch",
+        "LOW": "Niedrig",
+        "MEDIUM": "Mittel",
+        "VERY_HIGH": "Sehr Hoch",
+        "none": "Keine Priorität"
+      },
+      "status": {
+        "done": "Done",
+        "in_progress": "In Progress",
+        "open": "Open",
+        "rejected": "Rejected"
+      },
+      "statusBadgeLabel": "Status: {{label}}"
+    },
+    "workItemHistory": {
+      "assigneeUnassigned": "Nicht zugewiesen",
+      "created": "Erstellt",
+      "fields": {
+        "assignee": "Zuständig"
+      },
+      "labelLinked": "Label hinzugefügt",
+      "labelUnlinked": "Label entfernt",
+      "loadError": "Verlauf konnte nicht geladen werden.",
+      "noHistory": "Keine Änderungen aufgezeichnet.",
+      "panel": "Änderungsprotokoll"
+    }
+  },
+  "errorBoundary": {
+    "description": "Die Anwendung ist auf einen unerwarteten Rendering-Fehler gestoßen.",
+    "recoveryHint": "Bitte laden Sie die Seite neu, um fortzufahren. Wenn das Problem bestehen bleibt, wenden Sie sich an den Support.",
+    "reload": "Anwendung neu laden",
+    "title": "Etwas ist schiefgelaufen"
+  },
+  "features": {
+    "createProject": {
+      "cancel": "Abbrechen",
+      "fields": {
+        "description": "Projektbeschreibung",
+        "descriptionPlaceholder": "Projektbeschreibung hinzufügen (optional)",
+        "endDate": "Enddatum",
+        "name": "Projektname",
+        "namePlaceholder": "Projektnamen eingeben",
+        "sizeClassification": "Größenklassifizierung",
+        "sizeClassificationPlaceholder": "Größe auswählen",
+        "startDate": "Startdatum"
+      },
+      "sizeClassification": {
+        "large": "Groß",
+        "medium": "Mittel",
+        "small": "Klein"
+      },
+      "submit": "Projekt erstellen",
+      "title": "Neues Projekt",
+      "toast": {
+        "error": "Projekt konnte nicht erstellt werden.",
+        "loading": "Projekt wird erstellt...",
+        "success": "Projekt erfolgreich erstellt."
+      }
+    },
+    "deleteProject": {
+      "deleteButton": "Projekt löschen",
+      "dialog": {
+        "cancel": "Abbrechen",
+        "confirm": "Löschen",
+        "description": "Möchten Sie dieses Projekt wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.",
+        "title": "Projekt löschen"
+      },
+      "toast": {
+        "error": "Projekt konnte nicht gelöscht werden.",
+        "loading": "Projekt wird gelöscht...",
+        "success": "Projekt erfolgreich gelöscht."
+      }
+    },
+    "deliverablesManagement": {
+      "accessibility": {
+        "collapseNode": "{{name}} einklappen",
+        "dragHandle": "Ziehen um {{name}} zu verschieben",
+        "expandNode": "{{name}} aufklappen",
+        "inactiveOwnerSuffix": "inaktiv",
+        "invalidPosition": "Ungültige Position — Verschiebeaktion nicht möglich.",
+        "treeLabel": "Liefergegenstände Baumansicht"
+      },
+      "actions": {
+        "cancel": "Abbrechen",
+        "collapseAll": "Alle zuklappen",
+        "create": "Liefergegenstand anlegen",
+        "createChild": "Unterknoten anlegen",
+        "createSibling": "Geschwisterknoten anlegen",
+        "delete": "Löschen",
+        "deleteAll": "Alle löschen",
+        "edit": "Bearbeiten",
+        "expandAll": "Alle aufklappen",
+        "rowActions": "Zeilenaktionen",
+        "save": "Speichern",
+        "view": "Ansehen"
+      },
+      "columns": {
+        "businessId": "Fachliche ID",
+        "createdAt": "Erstellt am",
+        "name": "Bezeichnung",
+        "owner": "Eigentümer",
+        "parent": "Übergeordneter Liefergegenstand"
+      },
+      "delete": {
+        "cascadeWarning": "Dieser Liefergegenstand hat untergeordnete Einträge. Beim Löschen werden alle untergeordneten Liefergegenstände ebenfalls entfernt.",
+        "description": "Möchten Sie diesen Liefergegenstand wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.",
+        "title": "Liefergegenstand löschen"
+      },
+      "dialog": {
+        "formDescription": "Pflichtfelder sind mit * markiert."
+      },
+      "empty": {
+        "title": "Noch keine Liefergegenstände angelegt."
+      },
+      "error": {
+        "loadFailed": "Liefergegenstände konnten nicht geladen werden."
+      },
+      "fields": {
+        "businessId": "Fachliche ID",
+        "description": "Beschreibung",
+        "name": "Bezeichnung",
+        "otherInformation": "Sonstige Informationen",
+        "owner": "Eigentümer",
+        "parent": "Übergeordneter Liefergegenstand",
+        "parentRoot": "Stammknoten (oberste Ebene)"
+      },
+      "pageTitle": "Liefergegenstände",
+      "search": {
+        "noResults": "Keine Liefergegenstände gefunden.",
+        "placeholder": "Nach Name oder fachlicher ID suchen…"
+      },
+      "tabs": {
+        "list": "Liste",
+        "tree": "Baum"
+      },
+      "toast": {
+        "created": "Liefergegenstand wurde angelegt.",
+        "deleteFailed": "Löschen fehlgeschlagen. Bitte versuche es erneut.",
+        "deleted": "Liefergegenstand gelöscht.",
+        "deletedWithChildren": "Liefergegenstand und {{count}} untergeordnete Einträge wurden gelöscht.",
+        "deletedWithChildren_one": "Liefergegenstand und 1 untergeordneter Eintrag wurde gelöscht.",
+        "deletedWithChildren_other": "Liefergegenstand und {{count}} untergeordnete Einträge wurden gelöscht.",
+        "notFound": "Dieser Liefergegenstand wurde nicht gefunden.",
+        "saveFailed": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+        "saved": "Liefergegenstand wurde gespeichert."
+      },
+      "unsavedChanges": {
+        "description": "Nicht gespeicherte Änderungen gehen verloren.",
+        "discard": "Verwerfen",
+        "keepEditing": "Weiterbearbeiten",
+        "title": "Änderungen verwerfen?"
+      },
+      "validation": {
+        "businessIdDuplicate": "Diese fachliche ID wird bereits verwendet.",
+        "businessIdMaxLength": "Fachliche ID darf maximal 50 Zeichen lang sein.",
+        "nameMaxLength": "Bezeichnung darf maximal 255 Zeichen lang sein.",
+        "nameRequired": "Bezeichnung ist ein Pflichtfeld."
+      }
+    },
+    "editProject": {
+      "cancel": "Abbrechen",
+      "editButton": "Projekt bearbeiten",
+      "fields": {
+        "description": "Projektbeschreibung",
+        "descriptionPlaceholder": "Projektbeschreibung hinzufügen (optional)",
+        "endDate": "Enddatum",
+        "name": "Projektname",
+        "namePlaceholder": "Projektnamen eingeben",
+        "sizeClassification": "Größenklassifizierung",
+        "sizeClassificationPlaceholder": "Größe auswählen",
+        "startDate": "Startdatum"
+      },
+      "sizeClassification": {
+        "large": "Groß",
+        "medium": "Mittel",
+        "small": "Klein"
+      },
+      "submit": "Änderungen speichern",
+      "title": "Projekt bearbeiten",
+      "toast": {
+        "error": "Projekt konnte nicht gespeichert werden.",
+        "loading": "Projekt wird gespeichert...",
+        "success": "Projekt erfolgreich gespeichert."
+      }
+    },
+    "escalatedEntries": {
+      "actions": {
+        "escalate": "Eskalieren",
+        "escalatedTo": "Eskaliert an: {{targetName}}",
+        "return": "Zurückgeben"
+      },
+      "detail": {
+        "assessment": {
+          "save": "Bewertung speichern",
+          "targetImpact": "Zielauswirkung",
+          "targetProbability": "Zielwahrscheinlichkeit",
+          "title": "Zielbewertung"
+        },
+        "childAssessment": {
+          "title": "Bewertung Portfolioebene"
+        },
+        "loadError": "Eintragsdetails konnten nicht geladen werden",
+        "parentAssessment": {
+          "notAssessed": "Nicht bewertet",
+          "title": "Bewertung Programmebene"
+        },
+        "sourceFields": {
+          "entryNumber": "Eintrags-Nr.",
+          "escalatedAt": "Eskaliert am",
+          "escalationChain": "Eskalationskette",
+          "impact": "Auswirkung",
+          "name": "Name",
+          "pestelCategory": "PESTEL-Kategorie",
+          "probability": "Wahrscheinlichkeit",
+          "riskLevel": "Risikoniveau",
+          "sourceStatus": "Quellstatus",
+          "title": "Quellinformationen",
+          "type": "Typ"
+        },
+        "tabs": {
+          "assessment": "Bewertung",
+          "assessmentHistory": "Bewertungshistorie",
+          "measures": "Maßnahmen",
+          "measuresHistory": "Maßnahmenhistorie"
+        },
+        "title": "Details des eskalierten Eintrags"
+      },
+      "dialogs": {
+        "deEscalate": {
+          "cancel": "Abbrechen",
+          "reasonLabel": "Rückgabegrund",
+          "reasonPlaceholder": "Beschreiben Sie, warum dieser Eintrag zurückgegeben wird...",
+          "submit": "Zurückgeben",
+          "title": "Eintrag zurückgeben"
+        },
+        "escalate": {
+          "cancel": "Abbrechen",
+          "reasonLabel": "Begründung",
+          "reasonPlaceholder": "Beschreiben Sie, warum dieser Eintrag eskaliert werden muss...",
+          "submit": "Eskalieren",
+          "title": "Eintrag eskalieren"
+        }
+      },
+      "log": {
+        "empty": "Keine Eskalationsereignisse erfasst",
+        "title": "Eskalationsprotokoll",
+        "eventType": {
+          "ESCALATION": "Eskaliert",
+          "DE_ESCALATION": "Zurückgegeben"
+        }
+      },
+      "measures": {
+        "add": "Hinzufügen",
+        "addPlaceholder": "Maßnahme hinzufügen...",
+        "empty": "Noch keine Maßnahmen",
+        "remove": "Entfernen"
+      },
+      "status": {
+        "ariaLabel": "Eskalationsstatus: {{status}}",
+        "ACTIVE": "Aktiv",
+        "RETURNED": "Zurückgegeben",
+        "ESCALATED": "Eskaliert"
+      },
+      "table": {
+        "columns": {
+          "date": "Datum",
+          "entryNumber": "Nr.",
+          "escalatedBy": "Eskaliert von",
+          "name": "Name",
+          "source": "Quelle",
+          "sourceAssessment": "Quellbewertung",
+          "status": "Status"
+        },
+        "empty": "Keine eskalierten Einträge",
+        "rowActionsLabel": "Aktionen für \"{{name}}\"",
+        "showReturned": "Zurückgegebene anzeigen",
+        "title": "Eskalierte Einträge"
+      },
+      "toasts": {
+        "addMeasureError": "Maßnahme konnte nicht hinzugefügt werden",
+        "addMeasureSuccess": "Maßnahme hinzugefügt",
+        "deEscalateError": "Rückgabe des Eintrags fehlgeschlagen",
+        "deEscalateSuccess": "Eintrag erfolgreich zurückgegeben",
+        "deleteMeasureError": "Maßnahme konnte nicht entfernt werden",
+        "deleteMeasureSuccess": "Maßnahme entfernt",
+        "escalateError": "Eskalation des Eintrags fehlgeschlagen",
+        "escalateSuccess": "Eintrag erfolgreich eskaliert",
+        "updateAssessmentError": "Bewertung konnte nicht gespeichert werden",
+        "updateAssessmentSuccess": "Bewertung erfolgreich gespeichert"
+      }
+    },
+    "planningObjects": {
+      "assumptions": {
+        "addAssumption": "Annahme hinzufügen",
+        "cannotUncheckActiveRisk": "Kann nicht deaktiviert werden, solange ein aktives Risiko verknüpft ist.",
+        "dueDate": "Stichtag",
+        "emptyState": "Noch keine Annahmen vorhanden",
+        "isRisk": "Ist ein Risiko",
+        "linksSection": "Verknüpfungen",
+        "loadError": "Annahme konnte nicht geladen werden",
+        "otherInformation": "Andere Informationen",
+        "projectCharterLabel": "Verknüpfter Projektauftrag",
+        "relatedRisksLabel": "Verknüpfte Risiken",
+        "riskEntry": "Risikoeintrag",
+        "riskNoAccess": "Schreibzugriff auf das Risikoregister erforderlich",
+        "title": "Annahmen",
+        "toast": {
+          "createError": "Annahme konnte nicht erstellt werden",
+          "createSuccess": "Annahme erfolgreich erstellt",
+          "deleteError": "Annahme konnte nicht gelöscht werden",
+          "riskCreated": "Risikoeintrag wurde automatisch erstellt",
+          "updateError": "Annahme konnte nicht gespeichert werden",
+          "updateSuccess": "Annahme erfolgreich gespeichert"
+        },
+        "validatedBy": "Validiert von",
+        "validationStatusLabel": "Validierungsstatus",
+        "viewTitle": "Annahme ansehen",
+        "validationStatusValues": {
+          "OPEN": "Offen",
+          "IN_REVIEW": "In Prüfung",
+          "VALIDATED": "Validiert",
+          "REFUTED": "Widerlegt"
+        }
+      },
+      "common": {
+        "addChild": "Unterknoten anlegen",
+        "addNew": "Neu anlegen",
+        "addSibling": "Geschwisterknoten anlegen",
+        "createdAt": "Erstellt am",
+        "delete": "Löschen",
+        "deleteCancel": "Abbrechen",
+        "deleteConfirmAction": "Löschen",
+        "deleteDescription": "Möchten Sie dieses Element wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.",
+        "deleteHasChildren": "Dieses Element enthält Unterelemente, die ebenfalls unwiderruflich gelöscht werden.",
+        "deleteTitle": "Löschen bestätigen",
+        "description": "Beschreibung",
+        "discardCancel": "Weiter bearbeiten",
+        "discardConfirm": "Verwerfen",
+        "discardDescription": "Sie haben ungespeicherte Änderungen. Möchten Sie diese wirklich verwerfen?",
+        "discardTitle": "Ungespeicherte Änderungen",
+        "dueDate": "Stichtag",
+        "edit": "Bearbeiten",
+        "name": "Name",
+        "otherInfo": "Andere Informationen",
+        "rowActions": "Zeilenaktionen",
+        "save": "Speichern",
+        "view": "Anzeigen"
+      },
+      "constraints": {
+        "addConstraint": "Einschränkung hinzufügen",
+        "deadline": "Frist",
+        "emptyState": "Noch keine Einschränkungen vorhanden",
+        "linksSection": "Verknüpfungen",
+        "loadError": "Einschränkung konnte nicht geladen werden",
+        "owner": "Eigentümer",
+        "projectCharter": "Verknüpfter Projektauftrag",
+        "timeBound": "Termingebunden",
+        "timeBoundNoDate": "Termingebunden — Keine Frist",
+        "timeBoundWithDate": "Termingebunden — {{date}}",
+        "title": "Einschränkungen",
+        "toast": {
+          "createError": "Einschränkung konnte nicht erstellt werden",
+          "createSuccess": "Einschränkung erfolgreich erstellt",
+          "deleteError": "Einschränkung konnte nicht gelöscht werden",
+          "updateError": "Einschränkung konnte nicht gespeichert werden",
+          "updateSuccess": "Einschränkung erfolgreich gespeichert"
+        },
+        "viewTitle": "Einschränkung ansehen"
+      },
+      "errors": {
+        "cycleDetected": "Dieser Link kann nicht erstellt werden: Es würde eine zirkuläre Abhängigkeit entstehen"
+      },
+      "goals": {
+        "acceptedAt": "Akzeptiert am",
+        "acceptedBy": "Akzeptiert von",
+        "addGoal": "Ziel hinzufügen",
+        "appliesTo": "Gilt für",
+        "businessCase": "Verknüpfter Business Case",
+        "collapseAll": "Alle einklappen",
+        "deleteDialog": {
+          "cancel": "Abbrechen",
+          "cascadeWarning": "Alle untergeordneten Ziele werden zusammen mit diesem Ziel dauerhaft gelöscht.",
+          "deleteAll": "Alle löschen",
+          "description": "Dieses Ziel hat untergeordnete Ziele. Wie möchten Sie fortfahren?",
+          "descriptionWithCount": "Dieses Ziel hat {{count}} untergeordnete(s) Ziel(e). Wie möchten Sie fortfahren?",
+          "descriptionWithCount_one": "Dieses Ziel hat 1 untergeordnetes Ziel. Wie möchten Sie fortfahren?",
+          "descriptionWithCount_other": "Dieses Ziel hat {{count}} untergeordnete Ziele. Wie möchten Sie fortfahren?",
+          "title": "Ziel löschen"
+        },
+        "emptyState": "Noch keine Ziele vorhanden",
+        "expandAll": "Alle ausklappen",
+        "impact": "Impact",
+        "initiationRequest": "Initiierungsantrag",
+        "initiationRequests": "Verknüpfte Initiierungsanträge",
+        "keyResults": "Wichtigste Ergebnisse",
+        "linkedRequirements": "Verknüpfte Anforderungen",
+        "linksSection": "Verknüpfungen",
+        "listLoadError": "Ziele konnten nicht geladen werden.",
+        "loadError": "Dieses Ziel konnte nicht geladen werden. Es enthält möglicherweise Verweise auf gelöschte Elemente. Bitte wenden Sie sich an Ihren Administrator.",
+        "otherInformation": "Andere Informationen",
+        "outcome": "Outcome",
+        "parentLevelGoalDeleted": "Existiert nicht mehr",
+        "parentPortfolioGoals": "Portfolioziele",
+        "parentProgramGoals": "Programmziele",
+        "progress": "Fortschritt",
+        "progressAriaLabel": "Zielfortschritt: {{value}}%",
+        "projectCharter": "Verknüpfter Projektauftrag",
+        "relatedGoals": "Verwandte Ziele",
+        "searchPlaceholder": "Ziele suchen...",
+        "title": "Ziele",
+        "toast": {
+          "createError": "Ziel konnte nicht erstellt werden",
+          "createSuccess": "Ziel erfolgreich erstellt",
+          "deleteError": "Ziel konnte nicht gelöscht werden",
+          "updateError": "Ziel konnte nicht gespeichert werden",
+          "updateSuccess": "Ziel erfolgreich gespeichert"
+        },
+        "viewTitle": "Ziel anzeigen"
+      },
+      "requirements": {
+        "acceptanceCriteria": "Akzeptanzkriterien",
+        "addRequirement": "Anforderung hinzufügen",
+        "collapseAll": "Alle einklappen",
+        "dep": {
+          "addDependency": "Verknüpfung hinzufügen",
+          "blocks": "blockiert",
+          "duplicates": "dupliziert",
+          "isBlockedBy": "wird blockiert von",
+          "isDuplicatedBy": "wird dupliziert von",
+          "relatesTo": "hängt zusammen mit",
+          "removeAriaLabel": "Abhängigkeit zu {{name}} entfernen",
+          "sectionTitle": "Verknüpfungen zu anderen Anforderungen",
+          "selectLinkType": "Verknüpfungstyp",
+          "selectRequirement": "Anforderung suchen..."
+        },
+        "effortFrom": "Von",
+        "effortTo": "Bis",
+        "emptyState": "Noch keine Anforderungen vorhanden",
+        "expandAll": "Alle ausklappen",
+        "fieldEffort": "Geschätzter Aufwand (in PT)",
+        "fieldPriority": "Priorität",
+        "fieldScope": "Scope",
+        "fieldSource": "Quelle",
+        "fieldStatus": "Status",
+        "fieldType": "Art",
+        "filterAll": "Alle",
+        "filterInScope": "Im Scope",
+        "filterOutOfScope": "Außerhalb Scope",
+        "filterTabsLabel": "Anforderungen filtern",
+        "linkedGoals": "Verknüpfte Ziele",
+        "linksSection": "Verknüpfungen",
+        "listLoadError": "Anforderungen konnten nicht geladen werden",
+        "loadError": "Anforderung konnte nicht geladen werden",
+        "priority": {
+          "couldHave": "Could have",
+          "mustHave": "Must have",
+          "shouldHave": "Should have",
+          "wontHave": "Won't have"
+        },
+        "removeGoalAriaLabel": "Verknüpfung zu Ziel {{name}} entfernen",
+        "scope": {
+          "inScope": "Im Scope",
+          "outOfScope": "Außerhalb Scope"
+        },
+        "sourceExternal": "Extern",
+        "sourceInternal": "Intern",
+        "status": {
+          "accepted": "Angenommen",
+          "analysed": "Analysiert",
+          "implemented": "Implementiert",
+          "new": "Neu",
+          "specified": "Spezifiziert",
+          "tested": "Getestet"
+        },
+        "title": "Anforderungen",
+        "toast": {
+          "createError": "Anforderung konnte nicht erstellt werden",
+          "createSuccess": "Anforderung erfolgreich erstellt",
+          "deleteError": "Anforderung konnte nicht gelöscht werden",
+          "updateError": "Anforderung konnte nicht gespeichert werden",
+          "updateSuccess": "Anforderung erfolgreich gespeichert"
+        },
+        "type": {
+          "constraint": "Randbedingung",
+          "functional": "Funktional",
+          "nonFunctional": "Nicht-funktional"
+        },
+        "viewTitle": "Anforderung ansehen"
+      },
+      "validation": {
+        "effortMinGtMax": "Von muss kleiner oder gleich Bis sein",
+        "nameRequired": "Name ist erforderlich"
+      }
+    },
+    "planningRolesManagement": {
+      "actions": {
+        "cancel": "Abbrechen",
+        "create": "Planungsrolle anlegen",
+        "delete": "Löschen",
+        "edit": "Bearbeiten",
+        "remove": "Entfernen",
+        "save": "Speichern"
+      },
+      "columns": {
+        "assigned": "Zugewiesen (PT)",
+        "capacityPerWeek": "Kapazität/Wo. (PT)",
+        "name": "Name",
+        "unassigned": "Nicht zugew. (PT)",
+        "users": "Mitarbeitende"
+      },
+      "delete": {
+        "confirmLabel": "Trotzdem löschen",
+        "description": "Diese Aktion kann nicht rückgängig gemacht werden.",
+        "title": "Planungsrolle löschen?",
+        "withAssignments": "Diese Planungsrolle ist {{count}} Supportleistungen/Arbeitspaketen zugewiesen. Nach dem Löschen werden alle Zuweisungen aufgehoben.",
+        "withAssignments_one": "Diese Planungsrolle ist 1 Supportleistung/Arbeitspaket zugewiesen. Nach dem Löschen wird die Zuweisung aufgehoben.",
+        "withAssignments_other": "Diese Planungsrolle ist {{count}} Supportleistungen/Arbeitspaketen zugewiesen. Nach dem Löschen werden alle Zuweisungen aufgehoben."
+      },
+      "empty": {
+        "title": "Noch keine Planungsrollen angelegt."
+      },
+      "error": {
+        "loadFailed": "Planungsrollen konnten nicht geladen werden."
+      },
+      "form": {
+        "addPersonPlaceholder": "Person hinzufügen…",
+        "computed": {
+          "assigned": "Zugewiesen (PT)",
+          "unassigned": "Nicht zugewiesen (PT)"
+        },
+        "createTitle": "Planungsrolle anlegen",
+        "editTitle": "Planungsrolle bearbeiten",
+        "fields": {
+          "capacityPerWeek": "Kapazität pro Woche (PT)",
+          "name": "Name",
+          "user": "Mitarbeitende/r"
+        },
+        "unknownPerson": "Unbekannte Person"
+      },
+      "headerNotice": "Planungsrollen sind projektweite Ressourcen und können Supportleistungen und Arbeitspaketen zugewiesen werden.",
+      "pageTitle": "Planungsrollen",
+      "toast": {
+        "created": "Planungsrolle wurde angelegt.",
+        "deleteFailed": "Löschen fehlgeschlagen. Bitte versuche es erneut.",
+        "deleted": "Planungsrolle gelöscht.",
+        "saveFailed": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+        "saved": "Planungsrolle wurde gespeichert."
+      },
+      "unsavedChanges": {
+        "description": "Nicht gespeicherte Änderungen gehen verloren.",
+        "discard": "Verwerfen",
+        "keepEditing": "Weiterbearbeiten",
+        "title": "Änderungen verwerfen?"
+      },
+      "validation": {
+        "capacityMin": "Kapazität pro Woche muss größer als 0 sein.",
+        "capacityRequired": "Kapazität pro Woche ist ein Pflichtfeld.",
+        "nameDuplicate": "Eine Planungsrolle mit diesem Namen existiert bereits.",
+        "nameMaxLength": "Name darf maximal 100 Zeichen lang sein.",
+        "nameRequired": "Name ist ein Pflichtfeld."
+      }
+    },
+    "supportServicesManagement": {
+      "accessibility": {
+        "collapseNode": "{{name}} zuklappen",
+        "dragHandle": "{{name}} verschieben",
+        "expandNode": "{{name}} aufklappen",
+        "invalidPosition": "Ungültige Position — Verschieben nicht möglich.",
+        "treeLabel": "Baumansicht der Supportleistungen"
+      },
+      "actions": {
+        "cancel": "Abbrechen",
+        "collapseAll": "Alle zuklappen",
+        "create": "Supportleistung anlegen",
+        "createChild": "Unterknoten anlegen",
+        "createSibling": "Geschwisterknoten anlegen",
+        "delete": "Löschen",
+        "deleteAll": "Alle löschen",
+        "edit": "Bearbeiten",
+        "expandAll": "Alle aufklappen",
+        "promoteChildren": "Hochstufen",
+        "rowActions": "Zeilenaktionen",
+        "save": "Speichern"
+      },
+      "columns": {
+        "assignee": "Zugewiesen an",
+        "estimatedEffort": "Geschätzter Aufwand (PT)",
+        "name": "Bezeichnung"
+      },
+      "delete": {
+        "cascadeWarning": "Diese Supportleistung hat untergeordnete Einträge. Wähle, wie gelöscht werden soll.",
+        "description": "Diese Aktion kann nicht rückgängig gemacht werden.",
+        "title": "Supportleistung löschen"
+      },
+      "empty": {
+        "title": "Noch keine Supportleistungen angelegt."
+      },
+      "error": {
+        "loadFailed": "Supportleistungen konnten nicht geladen werden."
+      },
+      "fields": {
+        "assignee": "Zugewiesen an",
+        "description": "Beschreibung",
+        "estimatedEffort": "Geschätzter Aufwand (PT)",
+        "estimatedEffortReadOnly": "Berechnet aus untergeordneten Supportleistungen",
+        "name": "Bezeichnung",
+        "otherInformation": "Andere Informationen",
+        "parent": "Übergeordnete Supportleistung"
+      },
+      "filter": {
+        "removeAssignee": "Filter entfernen: {{name}}"
+      },
+      "firstChildWarning": {
+        "cancel": "Abbrechen",
+        "continue": "Weiter",
+        "description": "Dieser Eintrag hat einen manuellen Aufwandswert ({{effort}} PT). Durch das Anlegen eines untergeordneten Eintrags wird der Aufwand künftig berechnet — der bisherige Wert geht verloren.",
+        "title": "Manueller Aufwandswert geht verloren"
+      },
+      "form": {
+        "createTitle": "Supportleistung anlegen",
+        "editTitle": "Supportleistung bearbeiten"
+      },
+      "headerNotice": "Supportleistungen sind interne Unterstützungsleistungen anderer Organisationseinheiten — keine externe Vergabe (Outsourcing).",
+      "pageTitle": "Supportleistungen",
+      "planningRole": {
+        "capacityLabel": "Kapazität pro Woche (PT)",
+        "createInline": "+ Neue Planungsrolle erstellen",
+        "duplicateError": "Eine Planungsrolle mit diesem Namen existiert bereits in diesem Projekt.",
+        "nameLabel": "Name"
+      },
+      "search": {
+        "noResults": "Keine Supportleistungen gefunden.",
+        "placeholder": "Supportleistungen suchen…"
+      },
+      "tabs": {
+        "list": "Listenansicht",
+        "tree": "Baumansicht"
+      },
+      "toast": {
+        "created": "Supportleistung wurde angelegt.",
+        "deleteFailed": "Löschen fehlgeschlagen. Bitte versuche es erneut.",
+        "deleted": "Supportleistung gelöscht.",
+        "saveFailed": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+        "saved": "Supportleistung wurde gespeichert.",
+        "savedButMoveFailed": "Änderungen gespeichert, aber das Verschieben unter das neue übergeordnete Element ist fehlgeschlagen. Bitte versuche es erneut."
+      },
+      "unsavedChanges": {
+        "description": "Nicht gespeicherte Änderungen gehen verloren.",
+        "discard": "Verwerfen",
+        "keepEditing": "Weiterbearbeiten",
+        "title": "Änderungen verwerfen?"
+      },
+      "validation": {
+        "effortMin": "Aufwand muss 0 oder größer sein.",
+        "nameMaxLength": "Bezeichnung darf maximal 255 Zeichen lang sein.",
+        "nameRequired": "Bezeichnung ist ein Pflichtfeld."
+      }
+    },
+    "workItem": {
+      "assignColumnError": "Aufgabe konnte nicht verschoben werden. Bitte erneut versuchen.",
+      "board": {
+        "addAnotherColumn": "Weitere Spalte hinzufügen",
+        "addColumn": "Hinzufügen",
+        "addColumnTitle": "Spalte hinzufügen",
+        "addTaskToColumn": "Aufgabe hinzufügen",
+        "assignPerson": "Person zuweisen",
+        "assignTo": "Zuweisen an",
+        "assigneeSaveError": "Zuweisung konnte nicht gespeichert werden. Bitte erneut versuchen.",
+        "boardName": "Boardname",
+        "boardNamePlaceholder": "z.B. Sprint-Board",
+        "cardLabel": "{{name}}",
+        "changeAssignee": "Zugewiesen an {{name}}",
+        "clickToRenameColumn": "Zum Umbenennen klicken",
+        "columnCreated": "Spalte erfolgreich erstellt",
+        "columnDropZone": "Ablagebereich {{name}}",
+        "columnGroup": "Spalte {{name}}",
+        "columnItemCount_one": "{{count}} Aufgabe",
+        "columnItemCount_other": "{{count}} Aufgaben",
+        "columnName": "Spaltenname",
+        "columnSoftLimitWarning": "Dieses Board hat {{count}} Spalten. Erwägen Sie eine Konsolidierung.",
+        "columnSoftLimitWarning_one": "Dieses Board hat 1 Spalte. Erwägen Sie eine Konsolidierung.",
+        "columnSoftLimitWarning_other": "Dieses Board hat {{count}} Spalten. Erwägen Sie eine Konsolidierung.",
+        "columnStatus": "Status",
+        "createBoard": "Erstellen",
+        "createBoardTitle": "Board erstellen",
+        "defaultColumns": "Standardspalten",
+        "deleteBoardAction": "Board löschen",
+        "deleteBoardMessage": "Diese Aktion kann nicht rückgängig gemacht werden. Aufgaben werden in den aktiven Pool verschoben.",
+        "deleteBoardTitle": "Board löschen?",
+        "deleteColumnStatusGuard": "Löschen nicht möglich: Das Board würde die Abdeckung für Status \"{{status}}\" verlieren.",
+        "dragCancelled": "Drag für Aufgabe {{id}} abgebrochen.",
+        "dragColumn": "Spalte verschieben",
+        "dragEnd": "Aufgabe {{id}} in Spalte {{column}} abgelegt.",
+        "dragOver": "Aufgabe {{id}} über Spalte {{column}}.",
+        "dragOverNothing": "Aufgabe {{id}} nicht über einer Spalte.",
+        "dragStart": "Aufgabe {{id}} aufgenommen.",
+        "dragToPool": "In aktive Aufgaben ziehen",
+        "editBoard": "Board bearbeiten",
+        "editBoardTitle": "Board bearbeiten",
+        "editColumnNameInline": "Spaltenname bearbeiten",
+        "editColumnTitle": "Spalte bearbeiten",
+        "filterLabel": "Board filtern",
+        "noUnassigned": "Keine nicht zugewiesenen Aufgaben.",
+        "quickMove": "Karte verschieben",
+        "quickMoveAction": "Verschieben",
+        "quickMoveColumnLabel": "Spalte",
+        "quickMoveColumnPlaceholder": "Spalte auswählen",
+        "quickMoveSuggested": "Vorschläge",
+        "quickMoveTitle": "Karte verschieben",
+        "resetFilter": "Zurücksetzen",
+        "sidebarHint": {
+          "dismiss": "Verstanden ✓",
+          "text": "Hier findest du deine aktiven Aufgaben & das Archiv."
+        },
+        "unassign": "Zuweisung aufheben",
+        "unassigned": "Nicht zugewiesen (Backlog)"
+      },
+      "createDialog": {
+        "submit": "Erstellen",
+        "title": "Aufgabe erstellen"
+      },
+      "createSuccess": "Aufgabe \"{{name}}\" erstellt.",
+      "editDialog": {
+        "submit": "Speichern",
+        "title": "Aufgabe bearbeiten"
+      },
+      "form": {
+        "assignee": "Verantwortliche Person",
+        "assigneeNone": "Keine Zuweisung",
+        "assigneePlaceholder": "Person auswählen",
+        "cancel": "Abbrechen",
+        "description": "Beschreibung",
+        "descriptionPlaceholder": "Optionale Beschreibung (Markdown unterstützt)",
+        "dueDate": "Fälligkeitsdatum",
+        "labels": "Bezeichnungen",
+        "name": "Name",
+        "namePlaceholder": "Aufgabenname eingeben",
+        "priority": "Priorität",
+        "priorityPlaceholder": "Priorität auswählen",
+        "status": "Status",
+        "submit": "Speichern"
+      },
+      "labelSyncError": "Labels konnten nicht aktualisiert werden. Einige Änderungen wurden möglicherweise nicht gespeichert.",
+      "moveError": "Aufgabe konnte nicht sortiert werden. Bitte erneut versuchen.",
+      "optimisticLockConflict": "Das Element wurde von jemand anderem geändert. Bitte neu laden und erneut versuchen.",
+      "status": {
+        "OPEN": "Offen",
+        "IN_PROGRESS": "In Bearbeitung",
+        "DONE": "Erledigt"
+      }
+    },
+    "workItemAttachments": {
+      "deleteConfirm": {
+        "description": "Diese Aktion löscht den Anhang dauerhaft und kann nicht rückgängig gemacht werden.",
+        "title": "Anhang löschen?"
+      },
+      "deleteError": "Anhang konnte nicht gelöscht werden.",
+      "dropzoneDescription": "oder klicken um eine Datei auszuwählen (max. 10 MB)",
+      "dropzoneTitle": "Datei hier ablegen",
+      "errors": {
+        "invalidType": "Dateityp nicht erlaubt.",
+        "mimeMismatch": "\"{{name}}\" konnte nicht hochgeladen werden. Der Dateiinhalt stimmt nicht mit der Dateiendung überein.",
+        "serverTypeRejected": "\"{{name}}\" konnte nicht hochgeladen werden. Dieser Dateityp wird nicht unterstützt.",
+        "tooLarge": "Datei überschreitet die 10-MB-Größenbeschränkung.",
+        "uploadFailed": "\"{{name}}\" konnte nicht hochgeladen werden. Bitte versuche es erneut."
+      },
+      "list": "Anhänge",
+      "noAttachments": "Keine Anhänge.",
+      "processing": "Wird verarbeitet…",
+      "uploadError": "Anhang konnte nicht hochgeladen werden.",
+      "uploadFile": "Datei hochladen",
+      "uploadSuccessCount": "{{count}} Anhang/Anhänge hochgeladen.",
+      "uploadSuccessCount_one": "{{count}} attachment(s) uploaded.",
+      "uploadSuccessCount_other": "{{count}} attachment(s) uploaded."
+    },
+    "workItemComments": {
+      "createError": "Kommentar konnte nicht hinzugefügt werden.",
+      "deleteComment": "Kommentar löschen",
+      "deleteDialog": {
+        "description": "Bist du sicher, dass du diesen Kommentar löschen möchtest? Diese Aktion kann nicht rückgängig gemacht werden.",
+        "title": "Kommentar löschen"
+      },
+      "deleteError": "Kommentar konnte nicht gelöscht werden.",
+      "editComment": "Kommentar bearbeiten",
+      "form": {
+        "heading": "Neuer Kommentar",
+        "label": "Kommentartext",
+        "placeholder": "Kommentar hinzufügen…",
+        "submit": "Kommentar hinzufügen"
+      },
+      "noComments": "Noch keine Kommentare.",
+      "thread": "Kommentare",
+      "updateError": "Kommentar konnte nicht aktualisiert werden."
+    },
+    "workItemLabels": {
+      "addError": "Bezeichnung konnte nicht hinzugefügt werden.",
+      "createDialog": {
+        "submit": "Erstellen",
+        "title": "Bezeichnung erstellen"
+      },
+      "createError": "Bezeichnung konnte nicht erstellt werden.",
+      "createLabel": "Bezeichnung erstellen",
+      "deleteError": "Bezeichnung konnte nicht gelöscht werden.",
+      "deleteLabel": "{{name}} löschen",
+      "editDialog": {
+        "title": "Bezeichnung bearbeiten"
+      },
+      "editLabel": "{{name}} bearbeiten",
+      "form": {
+        "color": "Farbe",
+        "name": "Name"
+      },
+      "manager": "Bezeichnungen",
+      "managerTitle": "Bezeichnungen",
+      "noLabels": "Noch keine Bezeichnungen.",
+      "removeError": "Bezeichnung konnte nicht entfernt werden.",
+      "updateError": "Bezeichnung konnte nicht aktualisiert werden."
+    },
+    "workItemLinks": {
+      "addLink": "Link hinzufügen",
+      "createDialog": {
+        "linkType": "Link-Typ",
+        "submit": "Link hinzufügen",
+        "targetId": "Verknüpfte Aufgabe",
+        "targetIdNoResults": "Keine passenden Elemente gefunden.",
+        "targetIdPlaceholder": "Nach Name suchen oder ID eingeben",
+        "targetIdSearchPlaceholder": "Name eingeben oder ID einfügen…",
+        "title": "Link hinzufügen",
+        "useIdPrefix": "ID verwenden:"
+      },
+      "createError": "Link konnte nicht erstellt werden.",
+      "deleteError": "Link konnte nicht gelöscht werden.",
+      "noLinks": "Keine verknüpften Aufgaben.",
+      "panel": "Verknüpfte Aufgaben",
+      "unknownItem": "Unbekanntes Element",
+      "validation": {
+        "alreadyLinked": "Diese Arbeitselemente sind bereits verknüpft. Entfernen Sie zuerst den bestehenden Link.",
+        "duplicateLink": "Diese Arbeitselemente sind bereits mit demselben Typ verknüpft.",
+        "oppositeDirection": "Diese Arbeitselemente sind bereits in entgegengesetzter Richtung verknüpft. Ein Element kann nicht gleichzeitig Eltern- und Kindelement desselben Elements sein.",
+        "selfLink": "Ein Arbeitselement kann nicht mit sich selbst verknüpft werden."
+      },
+      "linkType": {
+        "parent": "Übergeordnet",
+        "child": "Untergeordnet",
+        "next": "Nachfolger",
+        "previous": "Vorgänger",
+        "related": "Verwandt"
+      }
+    }
+  },
+  "header": {
+    "brandLabel": "P1NG — Zur Startseite",
+    "brandName": "P1NG",
+    "logout": "Abmelden",
+    "search": "Suchen",
+    "searchShortcut": "⌘K",
+    "showcaseDrawer": "Showcase öffnen",
+    "title": "Kopfzeile",
+    "userMenu": "Benutzermenü"
+  },
+  "language": {
+    "de": "Deutsch",
+    "en": "English",
+    "switch": "Sprache wechseln"
+  },
+  "licenses": {
+    "dialogDescription": "Diese Anwendung enthält die folgenden Open-Source-Pakete.",
+    "dialogTitle": "Drittanbieter-Lizenzen",
+    "hideLicenseText": "Lizenz verbergen",
+    "loadError": "Lizenzinformationen konnten nicht geladen werden.",
+    "noResults": "Keine Pakete entsprechen Ihrer Suche.",
+    "packageCount_one": "{{count}} Paket",
+    "packageCount_other": "{{count}} Pakete",
+    "searchPlaceholder": "Pakete suchen…",
+    "source": "{{name}}",
+    "triggerLabel": "Drittanbieter-Lizenzen",
+    "viewLicenseText": "Lizenz anzeigen"
+  },
+  "nav": {
+    "administration": "Verwaltung",
+    "content": "Inhalte",
+    "dashboard": "Dashboard",
+    "documents": "Dokumente",
+    "general": "Allgemein",
+    "home": "Startseite",
+    "initiationRequests": "Initiierungsanträge",
+    "mainNavigation": "Hauptnavigation",
+    "messages": "Nachrichten",
+    "portfolios": "Portfolios",
+    "profile": "Profil",
+    "programs": "Programme",
+    "projects": "Projekte",
+    "reports": "Berichte",
+    "roleManagement": "Rechte und Rollen",
+    "settings": "Einstellungen",
+    "users": "Benutzer"
+  },
+  "pages": {
+    "businessCase": {
+      "actions": {
+        "startProjectCharter": "Projektsteckbrief erstellen"
+      },
+      "detailPage": {
+        "heading": "Business Case"
+      },
+      "form": {
+        "cancelButton": "Abbrechen",
+        "clientSummaryLabel": "Zusammenfassung des Auftraggebers",
+        "clientSummaryPlaceholder": "Beschreiben Sie den Kundenkontext und Hintergrund…",
+        "expectedBenefitLabel": "Erwarteter Nutzen",
+        "expectedBenefitPlaceholder": "Beschreiben Sie den erwarteten Nutzen…",
+        "expectedNegativeSideEffectLabel": "Erwarteter negativer Nebeneffekt",
+        "expectedNegativeSideEffectPlaceholder": "Beschreiben Sie mögliche negative Nebeneffekte…",
+        "investmentCalculationLabel": "Investitionsrechnung",
+        "investmentCalculationPlaceholder": "Geben Sie Kosten- und Investitionsdetails an…",
+        "keyRisksLabel": "Hauptrisiken",
+        "keyRisksPlaceholder": "Identifizieren Sie die wesentlichen Risiken…",
+        "markCompleteButton": "Einreichen",
+        "optionsLabel": "Optionen",
+        "optionsPlaceholder": "Listen Sie die bewerteten Optionen auf…",
+        "projectRationaleLabel": "Gründe für das Projekt",
+        "projectRationalePlaceholder": "Erklären Sie, warum dieses Projekt notwendig ist…",
+        "saveButton": "Speichern",
+        "saveDraftButton": "Als Entwurf speichern",
+        "timelineLabel": "Zeitlicher Rahmen",
+        "timelinePlaceholder": "Skizzieren Sie den Projektzeitplan…"
+      },
+      "loadError": "Business Case konnte nicht geladen werden.",
+      "newPage": {
+        "heading": "Neuer Business Case"
+      },
+      "statusBadge": {
+        "aria": "Status: {{status}}"
+      },
+      "toast": {
+        "createError": "Business Case konnte nicht erstellt werden.",
+        "createSuccess": "Business Case erstellt.",
+        "creating": "Business Case wird erstellt…",
+        "submitError": "Business Case konnte nicht als abgeschlossen markiert werden.",
+        "submitSuccess": "Business Case als abgeschlossen markiert.",
+        "submitting": "Wird als abgeschlossen markiert…",
+        "updateError": "Änderungen konnten nicht gespeichert werden.",
+        "updateSuccess": "Änderungen gespeichert.",
+        "updating": "Änderungen werden gespeichert…"
+      }
+    },
+    "dashboard": {
+      "description": "Übersicht und wichtige Kennzahlen.",
+      "title": "Dashboard"
+    },
+    "documents": {
+      "description": "Dokumente durchsuchen und verwalten.",
+      "title": "Dokumente"
+    },
+    "home": {
+      "description": "Eine kurze Einführung in die Anwendungshülle und ihre Navigation. Verwenden Sie den Design-Schalter in der Kopfzeile, um zwischen hell und dunkel zu wechseln.",
+      "title": "Startseite"
+    },
+    "initiationRequests": {
+      "detail": {
+        "backToList": "Initiierungsanträge",
+        "editTitle": "Initiierungsantrag bearbeiten",
+        "loadError": "Initiierungsantrag konnte nicht geladen werden.",
+        "readOnlyBadge": "Angenommen",
+        "startBusinessCaseButton": "Business Case starten",
+        "title": "Initiierungsantrag",
+        "viewEditBusinessCaseButton": "Business Case anzeigen / bearbeiten"
+      },
+      "dialog": {
+        "createDescription": "Erstellen Sie einen formellen Projektinitiierungsantrag (PIA), um den PMflex-Initiierungsprozess zu starten.",
+        "createTitle": "Neuer Initiierungsantrag"
+      },
+      "error": {
+        "retry": "Erneut versuchen",
+        "title": "Initiierungsanträge konnten nicht geladen werden"
+      },
+      "form": {
+        "approvalAuthorityLabel": "Genehmigungsbehörde",
+        "cancelButton": "Abbrechen",
+        "deliveryType": {
+          "external": "Extern",
+          "internal": "Intern",
+          "mixed": "Gemischt",
+          "unknown": "Unbekannt"
+        },
+        "deliveryTypeLabel": "Lieferart",
+        "deliveryTypePlaceholder": "Lieferart auswählen",
+        "documentVersionLabel": "Dokumentversion",
+        "documentVersionPlaceholder": "z.B. 1.0",
+        "estimatedEffortCommentLabel": "Aufwandskommentar",
+        "estimatedEffortLabel": "Geschätzter Aufwand (Personentage)",
+        "mandatorySection": "Pflichtfelder",
+        "nameLabel": "Projekttitel",
+        "namePlaceholder": "z.B. Digitalisierung Rechnungswesen",
+        "optionalSection": "Optionale Felder",
+        "organizationalUnitLabel": "Organisationseinheit",
+        "projectInitiatorLabel": "Projektinitiator",
+        "projectOwnerLabel": "Projektverantwortlicher",
+        "requestDateLabel": "Antragsdatum",
+        "requestingProjectEmpty": "Keine Projekte gefunden.",
+        "requestingProjectLabel": "Antragsstellendes Projekt",
+        "requestingProjectPlaceholder": "Projekt auswählen…",
+        "saveDraftButton": "Als Entwurf speichern",
+        "scopeTypeLabel": "Übergeordneter Domänentyp",
+        "scopeTypePlaceholder": "Bereichstyp auswählen…",
+        "solutionProviderLabel": "Lösungsanbieter",
+        "submitButton": "Einreichen",
+        "targetDeliveryDateLabel": "Geplantes Lieferdatum",
+        "scopeType": {
+          "program": "Programm",
+          "portfolio": "Portfolio"
+        },
+        "scopeId": {
+          "programLabel": "Programm",
+          "programPlaceholder": "Programm auswählen…",
+          "programEmpty": "Keine Programme gefunden.",
+          "portfolioLabel": "Portfolio",
+          "portfolioPlaceholder": "Portfolio auswählen…",
+          "portfolioEmpty": "Keine Portfolios gefunden."
+        }
+      },
+      "list": {
+        "columns": {
+          "name": "Projekttitel",
+          "status": "Status",
+          "updatedAt": "Zuletzt geändert"
+        },
+        "deleteButton": "Initiierungsantrag löschen",
+        "noDate": "—",
+        "statusBadgeLabel": "Status: {{label}}"
+      },
+      "newRequestButton": "Neuen Initiierungsantrag erstellen",
+      "title": "Initiierungsanträge",
+      "toast": {
+        "createError": "Antrag konnte nicht erstellt werden.",
+        "createSuccess": "Antrag erfolgreich erstellt.",
+        "creating": "Antrag wird erstellt…",
+        "deleteError": "Antrag konnte nicht gelöscht werden.",
+        "deleteSuccess": "Antrag gelöscht.",
+        "deleting": "Antrag wird gelöscht…",
+        "submitError": "Antrag konnte nicht eingereicht werden.",
+        "submitSuccess": "Antrag eingereicht und angenommen.",
+        "submitting": "Antrag wird eingereicht…",
+        "updateError": "Änderungen konnten nicht gespeichert werden.",
+        "updateSuccess": "Änderungen gespeichert.",
+        "updating": "Änderungen werden gespeichert…"
+      },
+      "validation": {
+        "approvalAuthorityRequired": "Genehmigungsbehörde ist erforderlich.",
+        "deliveryTypeRequired": "Bitte wählen Sie eine Lieferart aus.",
+        "documentVersionRequired": "Dokumentversion ist erforderlich.",
+        "estimatedEffortInvalid": "Der geschätzte Aufwand muss eine positive Zahl sein.",
+        "nameRequired": "Projekttitel ist erforderlich.",
+        "organizationalUnitRequired": "Organisationseinheit ist erforderlich.",
+        "projectInitiatorRequired": "Projektinitiator ist erforderlich.",
+        "projectOwnerRequired": "Projektverantwortlicher ist erforderlich.",
+        "requestDateRequired": "Antragsdatum ist erforderlich.",
+        "requestingProjectRequired": "Ein antragsstellendes Projekt muss ausgewählt werden.",
+        "scopeIdRequired": "Bitte wählen Sie eine Bereichsentität aus.",
+        "scopeTypeRequired": "Bitte wählen Sie einen Bereichstyp aus.",
+        "targetDeliveryDateRequired": "Geplantes Lieferdatum ist erforderlich."
+      },
+      "status": {
+        "draft": "Entwurf",
+        "submitted": "Eingereicht",
+        "accepted": "Angenommen"
+      }
+    },
+    "issueManagement": {
+      "addEntry": "Eintrag hinzufügen",
+      "createIssueEntry": {
+        "cancel": "Abbrechen",
+        "description": "Erfassen Sie eine neue Störung.",
+        "fields": {
+          "impact": "Auswirkung (1–5)",
+          "impactPlaceholder": "1–5",
+          "urgency": "Dringlichkeit (1–5)",
+          "urgencyPlaceholder": "1–5"
+        },
+        "submit": "Störung erstellen",
+        "title": "Neue Störung",
+        "toast": {
+          "error": "Störung konnte nicht erstellt werden.",
+          "success": "Störung erstellt."
+        }
+      },
+      "createProblemFromIssue": {
+        "cancel": "Abbrechen",
+        "confirm": "Problem erstellen",
+        "description": "\"{{name}}\" zu einem neuen Problem eskalieren?",
+        "title": "Problem aus Störung erstellen",
+        "toast": {
+          "error": "Problem konnte nicht aus Störung erstellt werden.",
+          "success": "Problem erstellt."
+        }
+      },
+      "editIssueEntry": {
+        "cancel": "Abbrechen",
+        "description": "Störungseintrag aktualisieren.",
+        "loadError": "Eintrag konnte nicht geladen werden.",
+        "loading": "Eintrag wird geladen…",
+        "submit": "Änderungen speichern",
+        "title": "Störung bearbeiten",
+        "toast": {
+          "error": "Störung konnte nicht aktualisiert werden.",
+          "success": "Störung aktualisiert."
+        }
+      },
+      "empty": "Keine Einträge gefunden.",
+      "filters": {
+        "pestelAll": "Alle Kategorien",
+        "pestelCategory": "PESTEL-Kategorie",
+        "showTerminal": "Gelöste / Geschlossene anzeigen",
+        "status": "Status",
+        "statusAll": "Alle Status"
+      },
+      "loadError": "Störungsmanagement-Einträge konnten nicht geladen werden.",
+      "loading": "Einträge werden geladen…",
+      "status": {
+        "CLOSED": "Geschlossen",
+        "DEFERRED": "Zurückgestellt",
+        "IN_PROGRESS": "In Bearbeitung",
+        "OPEN": "Offen",
+        "RESOLVED": "Gelöst"
+      },
+      "table": {
+        "columns": {
+          "escalation": "Eskalation",
+          "id": "ID",
+          "identificationDate": "Identifiziert",
+          "impact": "Auswirkung",
+          "name": "Name",
+          "owner": "Verantwortlicher",
+          "pestelCategory": "PESTEL",
+          "status": "Status",
+          "urgency": "Dringlichkeit"
+        },
+        "editAction": "Bearbeiten",
+        "rowActionsLabel": "Zeilenaktionen für \"{{name}}\""
+      },
+      "title": "Störungsmanagement",
+      "validation": {
+        "dateInvalid": "Datum muss im Format JJJJ-MM-TT vorliegen.",
+        "descriptionTooLong": "Beschreibung darf nicht mehr als 2000 Zeichen umfassen.",
+        "nameRequired": "Name ist erforderlich.",
+        "nameTooLong": "Name darf nicht mehr als 255 Zeichen umfassen.",
+        "scoreRange": "Wert muss zwischen 1 und 5 liegen.",
+        "statusRequired": "Status ist erforderlich."
+      }
+    },
+    "messages": {
+      "description": "Nachrichten lesen und verfassen.",
+      "title": "Nachrichten"
+    },
+    "notFound": {
+      "title": "404 — Seite nicht gefunden"
+    },
+    "permissions": {
+      "description": "Rollen und Berechtigungen konfigurieren.",
+      "title": "Berechtigungen"
+    },
+    "portfolioGoals": {
+      "title": "Ziele"
+    },
+    "portfolioMembers": {
+      "title": "Portfolio-Mitglieder"
+    },
+    "portfolios": {
+      "createButton": "Neues Portfolio erstellen",
+      "deleteDialog": {
+        "cancel": "Abbrechen",
+        "confirm": "Löschen",
+        "description": "Möchten Sie \"{{name}}\" wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.",
+        "title": "Portfolio löschen",
+        "toast": {
+          "deleting": "Portfolio wird gelöscht…",
+          "error": "Portfolio konnte nicht gelöscht werden.",
+          "success": "Portfolio erfolgreich gelöscht."
+        }
+      },
+      "detail": {
+        "createdAt": "Erstellt",
+        "edit": "Portfolio bearbeiten",
+        "endYear": "Endjahr",
+        "newProgram": "Neues Programm erstellen",
+        "notFound": "Portfolio nicht gefunden.",
+        "programsSection": "Zugehörige Programme",
+        "startYear": "Startjahr"
+      },
+      "editForm": {
+        "description": "Aktualisieren Sie die Details dieses Portfolios.",
+        "submit": "Änderungen speichern",
+        "title": "Portfolio bearbeiten",
+        "toast": {
+          "error": "Portfolio konnte nicht aktualisiert werden.",
+          "success": "Portfolio erfolgreich aktualisiert.",
+          "updating": "Portfolio wird aktualisiert…"
+        }
+      },
+      "error": {
+        "retry": "Erneut versuchen",
+        "title": "Portfolios konnten nicht geladen werden"
+      },
+      "filterButton": "Filtern",
+      "filters": {
+        "endYear": "Endjahr",
+        "searchLabel": "Suche",
+        "searchPlaceholder": "Portfolios suchen…",
+        "startYear": "Startjahr"
+      },
+      "form": {
+        "cancel": "Abbrechen",
+        "description": "Fügen Sie ein neues Portfolio hinzu, um verwandte Initiativen zu bündeln.",
+        "endYearLabel": "Endjahr",
+        "startYearLabel": "Startjahr",
+        "submit": "Portfolio erstellen",
+        "title": "Portfolio erstellen",
+        "titleLabel": "Titel",
+        "titlePlaceholder": "z. B. Digitale Transformation 2026",
+        "toast": {
+          "creating": "Portfolio wird erstellt…",
+          "error": "Portfolio konnte nicht erstellt werden.",
+          "success": "Portfolio erfolgreich erstellt."
+        }
+      },
+      "list": {
+        "columns": {
+          "actions": "Aktionen",
+          "endYear": "Endjahr",
+          "startYear": "Startjahr",
+          "title": "Titel"
+        },
+        "deleteAriaLabel": "Portfolio \"{{name}}\" löschen",
+        "editAriaLabel": "Portfolio \"{{name}}\" bearbeiten",
+        "noYear": "–",
+        "programsAriaLabel": "Programme für Portfolio \"{{name}}\" anzeigen"
+      },
+      "title": "Portfolios",
+      "validation": {
+        "titleMaxLength": "Der Titel darf 255 Zeichen nicht überschreiten.",
+        "titleRequired": "Titel ist erforderlich.",
+        "yearRangeInvalid": "Das Endjahr muss größer oder gleich dem Startjahr sein."
+      }
+    },
+    "problemManagement": {
+      "addEntry": "Eintrag hinzufügen",
+      "createProblemEntry": {
+        "cancel": "Abbrechen",
+        "description": "Erfassen Sie einen neuen Problemeintrag.",
+        "fields": {
+          "impact": "Auswirkung (1–5)",
+          "impactPlaceholder": "1–5"
+        },
+        "submit": "Problem erstellen",
+        "title": "Neues Problem",
+        "toast": {
+          "error": "Problem konnte nicht erstellt werden.",
+          "success": "Problem erstellt."
+        }
+      },
+      "editProblemEntry": {
+        "cancel": "Abbrechen",
+        "description": "Problemeintrag aktualisieren.",
+        "loadError": "Eintrag konnte nicht geladen werden.",
+        "loading": "Eintrag wird geladen…",
+        "submit": "Änderungen speichern",
+        "title": "Problem bearbeiten",
+        "toast": {
+          "error": "Problem konnte nicht aktualisiert werden.",
+          "success": "Problem aktualisiert."
+        }
+      },
+      "empty": "Keine Einträge gefunden.",
+      "filters": {
+        "pestelAll": "Alle Kategorien",
+        "pestelCategory": "PESTEL-Kategorie",
+        "showTerminal": "Gelöste / Geschlossene anzeigen",
+        "status": "Status",
+        "statusAll": "Alle Status"
+      },
+      "loadError": "Problemmanagement-Einträge konnten nicht geladen werden.",
+      "loading": "Einträge werden geladen…",
+      "status": {
+        "CLOSED": "Geschlossen",
+        "IN_ANALYSIS": "In Analyse",
+        "OPEN": "Offen",
+        "RESOLVED": "Gelöst",
+        "WORKAROUND_KNOWN": "Workaround bekannt"
+      },
+      "table": {
+        "columns": {
+          "escalation": "Eskalation",
+          "id": "ID",
+          "identificationDate": "Identifiziert",
+          "impact": "Auswirkung",
+          "name": "Name",
+          "owner": "Verantwortlicher",
+          "pestelCategory": "PESTEL",
+          "status": "Status"
+        },
+        "editAction": "Bearbeiten",
+        "rowActionsLabel": "Zeilenaktionen für \"{{name}}\""
+      },
+      "title": "Problemmanagement",
+      "validation": {
+        "dateInvalid": "Datum muss im Format JJJJ-MM-TT vorliegen.",
+        "descriptionTooLong": "Beschreibung darf nicht mehr als 2000 Zeichen umfassen.",
+        "nameRequired": "Name ist erforderlich.",
+        "nameTooLong": "Name darf nicht mehr als 255 Zeichen umfassen.",
+        "scoreRange": "Wert muss zwischen 1 und 5 liegen.",
+        "statusRequired": "Status ist erforderlich."
+      }
+    },
+    "profile": {
+      "description": "Ihr Profil anzeigen und bearbeiten.",
+      "title": "Profil"
+    },
+    "programGoals": {
+      "title": "Ziele"
+    },
+    "programInitiationRequests": {
+      "detail": {
+        "editTitle": "Programm-Initiierungsantrag bearbeiten",
+        "title": "Programm-Initiierungsantrag"
+      },
+      "dialog": {
+        "createDescription": "Erstellen Sie einen formalen Programm-Initiierungsantrag (PIR), um den Initiierungsprozess zu starten.",
+        "createTitle": "Neuer Programm-Initiierungsantrag"
+      },
+      "form": {
+        "nameLabel": "Programmtitel",
+        "namePlaceholder": "z.B. Digitalisierung Rechnungswesen",
+        "portfolioEmpty": "Keine Portfolios gefunden.",
+        "portfolioLabel": "Übergeordnete Domäne",
+        "portfolioPlaceholder": "Portfolio auswählen…",
+        "programInitiatorLabel": "Programminitiator",
+        "programOwnerLabel": "Programmeigentümer",
+        "requestingProgramLabel": "Antragstellendes Programm"
+      },
+      "toast": {
+        "createError": "Antrag konnte nicht erstellt werden.",
+        "createSuccess": "Antrag erfolgreich erstellt.",
+        "creating": "Antrag wird erstellt…",
+        "submitError": "Antrag konnte nicht eingereicht werden.",
+        "submitSuccess": "Antrag eingereicht.",
+        "submitting": "Antrag wird eingereicht…",
+        "updateError": "Änderungen konnten nicht gespeichert werden.",
+        "updateSuccess": "Änderungen gespeichert.",
+        "updating": "Änderungen werden gespeichert…"
+      },
+      "validation": {
+        "nameRequired": "Programmtitel ist erforderlich.",
+        "programInitiatorRequired": "Programminitiator ist erforderlich.",
+        "programOwnerRequired": "Programmeigentümer ist erforderlich."
+      }
+    },
+    "programMembers": {
+      "title": "Programm-Mitglieder"
+    },
+    "programs": {
+      "createButton": "Neues Programm erstellen",
+      "createDialog": {
+        "cancel": "Abbrechen",
+        "description": "Erstellen Sie ein neues Programm, um Projekte zu bündeln und zu koordinieren.",
+        "fields": {
+          "name": "Name",
+          "namePlaceholder": "Programmname"
+        },
+        "submit": "Programm erstellen",
+        "title": "Neues Programm",
+        "toast": {
+          "duplicateName": "Ein Programm mit dem Namen \"{{name}}\" existiert bereits.",
+          "error": "Programm konnte nicht erstellt werden.",
+          "success": "Programm \"{{name}}\" erstellt."
+        }
+      },
+      "detail": {
+        "actions": {
+          "createPIR": "Initiierungsantrag erstellen",
+          "viewPIR": "Initiierungsantrag anzeigen"
+        },
+        "backToList": "Programme",
+        "edit": "Bearbeiten",
+        "error": {
+          "retry": "Erneut versuchen",
+          "title": "Programm konnte nicht geladen werden."
+        },
+        "fields": {
+          "createdAt": "Erstellt",
+          "creator": "Erstellt von",
+          "portfolio": "Portfolio",
+          "status": "Status",
+          "updatedAt": "Zuletzt geändert",
+          "updater": "Zuletzt geändert von"
+        },
+        "projects": {
+          "title": "Zugewiesene Projekte"
+        }
+      },
+      "editDialog": {
+        "cancel": "Abbrechen",
+        "description": "Programmdetails aktualisieren.",
+        "detail": {
+          "createdAt": "Erstellt",
+          "creator": "Erstellt von",
+          "noProjects": "Keine Projekte zugewiesen.",
+          "projects": "Projekte",
+          "updatedAt": "Zuletzt geändert",
+          "updater": "Zuletzt geändert von"
+        },
+        "fields": {
+          "name": "Name",
+          "namePlaceholder": "Programmname",
+          "status": "Status",
+          "statusPlaceholder": "Status auswählen"
+        },
+        "submit": "Änderungen speichern",
+        "title": "Programm bearbeiten",
+        "toast": {
+          "duplicateName": "Ein Programm mit dem Namen \"{{name}}\" existiert bereits.",
+          "error": "Programm konnte nicht aktualisiert werden.",
+          "success": "Programm aktualisiert.",
+          "versionConflict": "Dieses Programm wurde kürzlich von einer anderen Person aktualisiert. Bitte prüfen Sie die neueste Version."
+        }
+      },
+      "error": {
+        "retry": "Erneut versuchen",
+        "title": "Programme konnten nicht geladen werden"
+      },
+      "filterButton": "Filtern",
+      "filters": {
+        "searchLabel": "Suche",
+        "searchPlaceholder": "Programme suchen…",
+        "status": "Status"
+      },
+      "list": {
+        "columns": {
+          "actions": "Aktionen",
+          "createdAt": "Erstellt",
+          "name": "Name",
+          "portfolio": "Portfolio",
+          "status": "Status",
+          "updatedAt": "Zuletzt geändert"
+        },
+        "editAriaLabel": "Programm \"{{name}}\" bearbeiten",
+        "empty": "Keine Programme gefunden."
+      },
+      "status": {
+        "active": "Aktiv",
+        "archived": "Archiviert",
+        "completed": "Abgeschlossen",
+        "created": "Angelegt",
+        "draft": "Entwurf"
+      },
+      "statusBadge": {
+        "aria": "Status: {{status}}"
+      },
+      "title": "Programme",
+      "validation": {
+        "nameRequired": "Name ist erforderlich.",
+        "nameTooLong": "Der Name darf 255 Zeichen nicht überschreiten."
+      }
+    },
+    "projectAssumptions": {
+      "title": "Annahmen"
+    },
+    "projectCharter": {
+      "actions": {
+        "startProjectCharter": "Projektauftrag erstellen",
+        "viewEditProjectCharter": "Projektauftrag anzeigen / bearbeiten"
+      },
+      "detailPage": {
+        "heading": "Projektauftrag"
+      },
+      "form": {
+        "assumptionLabel": "Annahme",
+        "assumptionPlaceholder": "Listen Sie die Annahmen auf…",
+        "cancelButton": "Abbrechen",
+        "operationalImplementationLabel": "Betriebliche Umsetzung",
+        "operationalImplementationPlaceholder": "Beschreiben Sie den Plan für die betriebliche Umsetzung…",
+        "projectConstraintLabel": "Einschränkung",
+        "projectConstraintPlaceholder": "Beschreiben Sie die Einschränkungen…",
+        "projectSummaryLabel": "Projektzusammenfassung",
+        "projectSummaryPlaceholder": "Beschreiben Sie die Projektzusammenfassung…",
+        "requirementLabel": "Anforderung",
+        "requirementPlaceholder": "Beschreiben Sie die Anforderungen…",
+        "resourcesLabel": "Ressourcen",
+        "resourcesPlaceholder": "Beschreiben Sie die benötigten Ressourcen…",
+        "riskLabel": "Risiko",
+        "riskPlaceholder": "Identifizieren Sie die wesentlichen Risiken…",
+        "saveButton": "Speichern",
+        "saveDraftButton": "Als Entwurf speichern",
+        "scopeSummaryLabel": "Zusammenfassung des Umfangs",
+        "scopeSummaryPlaceholder": "Beschreiben Sie den Projektumfang…",
+        "stakeholdersLabel": "Interessensgruppen",
+        "stakeholdersPlaceholder": "Listen Sie die wichtigsten Interessensgruppen auf…",
+        "submitButton": "Einreichen",
+        "successCriteriaLabel": "Erfolgskriterien",
+        "successCriteriaPlaceholder": "Definieren Sie die Erfolgskriterien…"
+      },
+      "loadError": "Projektauftrag konnte nicht geladen werden.",
+      "loadErrorTitle": "Laden fehlgeschlagen",
+      "newPage": {
+        "heading": "Neuer Projektauftrag"
+      },
+      "statusBadge": {
+        "accepted": "Angenommen",
+        "aria": "Status: {{status}}",
+        "draft": "Entwurf",
+        "submitted": "Eingereicht"
+      },
+      "toast": {
+        "createError": "Projektauftrag konnte nicht erstellt werden.",
+        "createSuccess": "Projektauftrag erstellt.",
+        "creating": "Projektauftrag wird erstellt…",
+        "submitError": "Projektauftrag konnte nicht eingereicht werden.",
+        "submitSuccess": "Projektauftrag eingereicht.",
+        "submitting": "Projektauftrag wird eingereicht…",
+        "updateError": "Änderungen konnten nicht gespeichert werden.",
+        "updateSuccess": "Änderungen gespeichert.",
+        "updating": "Änderungen werden gespeichert…"
+      }
+    },
+    "projectConstraints": {
+      "title": "Einschränkungen"
+    },
+    "projectDetail": {
+      "actions": {
+        "createBusinessCase": "Business Case erstellen",
+        "createPIR": "Initiierungsantrag erstellen",
+        "viewBusinessCase": "Business Case anzeigen",
+        "viewPIR": "Initiierungsantrag anzeigen"
+      },
+      "backToList": "Projekte",
+      "error": {
+        "retry": "Erneut versuchen",
+        "title": "Projekt konnte nicht geladen werden"
+      },
+      "fields": {
+        "description": "Beschreibung",
+        "endDate": "Enddatum",
+        "governanceStatus": "Governance-Status",
+        "sizeClassification": "Größe",
+        "startDate": "Startdatum",
+        "status": "Status"
+      }
+    },
+    "projectGoals": {
+      "title": "Ziele"
+    },
+    "projectMembers": {
+      "addButton": "Mitglied hinzufügen",
+      "assignButton": "Zuweisen",
+      "assignTitle": "Mitglied zuweisen",
+      "columnInitials": "Kürzel",
+      "columnMail": "E-Mail",
+      "columnName": "Name",
+      "columnRole": "Rolle",
+      "editButton": "Bearbeiten",
+      "editTitle": "Mitglied bearbeiten",
+      "empty": "Noch keine Mitglieder zugewiesen.",
+      "error": "Mitglieder konnten nicht geladen werden.",
+      "errors": {
+        "conflict": "Diese Person ist dem Projekt bereits zugewiesen.",
+        "unknown": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+      },
+      "initialsGenerate": "Kürzel automatisch generieren",
+      "initialsLabel": "Kürzel",
+      "initialsPlaceholder": "z. B. SK",
+      "personLabel": "Person",
+      "personPlaceholder": "Nach Name oder E-Mail suchen…",
+      "roleLabel": "Rolle",
+      "rolePlaceholder": "Rolle auswählen…",
+      "title": "Mitglieder",
+      "unassignButton": "Entfernen",
+      "unassignConfirm": "\"{{name}}\" aus diesem Projekt entfernen?",
+      "unassignTitle": "Mitglied entfernen"
+    },
+    "projectRequirements": {
+      "title": "Anforderungen"
+    },
+    "projects": {
+      "columns": {
+        "endDate": "Enddatum",
+        "governanceStatus": "Governance-Status",
+        "name": "Name",
+        "sizeClassification": "Größe",
+        "startDate": "Startdatum"
+      },
+      "createButton": "Neues Projekt erstellen",
+      "error": {
+        "retry": "Erneut versuchen",
+        "title": "Projekte konnten nicht geladen werden"
+      },
+      "filterButton": "Filtern",
+      "filters": {
+        "governanceStatus": "Governance-Status",
+        "searchLabel": "Suche",
+        "searchPlaceholder": "Projekte suchen...",
+        "sizeClassification": "Größe"
+      },
+      "governanceStatus": {
+        "formal": "Formal",
+        "unmanaged": "Nicht verwaltet"
+      },
+      "sizeClassification": {
+        "large": "Groß",
+        "medium": "Mittel",
+        "small": "Klein"
+      },
+      "title": "Projekte"
+    },
+    "rasciMatrix": {
+      "addRole": "Rolle hinzufügen",
+      "cellAriaLabel": "{{roleName}} – {{taskName}}: {{value}}",
+      "collapseResources": "Ressourcen ausblenden",
+      "deleteRole": "Rolle löschen",
+      "deleteRoleConfirm": "Rolle '{{roleName}}' von diesem Objekt entfernen?",
+      "editRole": "Rolle bearbeiten",
+      "expandResources": "Ressourcen anzeigen",
+      "noRoles": "Noch keine Rollen definiert.",
+      "overrideDialogTitle": "RASCI-Wert überschreiben",
+      "overrideMarker": "Überschrieben",
+      "overrideTooltip": "Abweichend vom Template",
+      "overrideTooltipWithValue": "Abweichend vom Template (Template: {{value}})",
+      "resetCell": "Diesen Wert zurücksetzen",
+      "resetCellTo": "Diesen Wert zurücksetzen auf",
+      "resetColumn": "Spalte zurücksetzen",
+      "resetColumnConfirm": "Alle Überschreibungen für diese Rolle zurücksetzen?",
+      "resourcesColumnName": "Name",
+      "resourcesColumnOperations": "Operationen",
+      "rightsButton": "Rechte",
+      "selectTemplateRole": "Vorlagenrolle auswählen",
+      "skeletonLabel": "Matrix wird geladen…",
+      "sourceRole": "Quellrolle (Vorlage)",
+      "templateValue": "Vorlagenwert: {{value}}",
+      "title": "Rechte-Matrix",
+      "accessLevel": {
+        "write": "Schreiben",
+        "read": "Lesen",
+        "none": "Keine"
+      },
+      "operations": {
+        "read": "Lesen",
+        "create": "Erstellen",
+        "update": "Bearbeiten",
+        "delete": "Löschen",
+        "link": "Verknüpfen",
+        "unlink": "Verknüpfung aufheben"
+      }
+    },
+    "reports": {
+      "description": "Berichte anzeigen und erstellen.",
+      "title": "Berichte"
+    },
+    "riskManagement": {
+      "addEntry": "Eintrag hinzufügen",
+      "createIssueFromRisk": {
+        "cancel": "Abbrechen",
+        "confirm": "Störung erstellen",
+        "description": "Störung aus \"{{name}}\" erstellen? Das Risiko wird als Eingetreten markiert.",
+        "title": "Störung aus Risiko erstellen",
+        "toast": {
+          "error": "Störung konnte nicht aus Risiko erstellt werden.",
+          "success": "Störung erstellt. Risiko als Eingetreten markiert."
+        }
+      },
+      "createRiskEntry": {
+        "cancel": "Abbrechen",
+        "fields": {
+          "description": "Beschreibung",
+          "descriptionPlaceholder": "Optionale Beschreibung",
+          "identificationDate": "Identifikationsdatum",
+          "impact": "Auswirkung (1–5)",
+          "impactPlaceholder": "1–5",
+          "name": "Name",
+          "namePlaceholder": "Eintragsname",
+          "owner": "Verantwortlicher",
+          "ownerPlaceholder": "Verantwortlichen auswählen",
+          "pestelCategory": "PESTEL-Kategorie",
+          "pestelPlaceholder": "Kategorie auswählen",
+          "probability": "Eintrittswahrscheinlichkeit (1–5)",
+          "probabilityPlaceholder": "1–5",
+          "reporter": "Melder",
+          "reporterPlaceholder": "Melder auswählen",
+          "status": "Status",
+          "statusPlaceholder": "Status auswählen",
+          "type": "Typ",
+          "typePlaceholder": "Typ auswählen"
+        },
+        "submit": "Eintrag erstellen",
+        "toast": {
+          "error": "Risikoeintrag konnte nicht erstellt werden.",
+          "success": "Risikoeintrag erstellt."
+        }
+      },
+      "editRiskEntry": {
+        "cancel": "Abbrechen",
+        "description": "Risiko- oder Chanceneintrag aktualisieren.",
+        "linksSection": "Verknüpfungen",
+        "loadError": "Eintrag konnte nicht geladen werden.",
+        "loading": "Eintrag wird geladen…",
+        "submit": "Änderungen speichern",
+        "title": "Risiko / Chance bearbeiten",
+        "toast": {
+          "error": "Risikoeintrag konnte nicht aktualisiert werden.",
+          "success": "Risikoeintrag aktualisiert."
+        }
+      },
+      "empty": "Keine Einträge gefunden.",
+      "entryType": {
+        "opportunity": "Chance",
+        "risk": "Risiko"
+      },
+      "filters": {
+        "pestelAll": "Alle Kategorien",
+        "pestelCategory": "PESTEL-Kategorie",
+        "showTerminal": "Geschlossene / Abgelehnte anzeigen",
+        "status": "Status",
+        "statusAll": "Alle Status",
+        "type": "Typ",
+        "typeAll": "Alle Typen"
+      },
+      "loadError": "Risikomanagement-Einträge konnten nicht geladen werden.",
+      "riskLevel": {
+        "notCalculated": "Risikoniveau: nicht berechnet"
+      },
+      "status": {
+        "APPROVED": "Genehmigt",
+        "ASSESSED": "Bewertet",
+        "CLOSED": "Geschlossen",
+        "OCCURRED": "Eingetreten",
+        "PENDING_APPROVAL": "Ausstehende Genehmigung",
+        "PROPOSED": "Vorgeschlagen",
+        "REJECTED": "Abgelehnt"
+      },
+      "table": {
+        "columns": {
+          "escalation": "Eskalation",
+          "id": "ID",
+          "identificationDate": "Identifiziert",
+          "name": "Name",
+          "owner": "Verantwortlicher",
+          "pestelCategory": "PESTEL",
+          "riskLevel": "Risikoniveau",
+          "status": "Status",
+          "type": "Typ"
+        },
+        "editAction": "Bearbeiten",
+        "rowActionsLabel": "Zeilenaktionen für \"{{name}}\""
+      },
+      "title": "Risikomanagement",
+      "validation": {
+        "dateInvalid": "Datum muss im Format JJJJ-MM-TT vorliegen.",
+        "descriptionTooLong": "Beschreibung darf nicht mehr als 2000 Zeichen umfassen.",
+        "nameRequired": "Name ist erforderlich.",
+        "nameTooLong": "Name darf nicht mehr als 255 Zeichen umfassen.",
+        "pestelRequired": "PESTEL-Kategorie ist erforderlich.",
+        "scoreRange": "Wert muss zwischen 1 und 5 liegen.",
+        "statusRequired": "Status ist erforderlich.",
+        "typeRequired": "Typ ist erforderlich."
+      }
+    },
+    "riskRegister": {
+      "createRiskEntry": {
+        "description": "Erfassen Sie ein neues Risiko oder eine neue Chance für dieses Register.",
+        "title": "Neues Risiko / Chance"
+      },
+      "pestel": {
+        "ECONOMIC": "Wirtschaftlich",
+        "ENVIRONMENTAL": "Umweltbezogen",
+        "LEGAL": "Rechtlich",
+        "POLITICAL": "Politisch",
+        "SOCIAL": "Sozial",
+        "TECHNOLOGICAL": "Technologisch"
+      }
+    },
+    "roleManagement": {
+      "actionsColumnLabel": "Aktionen",
+      "addGroup": "Neue Gruppe",
+      "addRole": "Rolle hinzufügen",
+      "bulkEditButton": "Wert setzen…",
+      "bulkEditSummary": "{{cellCount}} Zelle(n) in {{roleCount}} Rolle(n) werden aktualisiert.",
+      "bulkEditTitle": "RASCI-Wert setzen",
+      "bulkModeToggle": "Mehrfachauswahl",
+      "bulkSelectionCount": "{{count}} Zelle(n) ausgewählt",
+      "bulkSelectionCount_one": "{{count}} cell(s) selected",
+      "bulkSelectionCount_other": "{{count}} cell(s) selected",
+      "cardRoleGroupsLabel": "Rollengruppen",
+      "cardTaskGroupsLabel": "Aufgabengruppen",
+      "cellEditHint": "Klick auf eine Zelle zum Bearbeiten. ⌘/Strg gedrückt halten und klicken, um mehrere Zellen für die Massenbearbeitung auszuwählen.",
+      "deleteGroup": "Rollengruppe löschen",
+      "deleteGroupConfirm": "Möchten Sie die Rollengruppe \"{{name}}\" wirklich löschen?",
+      "deleteRole": "Rolle löschen",
+      "deleteRoleConfirm": "Möchten Sie die Rolle \"{{name}}\" wirklich löschen?",
+      "editCellRoleLabel": "Rolle:",
+      "editCellTaskLabel": "Aufgabe:",
+      "editCellTitle": "RASCI-Wert bearbeiten",
+      "editGroup": "Rollengruppe bearbeiten",
+      "editRole": "Rolle bearbeiten",
+      "errors": {
+        "defaultRoleCannotBeDeleted": "Die Standardrolle kann nicht gelöscht werden.",
+        "defaultRoleMustHaveAtLeastOneUser": "Der Standardrolle muss mindestens ein Benutzer zugewiesen sein.",
+        "directAssignmentNotAllowed": "Eine direkte Zuweisung ist für diese Rolle nicht zulässig.",
+        "fixedRoleCannotBeDeleted": "Diese Rolle ist systemdefiniert und kann nicht gelöscht werden.",
+        "fixedTaskCannotBeModified": "Diese Aufgabe ist systemdefiniert und kann nicht geändert werden.",
+        "groupHasAssignedRoles": "Die Rollengruppe kann nicht gelöscht werden, da ihr noch Rollen zugewiesen sind.",
+        "noTemplateRole": "Für diesen Vorgang wurde keine Vorlagenrolle gefunden.",
+        "originRoleStillExists": "Die Ursprungsrolle existiert noch und muss zuerst entfernt werden.",
+        "roleHasAssignedUsers": "Die Rolle kann nicht gelöscht werden, da ihr noch Benutzer zugewiesen sind.",
+        "roleNotMaterialized": "Die Rolle wurde noch nicht materialisiert.",
+        "scopePropagationConfigNotFound": "Die Konfiguration für die Bereichsweitergabe konnte nicht gefunden werden.",
+        "taskMutationNotAllowedOnTemplate": "Aufgabenänderungen sind bei Vorlagenmatrizen nicht erlaubt.",
+        "taskNotInTemplate": "Die Aufgabe ist nicht in der Vorlage vorhanden.",
+        "unknown": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+      },
+      "fixed": "Systemrolle (kann nicht gelöscht werden)",
+      "groupColorLabel": "Farbe",
+      "groupDescriptionLabel": "Beschreibung",
+      "groupNameLabel": "Name",
+      "groupRowActionsLabel": "Zeilenaktionen für \"{{name}}\"",
+      "groupSection": "Rollengruppen",
+      "groupSortOrderLabel": "Sortierreihenfolge",
+      "matrixNotFound": "Matrix nicht gefunden.",
+      "matrixSection": "Vorlagenmatrizen",
+      "noGroups": "Noch keine Rollengruppen definiert.",
+      "noRoles": "Noch keine Rollen definiert.",
+      "openMatrix": "Matrix öffnen",
+      "readOnlyHint": "Diese Matrix ist schreibgeschützt und kann derzeit nicht bearbeitet werden.",
+      "roleDescriptionLabel": "Beschreibung",
+      "roleGroupLabel": "Rollengruppe",
+      "roleNameLabel": "Name",
+      "roleShortTitleLabel": "Kurztitel (max. 10 Zeichen)",
+      "rolesColumn": "Rollen",
+      "setGroupForRole": "Alle \"{{groupName}}\"-Werte für {{roleName}} setzen",
+      "taskColumn": "Aufgabe",
+      "taskGroupBulkContext": "Aufgabengruppe:",
+      "title": "Rechte und Rollen",
+      "ungroupedRoles": "Rollen ohne Gruppe",
+      "validation": {
+        "pleaseSelect": "Bitte einen Wert auswählen.",
+        "required": "Dieses Feld ist erforderlich."
+      },
+      "rasciLegend": {
+        "R": "Verantwortlich",
+        "A": "Rechenschaftspflichtig",
+        "S": "Unterstützend",
+        "C": "Konsultiert",
+        "I": "Informiert",
+        "—": "Keine Beteiligung"
+      },
+      "domainType": {
+        "PORTFOLIO": "Portfolio",
+        "PROGRAM": "Programm",
+        "PROJECT": "Projekt",
+        "ADMIN": "Verwaltung"
+      }
+    },
+    "settings": {
+      "description": "Anwendungseinstellungen und Präferenzen.",
+      "title": "Einstellungen"
+    },
+    "stakeholderManagement": {
+      "title": "Stakeholder-Management"
+    },
+    "stakeholderRegister": {
+      "access": {
+        "deniedMessage": "Sie haben keine Berechtigung, dieses Stakeholder-Register zu sehen.",
+        "deniedTitle": "Kein Zugriff"
+      },
+      "delete": {
+        "cancelButton": "Abbrechen",
+        "confirmButton": "Bestätigen",
+        "confirmMessage": "Stakeholder {{name}} löschen?",
+        "dialogTitle": "Stakeholder löschen"
+      },
+      "emptyState": "Noch keine Stakeholder vorhanden",
+      "filter": {
+        "allLabel": "Alle",
+        "groupLabel": "Betroffenheitsfilter",
+        "negativeLabel": "Negativ",
+        "neutralLabel": "Neutral",
+        "positiveLabel": "Positiv"
+      },
+      "form": {
+        "cancelButton": "Abbrechen",
+        "conflictPotentialClear": "— Keine Angabe —",
+        "conflictPotentialLabel": "Konfliktpotenzial",
+        "contactGroupLabel": "Kontaktgruppe",
+        "contactGroupPlaceholder": "Kontaktgruppe auswählen …",
+        "createTitle": "Neuer Stakeholder",
+        "duplicateNameWarning": "Ein Stakeholder mit diesem Namen existiert bereits.",
+        "duplicateNameWarningTitle": "Achtung",
+        "editTitle": "Stakeholder bearbeiten",
+        "email2Label": "E-Mail (2. Adresse)",
+        "email3Label": "E-Mail (3. Adresse)",
+        "emailLabel": "E-Mail",
+        "expectationsLabel": "Erwartungen",
+        "inclusionMeasuresLabel": "Einbeziehungsmaßnahmen",
+        "logs": {
+          "addNote": "Vermerk hinzufügen",
+          "contentPlaceholder": "Vermerktext…",
+          "deleteNote": "Vermerk löschen",
+          "editNote": "Vermerk bearbeiten",
+          "empty": "Keine Vermerke vorhanden",
+          "searchPlaceholder": "Vermerke durchsuchen…",
+          "toggleSort": "Sortierung umkehren"
+        },
+        "memberLinkLabel": "Mit Mitglied verknüpfen",
+        "memberLinkNoResults": "Keine Mitglieder gefunden",
+        "memberLinkPlaceholder": "Mitglieder suchen…",
+        "nameLabel": "Name",
+        "phone2Label": "Telefon (2. Nummer)",
+        "phone3Label": "Telefon (3. Nummer)",
+        "phoneLabel": "Telefon",
+        "preferredCommunicationTypeLabel": "Bevorzugter Kommunikationstyp",
+        "preferredCommunicationTypePlaceholder": "z. B. E-Mail, Telefonat, Facetime morgens, Mobiltelefon zwischen 15:00–17:00 Uhr",
+        "responsibleLabel": "Verantwortlich",
+        "responsibleNoResults": "Keine Mitglieder gefunden",
+        "roleLabel": "Rolle",
+        "saveButton": "Speichern",
+        "tabContact": "Kontakt",
+        "tabGeneral": "Allgemein",
+        "tabLogs": "Stakeholder Vermerke",
+        "typeOfAffectednessLabel": "Art der Betroffenheit",
+        "unsavedChanges": {
+          "discardCancel": "Weiter bearbeiten",
+          "discardConfirm": "Verwerfen",
+          "discardMessage": "Sie haben ungespeicherte Änderungen. Wenn Sie jetzt schließen, gehen alle Änderungen verloren.",
+          "discardTitle": "Änderungen verwerfen?",
+          "unsavedLogsCancel": "Zurück",
+          "unsavedLogsConfirm": "Ohne Vermerk speichern",
+          "unsavedLogsMessage": "Der aktuell bearbeitete Vermerk wurde noch nicht bestätigt. Die Vermerkänderungen werden nicht gespeichert. Möchten Sie trotzdem fortfahren?",
+          "unsavedLogsTitle": "Vermerk nicht gespeichert"
+        },
+        "validation": {
+          "contactGroupRequired": "Bitte wählen Sie eine Kontaktgruppe aus",
+          "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+          "expectationsTooLong": "Die Erwartungen dürfen maximal 300 Zeichen lang sein",
+          "inclusionMeasuresTooLong": "Die Einbeziehungsmaßnahmen dürfen maximal 1.000 Zeichen lang sein",
+          "logContentRequired": "Vermerktext ist erforderlich",
+          "logDateRequired": "Datum ist erforderlich",
+          "nameRequired": "Name ist erforderlich",
+          "nameTooLong": "Der Name darf maximal 100 Zeichen lang sein",
+          "phoneInvalid": "Bitte geben Sie eine gültige Telefonnummer ein (z. B. +49 30 12345678)",
+          "preferredCommunicationTypeTooLong": "Der bevorzugte Kommunikationstyp darf maximal 100 Zeichen lang sein",
+          "roleRequired": "Rolle ist erforderlich",
+          "roleTooLong": "Die Rolle darf maximal 100 Zeichen lang sein"
+        },
+        "conflictPotentialOptions": {
+          "LOW": "Niedrig",
+          "MEDIUM": "Mittel",
+          "HIGH": "Hoch"
+        },
+        "contactGroupOptions": {
+          "INTERNAL": "Intern",
+          "CUSTOMER": "Kunde",
+          "SUPPLIER": "Lieferant",
+          "PARTNER": "Partner"
+        },
+        "typeOfAffectednessOptions": {
+          "POSITIVE": "Positiv",
+          "NEGATIVE": "Negativ",
+          "NEUTRAL": "Neutral"
+        }
+      },
+      "matrix": {
+        "affectednessLabel": "Betroffenheitsgrad",
+        "axisLabels": {
+          "HIGH": "Hoch",
+          "LOW": "Gering"
+        },
+        "cellAriaLabel": "Zelle {{x}}, {{y}}",
+        "influenceLabel": "Einflussgrad",
+        "sectionTitle": "Einfluss-Einstellungs-Matrix",
+        "strategyLabel": "Verhaltensstrategie:",
+        "strategyValues": {
+          "KEEP_SATISFIED": "Zufrieden stellen",
+          "MANAGE_CLOSELY": "Eng einbeziehen",
+          "MONITOR": "Beobachten",
+          "KEEP_INFORMED": "Informieren"
+        }
+      },
+      "newButton": "Neuer Stakeholder",
+      "pageTitle": "Stakeholder-Register",
+      "strategyConfig": {
+        "editButton": "Strategiebeschreibungen bearbeiten",
+        "keepInformedLabel": "Informiert halten",
+        "keepSatisfiedLabel": "Zufrieden halten",
+        "manageCloselyLabel": "Eng begleiten",
+        "monitorLabel": "Beobachten",
+        "saveButton": "Speichern",
+        "sectionTitle": "Strategiebeschreibungen",
+        "toast": {
+          "error": "Strategiebeschreibungen konnten nicht aktualisiert werden",
+          "success": "Strategiebeschreibungen aktualisiert"
+        }
+      },
+      "table": {
+        "conflictPotentialColumn": "Konfliktpotenzial",
+        "contactGroupColumn": "Kontaktgruppe",
+        "deleteButton": "Löschen",
+        "editButton": "Bearbeiten",
+        "nameColumn": "Name",
+        "roleColumn": "Rolle",
+        "typeOfAffectednessColumn": "Art der Betroffenheit"
+      },
+      "toast": {
+        "createError": "Stakeholder konnte nicht erstellt werden",
+        "createLoading": "Wird gespeichert…",
+        "createSuccess": "Stakeholder erstellt",
+        "deleteError": "Stakeholder konnte nicht gelöscht werden",
+        "deleteLoading": "Wird gelöscht…",
+        "deleteSuccess": "Stakeholder gelöscht",
+        "logSyncError": "Stakeholder gespeichert, aber einige Aktivitätsprotokolle konnten nicht synchronisiert werden. Bitte erneut speichern.",
+        "optimisticLockError": "Der Stakeholder wurde von jemand anderem geändert. Bitte laden Sie die Seite neu und versuchen Sie es erneut.",
+        "updateError": "Stakeholder konnte nicht aktualisiert werden",
+        "updateLoading": "Wird gespeichert…",
+        "updateSuccess": "Stakeholder aktualisiert"
+      }
+    },
+    "taskManagement": {
+      "activePool": "Aktive Aufgaben",
+      "activeTaskBadge": "Aktive Aufgabe",
+      "archive": "Archivierte Aufgaben",
+      "archiveConfirm": {
+        "description": "Die Aufgabe wird ins Archiv verschoben. Sie kann jederzeit wiederhergestellt werden.",
+        "title": "Aufgabe archivieren?"
+      },
+      "archiveTask": "Aufgabe {{name}} archivieren",
+      "archive_action": "Archivieren",
+      "collapseActiveTasks": "Aktive Aufgaben einklappen",
+      "createTask": "Aufgabe erstellen",
+      "deleteConfirm": {
+        "description": "Diese Aktion kann nicht rückgängig gemacht werden. Die Aufgabe und alle zugehörigen Daten werden dauerhaft gelöscht.",
+        "title": "Aufgabe löschen?"
+      },
+      "deleteError": "Aufgabe konnte nicht gelöscht werden.",
+      "deleteSuccess": "Aufgabe \"{{name}}\" wurde gelöscht.",
+      "delete_action": "Löschen",
+      "dragToReorder": "Zum Sortieren ziehen",
+      "edit": "Bearbeiten",
+      "editTask": "Aufgabe {{name}} bearbeiten",
+      "expandActiveTasks": "Aktive Aufgaben ausklappen",
+      "noArchivedTasks": "Keine archivierten Aufgaben.",
+      "noTasks": "Keine Aufgaben gefunden.",
+      "noTasksForFilter": "Keine Aufgaben entsprechen dem ausgewählten Filter.",
+      "openDetail": "{{name}} öffnen",
+      "poolDragCancelled": "Ziehen von {{name}} wurde abgebrochen",
+      "poolDragEnd": "Aufgabe {{name}} vor {{target}} verschoben",
+      "poolDragOver": "Aufgabe {{name}} ist über {{target}}",
+      "poolDragOverNothing": "Aufgabe {{name}} ist über keinem Ziel",
+      "poolDragStart": "Aufgabe {{name}} aufgenommen",
+      "softLimit": "Dieser Bereich enthält mehr als 500 Aufgaben. Die Performance kann beeinträchtigt sein.",
+      "title": "Aufgabenverwaltung",
+      "titleWithBoard": "Aufgabenverwaltung — {{board}}",
+      "unarchive": "Wiederherstellen",
+      "unarchiveTask": "Aufgabe {{name}} wiederherstellen"
+    },
+    "users": {
+      "description": "Benutzerkonten verwalten.",
+      "title": "Benutzer"
+    }
+  },
+  "shared": {
+    "breadcrumb": {
+      "nav": "Breadcrumb-Navigation"
+    },
+    "colorPicker": {
+      "alphaLabel": "Deckkraft (0–255)",
+      "colorLabel": "Farbe",
+      "hexLabel": "Hex (#AARRGGBB)"
+    },
+    "combobox": {
+      "createPrefix": "Erstellen",
+      "loading": "Laden…",
+      "noResults": "Keine Ergebnisse gefunden.",
+      "placeholder": "Option auswählen…",
+      "searchPlaceholder": "Suchen…"
+    },
+    "datePicker": {
+      "calendarLabel": "Kalender zur Datumsauswahl",
+      "nextMonth": "Nächster Monat",
+      "openCalendar": "Kalender öffnen",
+      "previousMonth": "Vorheriger Monat",
+      "today": "Heute"
+    },
+    "fileUpload": {
+      "button": "Dateien auswählen",
+      "dropzoneDescription": "oder die Schaltfläche unten verwenden, um eine oder mehrere Dateien hinzuzufügen.",
+      "dropzoneTitle": "Dateien hier ablegen",
+      "emptyState": "Noch keine Dateien ausgewählt.",
+      "fileCount_one": "{{count}} Datei ausgewählt",
+      "fileCount_other": "{{count}} Dateien ausgewählt",
+      "open": "Datei öffnen",
+      "remove": "Datei entfernen",
+      "unknownType": "Unbekannter Typ",
+      "status": {
+        "added_one": "{{count}} Datei hinzugefügt. {{totalCount}} Dateien ausgewählt.",
+        "added_other": "{{count}} Dateien hinzugefügt. {{totalCount}} Dateien ausgewählt.",
+        "removed_one": "{{count}} Datei entfernt. {{totalCount}} Dateien ausgewählt.",
+        "removed_other": "{{count}} Dateien entfernt. {{totalCount}} Dateien ausgewählt."
+      }
+    },
+    "filterBar": {
+      "clearFilters": "Filter zurücksetzen",
+      "dateFrom": "{{label}} von",
+      "dateTo": "{{label}} bis"
+    },
+    "linksPanel": {
+      "empty": "Keine verknüpften Einträge.",
+      "linkedIssues": "Verknüpfte Issues",
+      "linkedProblems": "Verknüpfte Probleme",
+      "linkedRisks": "Verknüpfte Risiken",
+      "remove": "Entfernen",
+      "removeAriaLabel": "Verknüpfung mit {{name}} entfernen"
+    },
+    "loading": "Wird geladen…",
+    "personPicker": {
+      "allGroup": "Alle Personen",
+      "loadMore": "Weitere laden…",
+      "loading": "Laden…",
+      "noResults": "Keine Personen gefunden.",
+      "placeholder": "Person auswählen…",
+      "recentsGroup": "Zuletzt verwendet",
+      "removeFromRecents": "{{name}} aus zuletzt Verwendeten entfernen",
+      "resultsGroup": "Suchergebnisse",
+      "searchPlaceholder": "Name oder E-Mail eingeben…",
+      "selected": "{{count}} ausgewählt",
+      "selected_one": "1 ausgewählt",
+      "selected_other": "{{count}} ausgewählt"
+    },
+    "table": {
+      "firstPage": "Erste Seite",
+      "lastPage": "Letzte Seite",
+      "nextPage": "Nächste Seite",
+      "noDataDescription": "Im Moment gibt es nichts anzuzeigen.",
+      "noDataTitle": "Keine Daten zum Anzeigen",
+      "pageSizeLabel": "Zeilen pro Seite",
+      "paginationRange": "{{from}}–{{to}} von {{total}}",
+      "previousPage": "Vorherige Seite",
+      "reorderColumn": "Zum Umordnen {{label}} ziehen",
+      "resizeColumn": "Zum Anpassen {{label}} ziehen",
+      "resizeColumnKeyboardHint": "Mit Pfeil links und rechts die Spaltenbreite anpassen. Pos1 setzt die Mindestbreite, Ende die Maximalbreite.",
+      "selectAllRows": "Alle Zeilen auswählen",
+      "selectRow": "Zeile auswählen",
+      "sortBy": "Nach {{label}} sortieren",
+      "sortedAscending": "Nach {{label}} aufsteigend sortiert",
+      "sortedDescending": "Nach {{label}} absteigend sortiert"
+    },
+    "textEditor": {
+      "blockquote": "Zitat",
+      "bold": "Fett",
+      "bulletList": "Aufzählungsliste",
+      "clearFormatting": "Formatierung entfernen",
+      "codeBlock": "Codeblock",
+      "editorLabel": "Markdown-Editor",
+      "heading1": "Überschrift 1",
+      "heading2": "Überschrift 2",
+      "heading3": "Überschrift 3",
+      "inlineCode": "Inline-Code",
+      "italic": "Kursiv",
+      "link": "Link",
+      "linkPrompt": "Geben Sie eine Link-URL ein",
+      "orderedList": "Nummerierte Liste",
+      "placeholder": "Schreiben Sie Ihren Inhalt in Markdown...",
+      "redo": "Wiederholen",
+      "strikethrough": "Durchgestrichen",
+      "toolbarLabel": "Werkzeugleiste für Textformatierung",
+      "underline": "Unterstrichen",
+      "undo": "Rückgängig"
+    },
+    "treeView": {
+      "collapseNode": "Zuklappen",
+      "dragHandle": "{{name}} verschieben",
+      "expandNode": "Aufklappen"
+    },
+    "yearPicker": {
+      "clear": "Auswahl aufheben",
+      "label": "Jahresauswahl",
+      "nextDecade": "Nächstes Jahrzehnt",
+      "placeholder": "Jahr auswählen",
+      "prevDecade": "Vorheriges Jahrzehnt"
+    }
+  },
+  "showcase": {
+    "alert": {
+      "degradedDescription": "api.example.com antwortet langsam (p95 > 2s).",
+      "degradedTitle": "Dienst beeinträchtigt",
+      "headsUpDescription": "Sie können Monitore für beliebige HTTP-Endpunkte hinzufügen.",
+      "headsUpTitle": "Achtung",
+      "successDescription": "Ihre Änderungen wurden erfolgreich gespeichert.",
+      "successTitle": "Änderungen gespeichert",
+      "title": "Hinweis",
+      "warningDescription": "Sie haben 90 % Ihres Speicherkontingents verwendet.",
+      "warningTitle": "Speicher fast voll"
+    },
+    "avatar": {
+      "title": "Avatar"
+    },
+    "badge": {
+      "danger": "Gefahr",
+      "default": "Standard",
+      "destructive": "Destruktiv",
+      "dotActive": "Aktiv",
+      "dotDanger": "Gefahr",
+      "dotSuccess": "Erfolgreich",
+      "dotTitle": "Mit Statusindikator",
+      "dotWarning": "Warnung",
+      "neutral": "Neutral",
+      "outline": "Umriss",
+      "success": "Erfolg",
+      "title": "Abzeichen",
+      "warning": "Warnung"
+    },
+    "button": {
+      "default": "Standard",
+      "destructive": "Destruktiv",
+      "disabled": "Deaktiviert",
+      "ghost": "Geist",
+      "large": "Groß",
+      "link": "Link",
+      "outline": "Umriss",
+      "secondary": "Sekundär",
+      "settingsAriaLabel": "Einstellungen",
+      "small": "Klein",
+      "title": "Schaltfläche",
+      "withIcon": "Element hinzufügen",
+      "withIconGhost": "Element hinzufügen"
+    },
+    "card": {
+      "cancel": "Abbrechen",
+      "dueDate": "Fälligkeitsdatum",
+      "inProgress": "In Bearbeitung",
+      "progress": "Fortschritt",
+      "projectDescription": "Echtzeit-Überwachungsdashboard",
+      "projectTitle": "Projekt P1NG",
+      "save": "Speichern",
+      "standardTitle": "Karte",
+      "statTitle": "Statistik-Karten",
+      "status": "Status",
+      "vsLastWeek": "vs. letzte Woche"
+    },
+    "checkbox": {
+      "checked": "Nutzungsbedingungen akzeptiert",
+      "disabled": "Deaktiviert",
+      "label": "Nutzungsbedingungen akzeptieren",
+      "title": "Kontrollkästchen",
+      "unchecked": "Nutzungsbedingungen nicht akzeptiert"
+    },
+    "combobox": {
+      "asyncPlaceholder": "Länder suchen…",
+      "asyncTitle": "Asynchron (Server-Suche)",
+      "creatablePlaceholder": "Tag auswählen oder erstellen…",
+      "creatableTitle": "Erweiterbar",
+      "createText": "\"{{query}}\" erstellen",
+      "groupedPlaceholder": "Technologie auswählen…",
+      "groupedTitle": "Gruppiert",
+      "noneSelected": "Keine Auswahl",
+      "selected": "Ausgewählt: {{value}}",
+      "staticPlaceholder": "Framework auswählen…",
+      "staticTitle": "Statisch (client-seitiger Filter)",
+      "title": "Combobox"
+    },
+    "componentShowcase": {
+      "description": "Durchsuchen Sie die verfügbaren shadcn/ui-Komponenten und ihre Varianten.",
+      "title": "Komponentenübersicht"
+    },
+    "confirmDialog": {
+      "defaultDescription": "Möchten Sie wirklich fortfahren? Diese Aktion kann nicht rückgängig gemacht werden.",
+      "defaultTitle": "Aktion bestätigen",
+      "destructiveDescription": "Das Element wird dauerhaft gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.",
+      "destructiveTitle": "Element löschen",
+      "openDefault": "Bestätigungsdialog öffnen",
+      "openDestructive": "Destruktiven Dialog öffnen",
+      "title": "Bestätigungsdialog"
+    },
+    "contextMenu": {
+      "copyLink": "Link kopieren",
+      "delete": "Löschen",
+      "duplicate": "Duplizieren",
+      "duplicateShortcut": "⌘D",
+      "label": "Dateiaktionen",
+      "rename": "Umbenennen",
+      "renameShortcut": "⌘R",
+      "share": "Teilen",
+      "shareViaEmail": "Per E-Mail",
+      "showHidden": "Versteckte Dateien anzeigen",
+      "title": "Kontextmenü",
+      "triggerLabel": "Bereich per Rechtsklick öffnen"
+    },
+    "datePicker": {
+      "labelWithToday": "Mit Heute-Schaltfläche",
+      "labelWithoutToday": "Ohne Heute-Schaltfläche",
+      "title": "Datumsauswahl"
+    },
+    "dialog": {
+      "cancel": "Abbrechen",
+      "confirmPermanentDelete": "Endgültig löschen",
+      "createProject": "Projekt erstellen",
+      "delete": "Löschen",
+      "deleteProjectAlertText": "Alle Projektdaten werden dauerhaft entfernt. Dies kann nicht rückgängig gemacht werden.",
+      "deleteProjectConfirmLabel": "Geben Sie den Projektnamen zur Bestätigung ein",
+      "deleteProjectConfirmPlaceholder": "Projektname",
+      "deleteProjectDesc": "Sind Sie sicher, dass Sie dieses Projekt löschen möchten?",
+      "deleteProjectTitle": "Projekt löschen",
+      "newProjectDescLabel": "Beschreibung",
+      "newProjectDescPlaceholder": "Worum geht es in diesem Projekt?",
+      "newProjectEndLabel": "Enddatum",
+      "newProjectNameLabel": "Name",
+      "newProjectNamePlaceholder": "z. B. Digitale Transformation",
+      "newProjectSizeLabel": "Größe",
+      "newProjectSizeLarge": "Groß",
+      "newProjectSizeMedium": "Mittel",
+      "newProjectSizePlaceholder": "Größe auswählen…",
+      "newProjectSizeSmall": "Klein",
+      "newProjectStartLabel": "Startdatum",
+      "newProjectTitle": "Neues Projekt",
+      "openConfirmDialog": "Bestätigungsdialog öffnen",
+      "openDeleteDialog": "Projekt löschen",
+      "openFormDialog": "Neues Projekt",
+      "simpleConfirmText": "Sind Sie sicher, dass Sie fortfahren möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+      "simpleConfirmTitle": "Aktion bestätigen",
+      "title": "Dialog"
+    },
+    "drawer": {
+      "demoDescription": "Dieses Beispiel zeigt die Drawer-Komponente, die für die Showcase-Hülle verwendet wird.",
+      "demoTitle": "Drawer-Beispiel",
+      "description": "Ein Drawer ist eine seitliche Fläche, die von der Seite hereingleitet und kontextbezogenen Inhalt bereitstellt.",
+      "hint": "Die Komponentenübersicht selbst wird in diesem Drawer dargestellt.",
+      "openDrawer": "Drawer öffnen",
+      "title": "Drawer"
+    },
+    "dropdown": {
+      "actions": "Aktionen",
+      "dangerZone": "Gefahrenzone",
+      "delete": "Löschen",
+      "deleteShortcut": "⌦",
+      "duplicate": "Duplizieren",
+      "edit": "Bearbeiten",
+      "editShortcut": "⌘E",
+      "export": "Exportieren",
+      "exportShortcut": "⇧⌘E",
+      "project": "Projekt",
+      "title": "Dropdown-Menü"
+    },
+    "fileUpload": {
+      "button": "Dateien auswählen",
+      "description": "Fügen Sie eine oder mehrere Dateien per Schaltfläche oder Drag & Drop hinzu.",
+      "dropzoneDescription": "oder die Schaltfläche unten verwenden, um eine oder mehrere Dateien hinzuzufügen.",
+      "dropzoneTitle": "Dateien hier ablegen",
+      "emptyState": "Noch keine Dateien ausgewählt.",
+      "fileCount_one": "{{count}} Datei ausgewählt",
+      "fileCount_other": "{{count}} Dateien ausgewählt",
+      "hint": "Diese Demo startet mit zwei Dateien, damit Sie sie sofort öffnen oder entfernen können.",
+      "open": "Datei öffnen",
+      "remove": "Datei entfernen",
+      "title": "Dateiupload"
+    },
+    "inputLabel": {
+      "currencyLabel": "Budget",
+      "currencyOptional": "(optional)",
+      "currencyPlaceholder": "0,00",
+      "disabledLabel": "Deaktiviert",
+      "disabledPlaceholder": "Nicht bearbeitbar",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "sie@beispiel.de",
+      "invalidError": "Bitte geben Sie einen gültigen Wert ein.",
+      "invalidLabel": "Firmenname",
+      "invalidValue": "123 Ungültig!!!",
+      "requiredHint": "Dieses Feld ist erforderlich.",
+      "requiredLabel": "Vollständiger Name",
+      "requiredPlaceholder": "z. B. Max Mustermann",
+      "title": "Eingabe & Label"
+    },
+    "labelBadge": {
+      "bug": "Fehler",
+      "feature": "Funktion",
+      "improvement": "Verbesserung",
+      "noColour": "Keine Farbe",
+      "title": "Label-Badge"
+    },
+    "listView": {
+      "description": "Eine Table in einer Card — direkter Ersatz für das <Card><Table />-Muster auf Listenseiten.",
+      "filterNamePlaceholder": "Nach Name filtern…",
+      "title": "List View"
+    },
+    "markdownContent": {
+      "sample": "## Markdown-Inhalt\n\nRendert **fett**, *kursiv* und `Inline-Code`.\n\n- Listenelemente funktionieren\n- Ebenso [Links](https://example.com)\n\n> Blockzitate werden ebenfalls unterstützt.",
+      "title": "Markdown-Inhalt"
+    },
+    "matrixTable": {
+      "taskColumn": "Aufgabe",
+      "title": "Matrix-Tabelle"
+    },
+    "personBadge": {
+      "title": "PersonBadge"
+    },
+    "personPicker": {
+      "description": "Asynchrone Personensuche mit Avatar, zuletzt Ausgewählten und Paginierung.",
+      "multiLabel": "Mehrfach",
+      "preFilledLabel": "Vorausgefüllt",
+      "selected": "Ausgewählt: {{name}}",
+      "singleLabel": "Einfach",
+      "title": "Personen-Auswahl"
+    },
+    "programStatus": {
+      "title": "Programm-Status-Badge"
+    },
+    "radioGroup": {
+      "comfortable": "Komfortabel",
+      "compact": "Kompakt",
+      "title": "Optionsfeldgruppe"
+    },
+    "rasciValueBadge": {
+      "noAccess": "Kein Zugriff",
+      "readAccess": "Lesezugriff",
+      "title": "RASCI-Wert-Badge",
+      "writeAccess": "Schreibzugriff"
+    },
+    "riskLevelBadge": {
+      "title": "Risikostufen-Abzeichen"
+    },
+    "select": {
+      "every30Seconds": "Alle 30 Sekunden",
+      "every5Minutes": "Alle 5 Minuten",
+      "everyHour": "Jede Stunde",
+      "everyMinute": "Jede Minute",
+      "placeholder": "Intervall wählen",
+      "title": "Auswahl"
+    },
+    "skeleton": {
+      "title": "Skeleton"
+    },
+    "switch": {
+      "disabled": "Deaktiviert",
+      "notificationsOff": "Benachrichtigungen aus",
+      "notificationsOn": "Benachrichtigungen ein",
+      "title": "Schalter"
+    },
+    "table": {
+      "active": "Aktiv",
+      "columnReordering": "Spalten umordnen",
+      "columnResizing": "Spaltenbreite anpassen",
+      "description": "Ein serverseitiges Tabellenbeispiel mit Sortierung, Paging, optionaler Virtualisierung, Spaltenanpassung und Zeilenauswahl.",
+      "loading": "Laden",
+      "name": "Name",
+      "paused": "Pausiert",
+      "rowLabel": "Bericht {{id}}",
+      "scheduled": "Geplant",
+      "score": "Punktzahl",
+      "selectionMode": "Zeilenauswahl",
+      "selectionModeMultiple": "Mehrfach",
+      "selectionModeNone": "Keine",
+      "selectionModeSingle": "Einfach",
+      "status": "Status",
+      "stickyHeader": "Kopfzeile fixiert",
+      "title": "Tabelle",
+      "updatedAt": "Aktualisiert am",
+      "virtualized": "Virtualisiert"
+    },
+    "tabs": {
+      "active": "Aktiv",
+      "activeContent": "Aktive Einträge werden hier angezeigt.",
+      "all": "Alle",
+      "allContent": "Alle Einträge werden hier angezeigt.",
+      "archived": "Archiviert",
+      "archivedContent": "Archivierte Einträge werden hier angezeigt.",
+      "title": "Tabs"
+    },
+    "textEditor": {
+      "contentTitle": "Markdown-Inhalt (schreibgeschützt)",
+      "editorTitle": "Editor (interaktiv)",
+      "initialContent": "# Willkommen im Editor\n\nVerwenden Sie **fett**, *kursiv* und [Links](https://example.com).\n\n- Aufzählungspunkte\n- Arbeiten Sie mit `Inline-Code`\n\n> Auch Blockzitate und andere übliche Markdown-Formatierungen funktionieren.",
+      "title": "Markdown-Editor"
+    },
+    "toast": {
+      "description": "Lösen Sie die gemeinsamen Toast-Hilfsfunktionen aus, um Erfolg, Info, Warnung, Fehler und Promise-Benachrichtigungen anzuzeigen.",
+      "error": "Etwas ist schiefgelaufen.",
+      "errorButton": "Fehler anzeigen",
+      "errorPreviewTitle": "Fehler",
+      "hint": "Toasts werden global oben rechts angezeigt.",
+      "info": "Hier ist eine Informationsmeldung.",
+      "infoButton": "Info anzeigen",
+      "infoPreviewTitle": "Info",
+      "promiseButton": "Promise anzeigen",
+      "promiseError": "Die Änderungen konnten nicht gespeichert werden.",
+      "promiseLoading": "Änderungen werden gespeichert...",
+      "promiseSuccess": "Änderungen gespeichert.",
+      "success": "Die Aktion wurde erfolgreich abgeschlossen.",
+      "successButton": "Erfolg anzeigen",
+      "successPreviewTitle": "Erfolg",
+      "title": "Toast",
+      "warning": "Bitte prüfen Sie diese Warnung, bevor Sie fortfahren.",
+      "warningButton": "Warnung anzeigen",
+      "warningPreviewTitle": "Warnung"
+    },
+    "tooltip": {
+      "hoverMe": "Überfahren",
+      "notifications": "Benachrichtigungen",
+      "notificationsAriaLabel": "Benachrichtigungen",
+      "rightTooltip": "Ich erscheine rechts",
+      "title": "Tooltip"
+    },
+    "treeView": {
+      "ariaLabel": "Demo-Baum",
+      "collapse": "Zuklappen",
+      "description": "Eine virtualisierte Drag-and-Drop-Baumstruktur für hierarchische Daten.",
+      "dragHandle": "Zum Neuanordnen ziehen",
+      "expand": "Aufklappen",
+      "loadingLabel": "Baum wird geladen",
+      "title": "Baumansicht"
+    },
+    "yearPicker": {
+      "presetLabel": "Vorausgewähltes Jahr",
+      "title": "Jahresauswahl",
+      "unsetLabel": "Kein Jahr ausgewählt"
+    }
+  },
+  "sidebar": {
+    "collapse": "Seitenleiste einklappen",
+    "expand": "Seitenleiste ausklappen"
+  },
+  "theme": {
+    "dark": "Dunkel",
+    "darkMode": "Dunkler Modus",
+    "light": "Hell",
+    "lightMode": "Heller Modus",
+    "switchToDark": "Zum dunklen Modus wechseln",
+    "switchToLight": "Zum hellen Modus wechseln",
+    "system": "System",
+    "toggle": "Design umschalten"
+  },
+  "validation": {
+    "maxLength": "Darf höchstens {{max}} Zeichen lang sein."
+  },
+  "widgets": {
+    "taskManagement": {
+      "createBoard": "Neues Board",
+      "detail": {
+        "tabs": {
+          "attachments": "Anhänge",
+          "comments": "Kommentare",
+          "details": "Details",
+          "history": "Verlauf",
+          "links": "Links"
+        }
+      },
+      "heading": "Aufgaben",
+      "labels": "Bezeichnungen",
+      "noBoards": "Noch keine Boards.",
+      "retry": "Erneut versuchen",
+      "rightSidebar": {
+        "archiveTab": "Archiv",
+        "close": "Aufgabenbereich schließen",
+        "open": "Aufgabenbereich öffnen",
+        "resize": "Aufgabenbereich vergrößern"
+      },
+      "sectionError": "Beim Laden dieses Abschnitts ist ein Fehler aufgetreten."
+    }
+  }
+}

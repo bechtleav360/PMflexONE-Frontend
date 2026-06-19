@@ -1,0 +1,2616 @@
+{
+  "auth": {
+    "sessionExpired": {
+      "description": "Your session has expired. Sign in again to continue — your current work will not be lost.",
+      "popupBlocked": "The sign-in pop-up was blocked. Please allow pop-ups and try again.",
+      "signIn": "Sign in",
+      "signingIn": "Opening sign-in…",
+      "title": "Session expired",
+      "verifyError": "Sign-in could not be verified. Please try again.",
+      "verifying": "Verifying…"
+    }
+  },
+  "common": {
+    "cancel": "Cancel",
+    "clear": "Clear",
+    "close": "Close",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "deleting": "Deleting…",
+    "download": "Download",
+    "edit": "Edit",
+    "loading": "Loading…",
+    "save": "Save",
+    "saving": "Saving…",
+    "unitPt": "PT",
+    "unknown": "Unknown"
+  },
+  "entities": {
+    "project": {
+      "errors": {
+        "endDateBeforeStartDate": "End date must be on or after the start date",
+        "endDateRequired": "End date is required",
+        "nameRequired": "Project name is required",
+        "sizeClassificationRequired": "Size classification is required",
+        "startDateRequired": "Start date is required"
+      }
+    },
+    "workItem": {
+      "copyId": "Copy Task ID",
+      "fields": {
+        "assignee": "Assignee",
+        "column": "Column",
+        "copied": "Copied!",
+        "createdAt": "Created",
+        "createdBy": "Created by",
+        "description": "Description",
+        "dueDate": "Due Date",
+        "id": "Task ID",
+        "labels": "Labels",
+        "priority": "Priority",
+        "updatedAt": "Updated",
+        "updatedBy": "Updated by"
+      },
+      "priority": {
+        "HIGH": "High",
+        "LOW": "Low",
+        "MEDIUM": "Medium",
+        "VERY_HIGH": "Very High",
+        "none": "No Priority"
+      },
+      "status": {
+        "done": "Done",
+        "in_progress": "In Progress",
+        "open": "Open",
+        "rejected": "Rejected"
+      },
+      "statusBadgeLabel": "Status: {{label}}"
+    },
+    "workItemHistory": {
+      "assigneeUnassigned": "Unassigned",
+      "created": "Created",
+      "fields": {
+        "assignee": "Assignee"
+      },
+      "labelLinked": "Label added",
+      "labelUnlinked": "Label removed",
+      "loadError": "Failed to load history.",
+      "noHistory": "No changes recorded.",
+      "panel": "Change History"
+    }
+  },
+  "errorBoundary": {
+    "description": "The application encountered an unexpected rendering error.",
+    "recoveryHint": "Please reload the page to continue. If the problem persists, contact support.",
+    "reload": "Reload application",
+    "title": "Something went wrong"
+  },
+  "features": {
+    "createProject": {
+      "cancel": "Cancel",
+      "fields": {
+        "description": "Project Description",
+        "descriptionPlaceholder": "Add project description (optional)",
+        "endDate": "End Date",
+        "name": "Project Name",
+        "namePlaceholder": "Enter project name",
+        "sizeClassification": "Size Classification",
+        "sizeClassificationPlaceholder": "Select size",
+        "startDate": "Start Date"
+      },
+      "sizeClassification": {
+        "large": "Large",
+        "medium": "Medium",
+        "small": "Small"
+      },
+      "submit": "Create Project",
+      "title": "New Project",
+      "toast": {
+        "error": "Failed to create project.",
+        "loading": "Creating project...",
+        "success": "Project created successfully."
+      }
+    },
+    "deleteProject": {
+      "deleteButton": "Delete project",
+      "dialog": {
+        "cancel": "Cancel",
+        "confirm": "Delete",
+        "description": "Are you sure you want to delete this project? This action cannot be undone.",
+        "title": "Delete Project"
+      },
+      "toast": {
+        "error": "Failed to delete project.",
+        "loading": "Deleting project...",
+        "success": "Project deleted successfully."
+      }
+    },
+    "deliverablesManagement": {
+      "accessibility": {
+        "collapseNode": "Collapse {{name}}",
+        "dragHandle": "Drag to move {{name}}",
+        "expandNode": "Expand {{name}}",
+        "inactiveOwnerSuffix": "inactive",
+        "invalidPosition": "Invalid position — move not possible.",
+        "treeLabel": "Deliverables tree view"
+      },
+      "actions": {
+        "cancel": "Cancel",
+        "collapseAll": "Collapse all",
+        "create": "Create deliverable",
+        "createChild": "Create subordinate",
+        "createSibling": "Create sibling",
+        "delete": "Delete",
+        "deleteAll": "Delete all",
+        "edit": "Edit",
+        "expandAll": "Expand all",
+        "rowActions": "Row actions",
+        "save": "Save",
+        "view": "View"
+      },
+      "columns": {
+        "businessId": "Business ID",
+        "createdAt": "Created at",
+        "name": "Name",
+        "owner": "Owner",
+        "parent": "Parent deliverable"
+      },
+      "delete": {
+        "cascadeWarning": "This deliverable has subordinate entries. Deleting it will also remove all subordinate deliverables.",
+        "description": "Are you sure you want to delete this deliverable? This action cannot be undone.",
+        "title": "Delete deliverable"
+      },
+      "dialog": {
+        "formDescription": "Required fields are marked with *."
+      },
+      "empty": {
+        "title": "No deliverables created yet."
+      },
+      "error": {
+        "loadFailed": "Deliverables could not be loaded."
+      },
+      "fields": {
+        "businessId": "Business ID",
+        "description": "Description",
+        "name": "Name",
+        "otherInformation": "Other information",
+        "owner": "Owner",
+        "parent": "Parent deliverable",
+        "parentRoot": "Root (top level)"
+      },
+      "pageTitle": "Deliverables",
+      "search": {
+        "noResults": "No deliverables match your search.",
+        "placeholder": "Search by name or ID…"
+      },
+      "tabs": {
+        "list": "List",
+        "tree": "Tree"
+      },
+      "toast": {
+        "created": "Deliverable created.",
+        "deleteFailed": "Delete failed. Please try again.",
+        "deleted": "Deliverable deleted.",
+        "deletedWithChildren": "Deliverable and {{count}} subordinate entries deleted.",
+        "deletedWithChildren_one": "Deliverable and 1 subordinate entry deleted.",
+        "deletedWithChildren_other": "Deliverable and {{count}} subordinate entries deleted.",
+        "notFound": "This deliverable was not found.",
+        "saveFailed": "Save failed. Please try again.",
+        "saved": "Deliverable saved."
+      },
+      "unsavedChanges": {
+        "description": "Unsaved changes will be lost.",
+        "discard": "Discard",
+        "keepEditing": "Keep editing",
+        "title": "Discard changes?"
+      },
+      "validation": {
+        "businessIdDuplicate": "This business ID is already in use.",
+        "businessIdMaxLength": "Business ID must not exceed 50 characters.",
+        "nameMaxLength": "Name must not exceed 255 characters.",
+        "nameRequired": "Name is required."
+      }
+    },
+    "editProject": {
+      "cancel": "Cancel",
+      "editButton": "Edit project",
+      "fields": {
+        "description": "Project Description",
+        "descriptionPlaceholder": "Add project description (optional)",
+        "endDate": "End Date",
+        "name": "Project Name",
+        "namePlaceholder": "Enter project name",
+        "sizeClassification": "Size Classification",
+        "sizeClassificationPlaceholder": "Select size",
+        "startDate": "Start Date"
+      },
+      "sizeClassification": {
+        "large": "Large",
+        "medium": "Medium",
+        "small": "Small"
+      },
+      "submit": "Save Changes",
+      "title": "Edit Project",
+      "toast": {
+        "error": "Failed to save project.",
+        "loading": "Saving project...",
+        "success": "Project saved successfully."
+      }
+    },
+    "escalatedEntries": {
+      "actions": {
+        "escalate": "Escalate",
+        "escalatedTo": "Escalated to: {{targetName}}",
+        "return": "Return"
+      },
+      "detail": {
+        "assessment": {
+          "save": "Save Assessment",
+          "targetImpact": "Target Impact",
+          "targetProbability": "Target Probability",
+          "title": "Target Assessment"
+        },
+        "childAssessment": {
+          "title": "Portfolio-Level Assessment"
+        },
+        "loadError": "Failed to load entry details",
+        "parentAssessment": {
+          "notAssessed": "Not assessed",
+          "title": "Program-Level Assessment"
+        },
+        "sourceFields": {
+          "entryNumber": "Entry No.",
+          "escalatedAt": "Escalated At",
+          "escalationChain": "Escalation Chain",
+          "impact": "Impact",
+          "name": "Name",
+          "pestelCategory": "PESTEL Category",
+          "probability": "Probability",
+          "riskLevel": "Risk Level",
+          "sourceStatus": "Source Status",
+          "title": "Source Information",
+          "type": "Type"
+        },
+        "tabs": {
+          "assessment": "Assessment",
+          "assessmentHistory": "Assessment History",
+          "measures": "Measures",
+          "measuresHistory": "Measures History"
+        },
+        "title": "Escalated Entry Details"
+      },
+      "dialogs": {
+        "deEscalate": {
+          "cancel": "Cancel",
+          "reasonLabel": "Return reason",
+          "reasonPlaceholder": "Describe why this entry is being returned...",
+          "submit": "Return",
+          "title": "Return Entry"
+        },
+        "escalate": {
+          "cancel": "Cancel",
+          "reasonLabel": "Justification",
+          "reasonPlaceholder": "Describe why this entry needs to be escalated...",
+          "submit": "Escalate",
+          "title": "Escalate Entry"
+        }
+      },
+      "log": {
+        "empty": "No escalation events recorded",
+        "title": "Escalation Log",
+        "eventType": {
+          "ESCALATION": "Escalated",
+          "DE_ESCALATION": "Returned"
+        }
+      },
+      "measures": {
+        "add": "Add",
+        "addPlaceholder": "Add action item...",
+        "empty": "No action items yet",
+        "remove": "Remove"
+      },
+      "status": {
+        "ariaLabel": "Escalation status: {{status}}",
+        "ACTIVE": "Active",
+        "RETURNED": "Returned",
+        "ESCALATED": "Escalated"
+      },
+      "table": {
+        "columns": {
+          "date": "Date",
+          "entryNumber": "No.",
+          "escalatedBy": "Escalated by",
+          "name": "Name",
+          "source": "Source",
+          "sourceAssessment": "Source Assessment",
+          "status": "Status"
+        },
+        "empty": "No escalated entries",
+        "rowActionsLabel": "Actions for \"{{name}}\"",
+        "showReturned": "Show Returned",
+        "title": "Escalated Entries"
+      },
+      "toasts": {
+        "addMeasureError": "Failed to add action item",
+        "addMeasureSuccess": "Action item added",
+        "deEscalateError": "Failed to return entry",
+        "deEscalateSuccess": "Entry returned successfully",
+        "deleteMeasureError": "Failed to remove action item",
+        "deleteMeasureSuccess": "Action item removed",
+        "escalateError": "Failed to escalate entry",
+        "escalateSuccess": "Entry escalated successfully",
+        "updateAssessmentError": "Failed to save assessment",
+        "updateAssessmentSuccess": "Assessment saved successfully"
+      }
+    },
+    "planningObjects": {
+      "assumptions": {
+        "addAssumption": "Add Assumption",
+        "cannotUncheckActiveRisk": "Cannot be deactivated while an active risk is linked.",
+        "dueDate": "Deadline",
+        "emptyState": "No assumptions yet",
+        "isRisk": "Is a risk",
+        "linksSection": "Links",
+        "loadError": "Assumption could not be loaded",
+        "otherInformation": "Other information",
+        "projectCharterLabel": "Project Charter",
+        "relatedRisksLabel": "Linked Risks",
+        "riskEntry": "Risk entry",
+        "riskNoAccess": "Write access to risk register required",
+        "title": "Assumptions",
+        "toast": {
+          "createError": "Failed to create assumption",
+          "createSuccess": "Assumption created successfully",
+          "deleteError": "Failed to delete assumption",
+          "riskCreated": "A risk entry was automatically created",
+          "updateError": "Failed to save assumption",
+          "updateSuccess": "Assumption saved successfully"
+        },
+        "validatedBy": "Validated by",
+        "validationStatusLabel": "Validation status",
+        "viewTitle": "View Assumption",
+        "validationStatusValues": {
+          "OPEN": "Open",
+          "IN_REVIEW": "In review",
+          "VALIDATED": "Validated",
+          "REFUTED": "Refuted"
+        }
+      },
+      "common": {
+        "addChild": "Add child",
+        "addNew": "Add new",
+        "addSibling": "Add sibling",
+        "createdAt": "Created at",
+        "delete": "Delete",
+        "deleteCancel": "Cancel",
+        "deleteConfirmAction": "Delete",
+        "deleteDescription": "Are you sure you want to delete this item? This action cannot be undone.",
+        "deleteHasChildren": "This element contains child elements that will also be permanently deleted.",
+        "deleteTitle": "Confirm Delete",
+        "description": "Description",
+        "discardCancel": "Keep editing",
+        "discardConfirm": "Discard",
+        "discardDescription": "You have unsaved changes. Are you sure you want to discard them?",
+        "discardTitle": "Unsaved Changes",
+        "dueDate": "Due date",
+        "edit": "Edit",
+        "name": "Name",
+        "otherInfo": "Other information",
+        "rowActions": "Row actions",
+        "save": "Save",
+        "view": "View"
+      },
+      "constraints": {
+        "addConstraint": "Add Constraint",
+        "deadline": "Deadline",
+        "emptyState": "No constraints yet",
+        "linksSection": "Links",
+        "loadError": "Constraint could not be loaded",
+        "owner": "Owner",
+        "projectCharter": "Project Charter",
+        "timeBound": "Time-bound",
+        "timeBoundNoDate": "Time-bound — No deadline",
+        "timeBoundWithDate": "Time-bound — {{date}}",
+        "title": "Constraints",
+        "toast": {
+          "createError": "Failed to create constraint",
+          "createSuccess": "Constraint created successfully",
+          "deleteError": "Failed to delete constraint",
+          "updateError": "Failed to save constraint",
+          "updateSuccess": "Constraint saved successfully"
+        },
+        "viewTitle": "View Constraint"
+      },
+      "errors": {
+        "cycleDetected": "Cannot create this link: it would create a circular dependency"
+      },
+      "goals": {
+        "acceptedAt": "Accepted at",
+        "acceptedBy": "Accepted by",
+        "addGoal": "Add Goal",
+        "appliesTo": "Applies to",
+        "businessCase": "Linked Business Case",
+        "collapseAll": "Collapse all",
+        "deleteDialog": {
+          "cancel": "Cancel",
+          "cascadeWarning": "All child goals will be permanently deleted along with this goal.",
+          "deleteAll": "Delete all",
+          "description": "This goal has child goals. Choose how to proceed.",
+          "descriptionWithCount": "This goal has {{count}} child goal(s). Choose how to proceed.",
+          "descriptionWithCount_one": "This goal has 1 child goal. Choose how to proceed.",
+          "descriptionWithCount_other": "This goal has {{count}} child goals. Choose how to proceed.",
+          "title": "Delete Goal"
+        },
+        "emptyState": "No goals yet",
+        "expandAll": "Expand all",
+        "impact": "Impact",
+        "initiationRequest": "Initiation Request",
+        "initiationRequests": "Linked Initiation Requests",
+        "keyResults": "Key results",
+        "linkedRequirements": "Linked Requirements",
+        "linksSection": "Links",
+        "listLoadError": "Goals could not be loaded.",
+        "loadError": "This goal could not be loaded. It may contain references to deleted items. Please contact your administrator.",
+        "otherInformation": "Other information",
+        "outcome": "Outcome",
+        "parentLevelGoalDeleted": "No longer exists",
+        "parentPortfolioGoals": "Portfolio Goals",
+        "parentProgramGoals": "Program Goals",
+        "progress": "Progress",
+        "progressAriaLabel": "Goal progress: {{value}}%",
+        "projectCharter": "Linked Project Charter",
+        "relatedGoals": "Related Goals",
+        "searchPlaceholder": "Search goals...",
+        "title": "Goals",
+        "toast": {
+          "createError": "Failed to create goal",
+          "createSuccess": "Goal created successfully",
+          "deleteError": "Failed to delete goal",
+          "updateError": "Failed to save goal",
+          "updateSuccess": "Goal saved successfully"
+        },
+        "viewTitle": "View Goal"
+      },
+      "requirements": {
+        "acceptanceCriteria": "Acceptance criteria",
+        "addRequirement": "Add Requirement",
+        "collapseAll": "Collapse all",
+        "dep": {
+          "addDependency": "Add link",
+          "blocks": "blocks",
+          "duplicates": "duplicates",
+          "isBlockedBy": "is blocked by",
+          "isDuplicatedBy": "is duplicated by",
+          "relatesTo": "relates to",
+          "removeAriaLabel": "Remove dependency to {{name}}",
+          "sectionTitle": "Links to Other Requirements",
+          "selectLinkType": "Link type",
+          "selectRequirement": "Search requirement..."
+        },
+        "effortFrom": "From",
+        "effortTo": "To",
+        "emptyState": "No requirements yet",
+        "expandAll": "Expand all",
+        "fieldEffort": "Estimated Effort (in PT)",
+        "fieldPriority": "Priority",
+        "fieldScope": "Scope",
+        "fieldSource": "Source",
+        "fieldStatus": "Status",
+        "fieldType": "Type",
+        "filterAll": "All",
+        "filterInScope": "In Scope",
+        "filterOutOfScope": "Out of Scope",
+        "filterTabsLabel": "Filter requirements",
+        "linkedGoals": "Linked Goals",
+        "linksSection": "Links",
+        "listLoadError": "Failed to load requirements",
+        "loadError": "Requirement could not be loaded",
+        "priority": {
+          "couldHave": "Could have",
+          "mustHave": "Must have",
+          "shouldHave": "Should have",
+          "wontHave": "Won't have"
+        },
+        "removeGoalAriaLabel": "Remove link to goal {{name}}",
+        "scope": {
+          "inScope": "In Scope",
+          "outOfScope": "Out of Scope"
+        },
+        "sourceExternal": "External",
+        "sourceInternal": "Internal",
+        "status": {
+          "accepted": "Accepted",
+          "analysed": "Analysed",
+          "implemented": "Implemented",
+          "new": "New",
+          "specified": "Specified",
+          "tested": "Tested"
+        },
+        "title": "Requirements",
+        "toast": {
+          "createError": "Failed to create requirement",
+          "createSuccess": "Requirement created successfully",
+          "deleteError": "Failed to delete requirement",
+          "updateError": "Failed to save requirement",
+          "updateSuccess": "Requirement saved successfully"
+        },
+        "type": {
+          "constraint": "Constraint",
+          "functional": "Functional",
+          "nonFunctional": "Non-Functional"
+        },
+        "viewTitle": "View Requirement"
+      },
+      "validation": {
+        "effortMinGtMax": "From must be less than or equal to To",
+        "nameRequired": "Name is required"
+      }
+    },
+    "planningRolesManagement": {
+      "actions": {
+        "cancel": "Cancel",
+        "create": "Create Planning Role",
+        "delete": "Delete",
+        "edit": "Edit",
+        "remove": "Remove",
+        "save": "Save"
+      },
+      "columns": {
+        "assigned": "Assigned (PD)",
+        "capacityPerWeek": "Capacity/Wk (PD)",
+        "name": "Name",
+        "unassigned": "Unassigned (PD)",
+        "users": "Users"
+      },
+      "delete": {
+        "confirmLabel": "Delete anyway",
+        "description": "This action cannot be undone.",
+        "title": "Delete planning role?",
+        "withAssignments": "This planning role is assigned to {{count}} support service(s)/work package(s). After deletion all assignments will be cleared.",
+        "withAssignments_one": "This planning role is assigned to 1 support service/work package. After deletion the assignment will be cleared.",
+        "withAssignments_other": "This planning role is assigned to {{count}} support services/work packages. After deletion all assignments will be cleared."
+      },
+      "empty": {
+        "title": "No planning roles created yet."
+      },
+      "error": {
+        "loadFailed": "Planning roles could not be loaded."
+      },
+      "form": {
+        "addPersonPlaceholder": "Add person…",
+        "computed": {
+          "assigned": "Assigned (PD)",
+          "unassigned": "Unassigned (PD)"
+        },
+        "createTitle": "Create Planning Role",
+        "editTitle": "Edit Planning Role",
+        "fields": {
+          "capacityPerWeek": "Capacity per Week (PD)",
+          "name": "Name",
+          "user": "User"
+        },
+        "unknownPerson": "Unknown person"
+      },
+      "headerNotice": "Planning roles are project-wide resources and can be assigned to support services and work packages.",
+      "pageTitle": "Planning Roles",
+      "toast": {
+        "created": "Planning role created.",
+        "deleteFailed": "Delete failed. Please try again.",
+        "deleted": "Planning role deleted.",
+        "saveFailed": "Save failed. Please try again.",
+        "saved": "Planning role saved."
+      },
+      "unsavedChanges": {
+        "description": "Unsaved changes will be lost.",
+        "discard": "Discard",
+        "keepEditing": "Keep editing",
+        "title": "Discard changes?"
+      },
+      "validation": {
+        "capacityMin": "Capacity per week must be greater than 0.",
+        "capacityRequired": "Capacity per week is a required field.",
+        "nameDuplicate": "A planning role with this name already exists.",
+        "nameMaxLength": "Name may not exceed 100 characters.",
+        "nameRequired": "Name is a required field."
+      }
+    },
+    "supportServicesManagement": {
+      "accessibility": {
+        "collapseNode": "Collapse {{name}}",
+        "dragHandle": "Drag to move {{name}}",
+        "expandNode": "Expand {{name}}",
+        "invalidPosition": "Invalid position — move not possible.",
+        "treeLabel": "Support services tree view"
+      },
+      "actions": {
+        "cancel": "Cancel",
+        "collapseAll": "Collapse all",
+        "create": "Create support service",
+        "createChild": "Create subordinate",
+        "createSibling": "Create sibling",
+        "delete": "Delete",
+        "deleteAll": "Delete all",
+        "edit": "Edit",
+        "expandAll": "Expand all",
+        "promoteChildren": "Promote children",
+        "rowActions": "Row actions",
+        "save": "Save"
+      },
+      "columns": {
+        "assignee": "Assigned to",
+        "estimatedEffort": "Estimated effort (PT)",
+        "name": "Name"
+      },
+      "delete": {
+        "cascadeWarning": "This support service has subordinate entries. Choose how to delete.",
+        "description": "This action cannot be undone.",
+        "title": "Delete support service"
+      },
+      "empty": {
+        "title": "No support services created yet."
+      },
+      "error": {
+        "loadFailed": "Support services could not be loaded."
+      },
+      "fields": {
+        "assignee": "Assigned to",
+        "description": "Description",
+        "estimatedEffort": "Estimated effort (PT)",
+        "estimatedEffortReadOnly": "Calculated from subordinate support services",
+        "name": "Name",
+        "otherInformation": "Other information",
+        "parent": "Parent support service"
+      },
+      "filter": {
+        "removeAssignee": "Remove filter: {{name}}"
+      },
+      "firstChildWarning": {
+        "cancel": "Cancel",
+        "continue": "Continue",
+        "description": "This entry has a manual effort value ({{effort}} PT). By creating a subordinate entry, the effort will be calculated in future — the current value will be lost.",
+        "title": "Manual effort value will be lost"
+      },
+      "form": {
+        "createTitle": "Create Support Service",
+        "editTitle": "Edit Support Service"
+      },
+      "headerNotice": "Support services are internal contributions from other organisational units — not external procurement (outsourcing).",
+      "pageTitle": "Support Services",
+      "planningRole": {
+        "capacityLabel": "Capacity per week (PT)",
+        "createInline": "+ Create new planning role",
+        "duplicateError": "A planning role with this name already exists in this project.",
+        "nameLabel": "Name"
+      },
+      "search": {
+        "noResults": "No support services match your search.",
+        "placeholder": "Search support services…"
+      },
+      "tabs": {
+        "list": "List view",
+        "tree": "Tree view"
+      },
+      "toast": {
+        "created": "Support service created.",
+        "deleteFailed": "Delete failed. Please try again.",
+        "deleted": "Support service deleted.",
+        "saveFailed": "Save failed. Please try again.",
+        "saved": "Support service saved.",
+        "savedButMoveFailed": "Changes saved, but moving under the new parent failed. Please try again."
+      },
+      "unsavedChanges": {
+        "description": "Unsaved changes will be lost.",
+        "discard": "Discard",
+        "keepEditing": "Keep editing",
+        "title": "Discard changes?"
+      },
+      "validation": {
+        "effortMin": "Effort must be 0 or greater.",
+        "nameMaxLength": "Name must not exceed 255 characters.",
+        "nameRequired": "Name is required."
+      }
+    },
+    "workItem": {
+      "assignColumnError": "Failed to move task. Please try again.",
+      "board": {
+        "addAnotherColumn": "Add another column",
+        "addColumn": "Add",
+        "addColumnTitle": "Add Column",
+        "addTaskToColumn": "Add a task",
+        "assignPerson": "Assign person",
+        "assignTo": "Assign to",
+        "assigneeSaveError": "Could not update assignee. Please try again.",
+        "boardName": "Board name",
+        "boardNamePlaceholder": "e.g. Sprint Board",
+        "cardLabel": "{{name}}",
+        "changeAssignee": "Assigned to {{name}}",
+        "clickToRenameColumn": "Click to rename",
+        "columnCreated": "Column created successfully",
+        "columnDropZone": "{{name}} drop zone",
+        "columnGroup": "{{name}} column",
+        "columnItemCount_one": "{{count}} task",
+        "columnItemCount_other": "{{count}} tasks",
+        "columnName": "Column name",
+        "columnSoftLimitWarning": "This board has {{count}} columns. Consider consolidating.",
+        "columnSoftLimitWarning_one": "This board has 1 column. Consider consolidating.",
+        "columnSoftLimitWarning_other": "This board has {{count}} columns. Consider consolidating.",
+        "columnStatus": "Status",
+        "createBoard": "Create",
+        "createBoardTitle": "Create Board",
+        "defaultColumns": "Default Columns",
+        "deleteBoardAction": "Delete board",
+        "deleteBoardMessage": "This action cannot be undone. Tasks will be moved to the active pool.",
+        "deleteBoardTitle": "Delete board?",
+        "deleteColumnStatusGuard": "Cannot delete: board would lose coverage for status \"{{status}}\".",
+        "dragCancelled": "Drag cancelled for task {{id}}.",
+        "dragColumn": "Drag to reorder column",
+        "dragEnd": "Task {{id}} dropped in column {{column}}.",
+        "dragOver": "Task {{id}} is over column {{column}}.",
+        "dragOverNothing": "Task {{id}} is not over a column.",
+        "dragStart": "Picked up task {{id}}.",
+        "dragToPool": "Drag to Active Tasks",
+        "editBoard": "Edit board",
+        "editBoardTitle": "Edit Board",
+        "editColumnNameInline": "Edit column name",
+        "editColumnTitle": "Edit Column",
+        "filterLabel": "Filter board",
+        "noUnassigned": "No unassigned tasks.",
+        "quickMove": "Move card",
+        "quickMoveAction": "Move",
+        "quickMoveColumnLabel": "Column",
+        "quickMoveColumnPlaceholder": "Select column",
+        "quickMoveSuggested": "Suggested",
+        "quickMoveTitle": "Move card",
+        "resetFilter": "Reset",
+        "sidebarHint": {
+          "dismiss": "Got it ✓",
+          "text": "Here you'll find your active tasks and the archive."
+        },
+        "unassign": "Unassign",
+        "unassigned": "Unassigned (Backlog)"
+      },
+      "createDialog": {
+        "submit": "Create",
+        "title": "Create Task"
+      },
+      "createSuccess": "Task \"{{name}}\" created.",
+      "editDialog": {
+        "submit": "Save",
+        "title": "Edit Task"
+      },
+      "form": {
+        "assignee": "Assignee",
+        "assigneeNone": "No assignee",
+        "assigneePlaceholder": "Select assignee",
+        "cancel": "Cancel",
+        "description": "Description",
+        "descriptionPlaceholder": "Optional description (Markdown supported)",
+        "dueDate": "Due Date",
+        "labels": "Labels",
+        "name": "Name",
+        "namePlaceholder": "Enter task name",
+        "priority": "Priority",
+        "priorityPlaceholder": "Select priority",
+        "status": "Status",
+        "submit": "Save"
+      },
+      "labelSyncError": "Failed to update labels. Some changes may not have been saved.",
+      "moveError": "Failed to reorder task. Please try again.",
+      "optimisticLockConflict": "Item was modified by someone else. Please reload and retry.",
+      "status": {
+        "OPEN": "Open",
+        "IN_PROGRESS": "In progress",
+        "DONE": "Done"
+      }
+    },
+    "workItemAttachments": {
+      "deleteConfirm": {
+        "description": "This will permanently delete the attachment and cannot be undone.",
+        "title": "Delete attachment?"
+      },
+      "deleteError": "Failed to delete attachment.",
+      "dropzoneDescription": "or click to select a file (max 10 MB)",
+      "dropzoneTitle": "Drag and drop a file here",
+      "errors": {
+        "invalidType": "File type not allowed.",
+        "mimeMismatch": "\"{{name}}\" could not be uploaded. The file content does not match its extension.",
+        "serverTypeRejected": "\"{{name}}\" could not be uploaded. This file type is not supported.",
+        "tooLarge": "File exceeds the 10 MB size limit.",
+        "uploadFailed": "\"{{name}}\" could not be uploaded. Please try again."
+      },
+      "list": "Attachments",
+      "noAttachments": "No attachments.",
+      "processing": "Processing…",
+      "uploadError": "Failed to upload attachment.",
+      "uploadFile": "Upload file",
+      "uploadSuccessCount": "{{count}} attachment(s) uploaded.",
+      "uploadSuccessCount_one": "{{count}} attachment(s) uploaded.",
+      "uploadSuccessCount_other": "{{count}} attachment(s) uploaded."
+    },
+    "workItemComments": {
+      "createError": "Failed to add comment.",
+      "deleteComment": "Delete comment",
+      "deleteDialog": {
+        "description": "Are you sure you want to delete this comment? This action cannot be undone.",
+        "title": "Delete Comment"
+      },
+      "deleteError": "Failed to delete comment.",
+      "editComment": "Edit comment",
+      "form": {
+        "heading": "New Comment",
+        "label": "Comment text",
+        "placeholder": "Add a comment…",
+        "submit": "Add Comment"
+      },
+      "noComments": "No comments yet.",
+      "thread": "Comments",
+      "updateError": "Failed to update comment."
+    },
+    "workItemLabels": {
+      "addError": "Failed to add label.",
+      "createDialog": {
+        "submit": "Create Label",
+        "title": "Create Label"
+      },
+      "createError": "Failed to create label.",
+      "createLabel": "Create label",
+      "deleteError": "Failed to delete label.",
+      "deleteLabel": "Delete {{name}}",
+      "editDialog": {
+        "title": "Edit Label"
+      },
+      "editLabel": "Edit {{name}}",
+      "form": {
+        "color": "Color",
+        "name": "Name"
+      },
+      "manager": "Labels",
+      "managerTitle": "Labels",
+      "noLabels": "No labels yet.",
+      "removeError": "Failed to remove label.",
+      "updateError": "Failed to update label."
+    },
+    "workItemLinks": {
+      "addLink": "Add Link",
+      "createDialog": {
+        "linkType": "Link Type",
+        "submit": "Add Link",
+        "targetId": "Linked Task",
+        "targetIdNoResults": "No matching items found.",
+        "targetIdPlaceholder": "Search by name or enter ID",
+        "targetIdSearchPlaceholder": "Type a name or paste an ID…",
+        "title": "Add Link",
+        "useIdPrefix": "Use ID:"
+      },
+      "createError": "Failed to create link.",
+      "deleteError": "Failed to delete link.",
+      "noLinks": "No linked tasks.",
+      "panel": "Linked Tasks",
+      "unknownItem": "Unknown item",
+      "validation": {
+        "alreadyLinked": "These work items are already linked. Remove the existing link first.",
+        "duplicateLink": "These work items are already linked with the same type.",
+        "oppositeDirection": "These work items are already linked in the opposite direction. A work item cannot be both parent and child of the same item.",
+        "selfLink": "A work item cannot be linked to itself."
+      },
+      "linkType": {
+        "parent": "Parent",
+        "child": "Child",
+        "next": "Next",
+        "previous": "Previous",
+        "related": "Related"
+      }
+    }
+  },
+  "header": {
+    "brandLabel": "P1NG — Go to home",
+    "brandName": "P1NG",
+    "logout": "Logout",
+    "search": "Search",
+    "searchShortcut": "⌘K",
+    "showcaseDrawer": "Open showcase",
+    "title": "Header",
+    "userMenu": "User menu"
+  },
+  "language": {
+    "de": "Deutsch",
+    "en": "English",
+    "switch": "Switch language"
+  },
+  "licenses": {
+    "dialogDescription": "This application includes the following open-source packages.",
+    "dialogTitle": "Third-party licenses",
+    "hideLicenseText": "Hide license",
+    "loadError": "Failed to load license information.",
+    "noResults": "No packages match your search.",
+    "packageCount_one": "{{count}} package",
+    "packageCount_other": "{{count}} packages",
+    "searchPlaceholder": "Search packages…",
+    "source": "{{name}}",
+    "triggerLabel": "Third-party licenses",
+    "viewLicenseText": "Show license"
+  },
+  "nav": {
+    "administration": "Administration",
+    "content": "Content",
+    "dashboard": "Dashboard",
+    "documents": "Documents",
+    "general": "General",
+    "home": "Home",
+    "initiationRequests": "Initiation Requests",
+    "mainNavigation": "Main navigation",
+    "messages": "Messages",
+    "portfolios": "Portfolios",
+    "profile": "Profile",
+    "programs": "Programs",
+    "projects": "Projects",
+    "reports": "Reports",
+    "roleManagement": "Role Management",
+    "settings": "Settings",
+    "users": "Users"
+  },
+  "pages": {
+    "businessCase": {
+      "actions": {
+        "startProjectCharter": "Create Project Charter"
+      },
+      "detailPage": {
+        "heading": "Business Case"
+      },
+      "form": {
+        "cancelButton": "Cancel",
+        "clientSummaryLabel": "Client Summary",
+        "clientSummaryPlaceholder": "Describe the client context and background…",
+        "expectedBenefitLabel": "Expected Benefit",
+        "expectedBenefitPlaceholder": "Describe the expected benefits…",
+        "expectedNegativeSideEffectLabel": "Expected Negative Side Effects",
+        "expectedNegativeSideEffectPlaceholder": "Describe any negative side effects…",
+        "investmentCalculationLabel": "Investment Calculation",
+        "investmentCalculationPlaceholder": "Provide cost and investment details…",
+        "keyRisksLabel": "Key Risks",
+        "keyRisksPlaceholder": "Identify key risks…",
+        "markCompleteButton": "Submit",
+        "optionsLabel": "Options",
+        "optionsPlaceholder": "List the evaluated options…",
+        "projectRationaleLabel": "Project Rationale",
+        "projectRationalePlaceholder": "Explain why this project is needed…",
+        "saveButton": "Save",
+        "saveDraftButton": "Save as Draft",
+        "timelineLabel": "Timeline",
+        "timelinePlaceholder": "Outline the project timeline…"
+      },
+      "loadError": "Failed to load business case.",
+      "newPage": {
+        "heading": "New Business Case"
+      },
+      "statusBadge": {
+        "aria": "Status: {{status}}"
+      },
+      "toast": {
+        "createError": "Failed to create business case.",
+        "createSuccess": "Business case created.",
+        "creating": "Creating business case…",
+        "submitError": "Failed to mark business case as complete.",
+        "submitSuccess": "Business case marked as complete.",
+        "submitting": "Marking as complete…",
+        "updateError": "Failed to save changes.",
+        "updateSuccess": "Changes saved.",
+        "updating": "Saving changes…"
+      }
+    },
+    "dashboard": {
+      "description": "Overview and key metrics.",
+      "title": "Dashboard"
+    },
+    "documents": {
+      "description": "Browse and manage documents.",
+      "title": "Documents"
+    },
+    "home": {
+      "description": "A concise introduction to the app shell and its navigation. Use the theme toggle in the header to switch between light and dark.",
+      "title": "Home"
+    },
+    "initiationRequests": {
+      "detail": {
+        "backToList": "Initiation Requests",
+        "editTitle": "Edit Initiation Request",
+        "loadError": "Failed to load initiation request.",
+        "readOnlyBadge": "Accepted",
+        "startBusinessCaseButton": "Start Business Case",
+        "title": "Initiation Request",
+        "viewEditBusinessCaseButton": "View / Edit Business Case"
+      },
+      "dialog": {
+        "createDescription": "Create a formal project initiation request (PIR) to start the PMflex initiation process.",
+        "createTitle": "New Initiation Request"
+      },
+      "error": {
+        "retry": "Retry",
+        "title": "Failed to load initiation requests"
+      },
+      "form": {
+        "approvalAuthorityLabel": "Approving Authority",
+        "cancelButton": "Cancel",
+        "deliveryType": {
+          "external": "External",
+          "internal": "Internal",
+          "mixed": "Mixed",
+          "unknown": "Unknown"
+        },
+        "deliveryTypeLabel": "Delivery Type",
+        "deliveryTypePlaceholder": "Select delivery type",
+        "documentVersionLabel": "Document Version",
+        "documentVersionPlaceholder": "e.g. 1.0",
+        "estimatedEffortCommentLabel": "Effort Comment",
+        "estimatedEffortLabel": "Estimated Effort (person-days)",
+        "mandatorySection": "Mandatory Fields",
+        "nameLabel": "Project Title",
+        "namePlaceholder": "e.g. Digitalisierung Rechnungswesen",
+        "optionalSection": "Optional Fields",
+        "organizationalUnitLabel": "Organisational Unit",
+        "projectInitiatorLabel": "Project Initiator",
+        "projectOwnerLabel": "Project Owner",
+        "requestDateLabel": "Request Date",
+        "requestingProjectEmpty": "No projects found.",
+        "requestingProjectLabel": "Requesting Project",
+        "requestingProjectPlaceholder": "Select a project…",
+        "saveDraftButton": "Save as Draft",
+        "scopeTypeLabel": "Parent Domain Type",
+        "scopeTypePlaceholder": "Select scope type…",
+        "solutionProviderLabel": "Solution Provider",
+        "submitButton": "Submit",
+        "targetDeliveryDateLabel": "Target Delivery Date",
+        "scopeType": {
+          "program": "Program",
+          "portfolio": "Portfolio"
+        },
+        "scopeId": {
+          "programLabel": "Program",
+          "programPlaceholder": "Select a program…",
+          "programEmpty": "No programs found.",
+          "portfolioLabel": "Portfolio",
+          "portfolioPlaceholder": "Select a portfolio…",
+          "portfolioEmpty": "No portfolios found."
+        }
+      },
+      "list": {
+        "columns": {
+          "name": "Project Title",
+          "status": "Status",
+          "updatedAt": "Last Modified"
+        },
+        "deleteButton": "Delete initiation request",
+        "noDate": "—",
+        "statusBadgeLabel": "Status: {{label}}"
+      },
+      "newRequestButton": "Create new initiation request",
+      "title": "Initiation Requests",
+      "toast": {
+        "createError": "Failed to create request.",
+        "createSuccess": "Request created successfully.",
+        "creating": "Creating request…",
+        "deleteError": "Failed to delete request.",
+        "deleteSuccess": "Request deleted.",
+        "deleting": "Deleting request…",
+        "submitError": "Failed to submit request.",
+        "submitSuccess": "Request submitted and accepted.",
+        "submitting": "Submitting request…",
+        "updateError": "Failed to save changes.",
+        "updateSuccess": "Changes saved.",
+        "updating": "Saving changes…"
+      },
+      "validation": {
+        "approvalAuthorityRequired": "Approving authority is required.",
+        "deliveryTypeRequired": "Please select a delivery type.",
+        "documentVersionRequired": "Document version is required.",
+        "estimatedEffortInvalid": "Estimated effort must be a positive number.",
+        "nameRequired": "Project title is required.",
+        "organizationalUnitRequired": "Organisational unit is required.",
+        "projectInitiatorRequired": "Project initiator is required.",
+        "projectOwnerRequired": "Project owner is required.",
+        "requestDateRequired": "Request date is required.",
+        "requestingProjectRequired": "A requesting project must be selected.",
+        "scopeIdRequired": "Please select a scope entity.",
+        "scopeTypeRequired": "Please select a scope type.",
+        "targetDeliveryDateRequired": "Target delivery date is required."
+      },
+      "status": {
+        "draft": "Draft",
+        "submitted": "Submitted",
+        "accepted": "Accepted"
+      }
+    },
+    "issueManagement": {
+      "addEntry": "Add entry",
+      "createIssueEntry": {
+        "cancel": "Cancel",
+        "description": "Capture a new issue entry.",
+        "fields": {
+          "impact": "Impact (1–5)",
+          "impactPlaceholder": "1–5",
+          "urgency": "Urgency (1–5)",
+          "urgencyPlaceholder": "1–5"
+        },
+        "submit": "Create Issue",
+        "title": "New Issue",
+        "toast": {
+          "error": "Failed to create issue.",
+          "success": "Issue created."
+        }
+      },
+      "createProblemFromIssue": {
+        "cancel": "Cancel",
+        "confirm": "Create Problem",
+        "description": "Escalate \"{{name}}\" to a new problem entry?",
+        "title": "Create Problem from Issue",
+        "toast": {
+          "error": "Failed to create problem from issue.",
+          "success": "Problem created."
+        }
+      },
+      "editIssueEntry": {
+        "cancel": "Cancel",
+        "description": "Update the issue entry.",
+        "loadError": "Failed to load entry.",
+        "loading": "Loading entry…",
+        "submit": "Save Changes",
+        "title": "Edit Issue",
+        "toast": {
+          "error": "Failed to update issue.",
+          "success": "Issue updated."
+        }
+      },
+      "empty": "No entries found.",
+      "filters": {
+        "pestelAll": "All categories",
+        "pestelCategory": "PESTEL Category",
+        "showTerminal": "Show resolved / closed",
+        "status": "Status",
+        "statusAll": "All statuses"
+      },
+      "loadError": "Failed to load issue management entries.",
+      "loading": "Loading entries…",
+      "status": {
+        "CLOSED": "Closed",
+        "DEFERRED": "Deferred",
+        "IN_PROGRESS": "In Progress",
+        "OPEN": "Open",
+        "RESOLVED": "Resolved"
+      },
+      "table": {
+        "columns": {
+          "escalation": "Escalation",
+          "id": "ID",
+          "identificationDate": "Identified",
+          "impact": "Impact",
+          "name": "Name",
+          "owner": "Owner",
+          "pestelCategory": "PESTEL",
+          "status": "Status",
+          "urgency": "Urgency"
+        },
+        "editAction": "Edit",
+        "rowActionsLabel": "Row actions for \"{{name}}\""
+      },
+      "title": "Issue Management",
+      "validation": {
+        "dateInvalid": "Date must be in YYYY-MM-DD format.",
+        "descriptionTooLong": "Description must not exceed 2000 characters.",
+        "nameRequired": "Name is required.",
+        "nameTooLong": "Name must not exceed 255 characters.",
+        "scoreRange": "Value must be between 1 and 5.",
+        "statusRequired": "Status is required."
+      }
+    },
+    "messages": {
+      "description": "Read and compose messages.",
+      "title": "Messages"
+    },
+    "notFound": {
+      "title": "404 — Page not found"
+    },
+    "permissions": {
+      "description": "Configure roles and permissions.",
+      "title": "Permissions"
+    },
+    "portfolioGoals": {
+      "title": "Goals"
+    },
+    "portfolioMembers": {
+      "title": "Portfolio Members"
+    },
+    "portfolios": {
+      "createButton": "Create new portfolio",
+      "deleteDialog": {
+        "cancel": "Cancel",
+        "confirm": "Delete",
+        "description": "Are you sure you want to delete \"{{name}}\"? This action cannot be undone.",
+        "title": "Delete Portfolio",
+        "toast": {
+          "deleting": "Deleting portfolio…",
+          "error": "Failed to delete portfolio.",
+          "success": "Portfolio deleted successfully."
+        }
+      },
+      "detail": {
+        "createdAt": "Created",
+        "edit": "Edit Portfolio",
+        "endYear": "End Year",
+        "newProgram": "Create new program",
+        "notFound": "Portfolio not found.",
+        "programsSection": "Associated Programs",
+        "startYear": "Start Year"
+      },
+      "editForm": {
+        "description": "Update the details of this portfolio.",
+        "submit": "Save Changes",
+        "title": "Edit Portfolio",
+        "toast": {
+          "error": "Failed to update portfolio.",
+          "success": "Portfolio updated successfully.",
+          "updating": "Updating portfolio…"
+        }
+      },
+      "error": {
+        "retry": "Retry",
+        "title": "Failed to load portfolios"
+      },
+      "filterButton": "Filter",
+      "filters": {
+        "endYear": "End Year",
+        "searchLabel": "Search",
+        "searchPlaceholder": "Search portfolios...",
+        "startYear": "Start Year"
+      },
+      "form": {
+        "cancel": "Cancel",
+        "description": "Add a new portfolio to group related initiatives.",
+        "endYearLabel": "End Year",
+        "startYearLabel": "Start Year",
+        "submit": "Create Portfolio",
+        "title": "Create Portfolio",
+        "titleLabel": "Title",
+        "titlePlaceholder": "e.g. Digital Transformation 2026",
+        "toast": {
+          "creating": "Creating portfolio…",
+          "error": "Failed to create portfolio.",
+          "success": "Portfolio created successfully."
+        }
+      },
+      "list": {
+        "columns": {
+          "actions": "Actions",
+          "endYear": "End Year",
+          "startYear": "Start Year",
+          "title": "Title"
+        },
+        "deleteAriaLabel": "Delete portfolio \"{{name}}\"",
+        "editAriaLabel": "Edit portfolio \"{{name}}\"",
+        "noYear": "–",
+        "programsAriaLabel": "Show programs for portfolio \"{{name}}\""
+      },
+      "title": "Portfolios",
+      "validation": {
+        "titleMaxLength": "Title must not exceed 255 characters.",
+        "titleRequired": "Title is required.",
+        "yearRangeInvalid": "End year must be greater than or equal to start year."
+      }
+    },
+    "problemManagement": {
+      "addEntry": "Add entry",
+      "createProblemEntry": {
+        "cancel": "Cancel",
+        "description": "Capture a new problem entry.",
+        "fields": {
+          "impact": "Impact (1–5)",
+          "impactPlaceholder": "1–5"
+        },
+        "submit": "Create Problem",
+        "title": "New Problem",
+        "toast": {
+          "error": "Failed to create problem.",
+          "success": "Problem created."
+        }
+      },
+      "editProblemEntry": {
+        "cancel": "Cancel",
+        "description": "Update the problem entry.",
+        "loadError": "Failed to load entry.",
+        "loading": "Loading entry…",
+        "submit": "Save Changes",
+        "title": "Edit Problem",
+        "toast": {
+          "error": "Failed to update problem.",
+          "success": "Problem updated."
+        }
+      },
+      "empty": "No entries found.",
+      "filters": {
+        "pestelAll": "All categories",
+        "pestelCategory": "PESTEL Category",
+        "showTerminal": "Show resolved / closed",
+        "status": "Status",
+        "statusAll": "All statuses"
+      },
+      "loadError": "Failed to load problem management entries.",
+      "loading": "Loading entries…",
+      "status": {
+        "CLOSED": "Closed",
+        "IN_ANALYSIS": "In Analysis",
+        "OPEN": "Open",
+        "RESOLVED": "Resolved",
+        "WORKAROUND_KNOWN": "Workaround Known"
+      },
+      "table": {
+        "columns": {
+          "escalation": "Escalation",
+          "id": "ID",
+          "identificationDate": "Identified",
+          "impact": "Impact",
+          "name": "Name",
+          "owner": "Owner",
+          "pestelCategory": "PESTEL",
+          "status": "Status"
+        },
+        "editAction": "Edit",
+        "rowActionsLabel": "Row actions for \"{{name}}\""
+      },
+      "title": "Problem Management",
+      "validation": {
+        "dateInvalid": "Date must be in YYYY-MM-DD format.",
+        "descriptionTooLong": "Description must not exceed 2000 characters.",
+        "nameRequired": "Name is required.",
+        "nameTooLong": "Name must not exceed 255 characters.",
+        "scoreRange": "Value must be between 1 and 5.",
+        "statusRequired": "Status is required."
+      }
+    },
+    "profile": {
+      "description": "View and edit your profile.",
+      "title": "Profile"
+    },
+    "programGoals": {
+      "title": "Goals"
+    },
+    "programInitiationRequests": {
+      "detail": {
+        "editTitle": "Edit Program Initiation Request",
+        "title": "Program Initiation Request"
+      },
+      "dialog": {
+        "createDescription": "Create a formal program initiation request (PIR) to start the program initiation process.",
+        "createTitle": "New Program Initiation Request"
+      },
+      "form": {
+        "nameLabel": "Program Title",
+        "namePlaceholder": "e.g. Digitalisierung Rechnungswesen",
+        "portfolioEmpty": "No portfolios found.",
+        "portfolioLabel": "Parent Domain",
+        "portfolioPlaceholder": "Select portfolio…",
+        "programInitiatorLabel": "Program Initiator",
+        "programOwnerLabel": "Program Owner",
+        "requestingProgramLabel": "Requesting Program"
+      },
+      "toast": {
+        "createError": "Failed to create request.",
+        "createSuccess": "Request created successfully.",
+        "creating": "Creating request…",
+        "submitError": "Failed to submit request.",
+        "submitSuccess": "Request submitted.",
+        "submitting": "Submitting request…",
+        "updateError": "Failed to save changes.",
+        "updateSuccess": "Changes saved.",
+        "updating": "Saving changes…"
+      },
+      "validation": {
+        "nameRequired": "Program title is required.",
+        "programInitiatorRequired": "Program initiator is required.",
+        "programOwnerRequired": "Program owner is required."
+      }
+    },
+    "programMembers": {
+      "title": "Program Members"
+    },
+    "programs": {
+      "createButton": "Create new program",
+      "createDialog": {
+        "cancel": "Cancel",
+        "description": "Create a new program to bundle and coordinate projects.",
+        "fields": {
+          "name": "Name",
+          "namePlaceholder": "Program name"
+        },
+        "submit": "Create Program",
+        "title": "New Program",
+        "toast": {
+          "duplicateName": "A program named \"{{name}}\" already exists.",
+          "error": "Failed to create program.",
+          "success": "Program \"{{name}}\" created."
+        }
+      },
+      "detail": {
+        "actions": {
+          "createPIR": "Create Initiation Request",
+          "viewPIR": "View Initiation Request"
+        },
+        "backToList": "Programs",
+        "edit": "Edit",
+        "error": {
+          "retry": "Try again",
+          "title": "Failed to load program."
+        },
+        "fields": {
+          "createdAt": "Created",
+          "creator": "Created by",
+          "portfolio": "Portfolio",
+          "status": "Status",
+          "updatedAt": "Last Modified",
+          "updater": "Last modified by"
+        },
+        "projects": {
+          "title": "Assigned Projects"
+        }
+      },
+      "editDialog": {
+        "cancel": "Cancel",
+        "description": "Update program details.",
+        "detail": {
+          "createdAt": "Created",
+          "creator": "Created by",
+          "noProjects": "No projects assigned.",
+          "projects": "Projects",
+          "updatedAt": "Last modified",
+          "updater": "Last modified by"
+        },
+        "fields": {
+          "name": "Name",
+          "namePlaceholder": "Program name",
+          "status": "Status",
+          "statusPlaceholder": "Select status"
+        },
+        "submit": "Save Changes",
+        "title": "Edit Program",
+        "toast": {
+          "duplicateName": "A program named \"{{name}}\" already exists.",
+          "error": "Failed to update program.",
+          "success": "Program updated.",
+          "versionConflict": "This program was recently updated by someone else. Please review the latest version."
+        }
+      },
+      "error": {
+        "retry": "Retry",
+        "title": "Failed to load programs"
+      },
+      "filterButton": "Filter",
+      "filters": {
+        "searchLabel": "Search",
+        "searchPlaceholder": "Search programs...",
+        "status": "Status"
+      },
+      "list": {
+        "columns": {
+          "actions": "Actions",
+          "createdAt": "Created",
+          "name": "Name",
+          "portfolio": "Portfolio",
+          "status": "Status",
+          "updatedAt": "Last Modified"
+        },
+        "editAriaLabel": "Edit program \"{{name}}\"",
+        "empty": "No programs found."
+      },
+      "status": {
+        "active": "Active",
+        "archived": "Archived",
+        "completed": "Completed",
+        "created": "Created",
+        "draft": "Draft"
+      },
+      "statusBadge": {
+        "aria": "Status: {{status}}"
+      },
+      "title": "Programs",
+      "validation": {
+        "nameRequired": "Name is required.",
+        "nameTooLong": "Name must not exceed 255 characters."
+      }
+    },
+    "projectAssumptions": {
+      "title": "Assumptions"
+    },
+    "projectCharter": {
+      "actions": {
+        "startProjectCharter": "Create Project Charter",
+        "viewEditProjectCharter": "View / Edit Project Charter"
+      },
+      "detailPage": {
+        "heading": "Project Charter"
+      },
+      "form": {
+        "assumptionLabel": "Assumptions",
+        "assumptionPlaceholder": "List the assumptions…",
+        "cancelButton": "Cancel",
+        "operationalImplementationLabel": "Operational Implementation",
+        "operationalImplementationPlaceholder": "Describe the operational implementation plan…",
+        "projectConstraintLabel": "Constraints",
+        "projectConstraintPlaceholder": "Describe the constraints…",
+        "projectSummaryLabel": "Project Summary",
+        "projectSummaryPlaceholder": "Describe the overall project summary…",
+        "requirementLabel": "Requirements",
+        "requirementPlaceholder": "Describe the requirements…",
+        "resourcesLabel": "Resources",
+        "resourcesPlaceholder": "Describe the resources needed…",
+        "riskLabel": "Risks",
+        "riskPlaceholder": "Identify the key risks…",
+        "saveButton": "Save",
+        "saveDraftButton": "Save as Draft",
+        "scopeSummaryLabel": "Scope Summary",
+        "scopeSummaryPlaceholder": "Describe the project scope…",
+        "stakeholdersLabel": "Stakeholders",
+        "stakeholdersPlaceholder": "List the key stakeholders…",
+        "submitButton": "Submit",
+        "successCriteriaLabel": "Success Criteria",
+        "successCriteriaPlaceholder": "Define the success criteria…"
+      },
+      "loadError": "Failed to load project charter.",
+      "loadErrorTitle": "Failed to load",
+      "newPage": {
+        "heading": "New Project Charter"
+      },
+      "statusBadge": {
+        "accepted": "Accepted",
+        "aria": "Status: {{status}}",
+        "draft": "Draft",
+        "submitted": "Submitted"
+      },
+      "toast": {
+        "createError": "Failed to create project charter.",
+        "createSuccess": "Project charter created.",
+        "creating": "Creating project charter…",
+        "submitError": "Failed to submit project charter.",
+        "submitSuccess": "Project charter submitted.",
+        "submitting": "Submitting project charter…",
+        "updateError": "Failed to save changes.",
+        "updateSuccess": "Changes saved.",
+        "updating": "Saving changes…"
+      }
+    },
+    "projectConstraints": {
+      "title": "Constraints"
+    },
+    "projectDetail": {
+      "actions": {
+        "createBusinessCase": "Create Business Case",
+        "createPIR": "Create Initiation Request",
+        "viewBusinessCase": "View Business Case",
+        "viewPIR": "View Initiation Request"
+      },
+      "backToList": "Projects",
+      "error": {
+        "retry": "Retry",
+        "title": "Failed to load project"
+      },
+      "fields": {
+        "description": "Description",
+        "endDate": "End Date",
+        "governanceStatus": "Governance Status",
+        "sizeClassification": "Size",
+        "startDate": "Start Date",
+        "status": "Status"
+      }
+    },
+    "projectGoals": {
+      "title": "Goals"
+    },
+    "projectMembers": {
+      "addButton": "Add Member",
+      "assignButton": "Assign",
+      "assignTitle": "Assign Member",
+      "columnInitials": "Initials",
+      "columnMail": "Email",
+      "columnName": "Name",
+      "columnRole": "Role",
+      "editButton": "Save",
+      "editTitle": "Edit Member",
+      "empty": "No members assigned yet.",
+      "error": "Failed to load project members.",
+      "errors": {
+        "conflict": "This person is already assigned to the project.",
+        "unknown": "An unexpected error occurred. Please try again."
+      },
+      "initialsGenerate": "Auto-generate initials",
+      "initialsLabel": "Initials",
+      "initialsPlaceholder": "e.g. SK",
+      "personLabel": "Person",
+      "personPlaceholder": "Search by name or email…",
+      "roleLabel": "Role",
+      "rolePlaceholder": "Select a role…",
+      "title": "Members",
+      "unassignButton": "Remove",
+      "unassignConfirm": "Remove \"{{name}}\" from this project?",
+      "unassignTitle": "Remove Member"
+    },
+    "projectRequirements": {
+      "title": "Requirements"
+    },
+    "projects": {
+      "columns": {
+        "endDate": "End Date",
+        "governanceStatus": "Governance Status",
+        "name": "Name",
+        "sizeClassification": "Size",
+        "startDate": "Start Date"
+      },
+      "createButton": "Create new project",
+      "error": {
+        "retry": "Retry",
+        "title": "Failed to load projects"
+      },
+      "filterButton": "Filter",
+      "filters": {
+        "governanceStatus": "Governance Status",
+        "searchLabel": "Search",
+        "searchPlaceholder": "Search projects...",
+        "sizeClassification": "Size"
+      },
+      "governanceStatus": {
+        "formal": "Formal",
+        "unmanaged": "Unmanaged"
+      },
+      "sizeClassification": {
+        "large": "Large",
+        "medium": "Medium",
+        "small": "Small"
+      },
+      "title": "Projects"
+    },
+    "rasciMatrix": {
+      "addRole": "Add Role",
+      "cellAriaLabel": "{{roleName}} – {{taskName}}: {{value}}",
+      "collapseResources": "Hide resources",
+      "deleteRole": "Delete role",
+      "deleteRoleConfirm": "Remove role '{{roleName}}' from this object?",
+      "editRole": "Edit role",
+      "expandResources": "Show resources",
+      "noRoles": "No roles defined yet.",
+      "overrideDialogTitle": "Override RASCI Value",
+      "overrideMarker": "Overridden",
+      "overrideTooltip": "Deviates from template",
+      "overrideTooltipWithValue": "Deviates from template (Template: {{value}})",
+      "resetCell": "Reset this value",
+      "resetCellTo": "Reset this value to",
+      "resetColumn": "Reset Column",
+      "resetColumnConfirm": "Reset all overrides for this role?",
+      "resourcesColumnName": "Name",
+      "resourcesColumnOperations": "Operations",
+      "rightsButton": "Rights",
+      "selectTemplateRole": "Select template role",
+      "skeletonLabel": "Loading matrix…",
+      "sourceRole": "Source role (template)",
+      "templateValue": "Template value: {{value}}",
+      "title": "Rights Matrix",
+      "accessLevel": {
+        "write": "Write",
+        "read": "Read",
+        "none": "None"
+      },
+      "operations": {
+        "read": "Read",
+        "create": "Create",
+        "update": "Update",
+        "delete": "Delete",
+        "link": "Link",
+        "unlink": "Unlink"
+      }
+    },
+    "reports": {
+      "description": "View and generate reports.",
+      "title": "Reports"
+    },
+    "riskManagement": {
+      "addEntry": "Add entry",
+      "createIssueFromRisk": {
+        "cancel": "Cancel",
+        "confirm": "Create Issue",
+        "description": "Create an issue from \"{{name}}\"? The risk will be marked as Occurred.",
+        "title": "Create Issue from Risk",
+        "toast": {
+          "error": "Failed to create issue from risk.",
+          "success": "Issue created. Risk marked as Occurred."
+        }
+      },
+      "createRiskEntry": {
+        "cancel": "Cancel",
+        "fields": {
+          "description": "Description",
+          "descriptionPlaceholder": "Optional description",
+          "identificationDate": "Date of Identification",
+          "impact": "Impact (1–5)",
+          "impactPlaceholder": "1–5",
+          "name": "Name",
+          "namePlaceholder": "Entry name",
+          "owner": "Owner",
+          "ownerPlaceholder": "Select owner",
+          "pestelCategory": "PESTEL Category",
+          "pestelPlaceholder": "Select category",
+          "probability": "Probability of Occurrence (1–5)",
+          "probabilityPlaceholder": "1–5",
+          "reporter": "Reporter",
+          "reporterPlaceholder": "Select reporter",
+          "status": "Status",
+          "statusPlaceholder": "Select status",
+          "type": "Type",
+          "typePlaceholder": "Select type"
+        },
+        "submit": "Create Entry",
+        "toast": {
+          "error": "Failed to create risk entry.",
+          "success": "Risk entry created."
+        }
+      },
+      "editRiskEntry": {
+        "cancel": "Cancel",
+        "description": "Update the risk or opportunity entry.",
+        "linksSection": "Links",
+        "loadError": "Failed to load entry.",
+        "loading": "Loading entry…",
+        "submit": "Save Changes",
+        "title": "Edit Risk / Opportunity",
+        "toast": {
+          "error": "Failed to update risk entry.",
+          "success": "Risk entry updated."
+        }
+      },
+      "empty": "No entries found.",
+      "entryType": {
+        "opportunity": "Opportunity",
+        "risk": "Risk"
+      },
+      "filters": {
+        "pestelAll": "All categories",
+        "pestelCategory": "PESTEL Category",
+        "showTerminal": "Show closed / rejected",
+        "status": "Status",
+        "statusAll": "All statuses",
+        "type": "Type",
+        "typeAll": "All types"
+      },
+      "loadError": "Failed to load risk management entries.",
+      "riskLevel": {
+        "notCalculated": "Risk level: not calculated"
+      },
+      "status": {
+        "APPROVED": "Approved",
+        "ASSESSED": "Assessed",
+        "CLOSED": "Closed",
+        "OCCURRED": "Occurred",
+        "PENDING_APPROVAL": "Pending Approval",
+        "PROPOSED": "Proposed",
+        "REJECTED": "Rejected"
+      },
+      "table": {
+        "columns": {
+          "escalation": "Escalation",
+          "id": "ID",
+          "identificationDate": "Identified",
+          "name": "Name",
+          "owner": "Owner",
+          "pestelCategory": "PESTEL",
+          "riskLevel": "Risk Level",
+          "status": "Status",
+          "type": "Type"
+        },
+        "editAction": "Edit",
+        "rowActionsLabel": "Row actions for \"{{name}}\""
+      },
+      "title": "Risk Management",
+      "validation": {
+        "dateInvalid": "Date must be in YYYY-MM-DD format.",
+        "descriptionTooLong": "Description must not exceed 2000 characters.",
+        "nameRequired": "Name is required.",
+        "nameTooLong": "Name must not exceed 255 characters.",
+        "pestelRequired": "PESTEL category is required.",
+        "scoreRange": "Value must be between 1 and 5.",
+        "statusRequired": "Status is required.",
+        "typeRequired": "Type is required."
+      }
+    },
+    "riskRegister": {
+      "createRiskEntry": {
+        "description": "Capture a new risk or opportunity for this register.",
+        "title": "New Risk / Opportunity"
+      },
+      "pestel": {
+        "ECONOMIC": "Economic",
+        "ENVIRONMENTAL": "Environmental",
+        "LEGAL": "Legal",
+        "POLITICAL": "Political",
+        "SOCIAL": "Social",
+        "TECHNOLOGICAL": "Technological"
+      }
+    },
+    "roleManagement": {
+      "actionsColumnLabel": "Actions",
+      "addGroup": "New Group",
+      "addRole": "Add Role",
+      "bulkEditButton": "Set value…",
+      "bulkEditSummary": "{{cellCount}} cell(s) across {{roleCount}} role(s) will be updated.",
+      "bulkEditTitle": "Set RASCI Value",
+      "bulkModeToggle": "Multi-select",
+      "bulkSelectionCount": "{{count}} cell(s) selected",
+      "bulkSelectionCount_one": "{{count}} cell(s) selected",
+      "bulkSelectionCount_other": "{{count}} cell(s) selected",
+      "cardRoleGroupsLabel": "Role groups",
+      "cardTaskGroupsLabel": "Task groups",
+      "cellEditHint": "Click a cell to edit. Hold ⌘/Ctrl and click to select multiple cells for bulk editing.",
+      "deleteGroup": "Delete Role Group",
+      "deleteGroupConfirm": "Are you sure you want to delete the role group \"{{name}}\"?",
+      "deleteRole": "Delete Role",
+      "deleteRoleConfirm": "Are you sure you want to delete the role \"{{name}}\"?",
+      "editCellRoleLabel": "Role:",
+      "editCellTaskLabel": "Task:",
+      "editCellTitle": "Edit RASCI Value",
+      "editGroup": "Edit Role Group",
+      "editRole": "Edit Role",
+      "errors": {
+        "defaultRoleCannotBeDeleted": "The default role cannot be deleted.",
+        "defaultRoleMustHaveAtLeastOneUser": "The default role must have at least one user assigned.",
+        "directAssignmentNotAllowed": "Direct assignment is not allowed for this role.",
+        "fixedRoleCannotBeDeleted": "This role is system-defined and cannot be deleted.",
+        "fixedTaskCannotBeModified": "This task is system-defined and cannot be modified.",
+        "groupHasAssignedRoles": "The role group cannot be deleted because it still has assigned roles.",
+        "noTemplateRole": "No template role found for this operation.",
+        "originRoleStillExists": "The origin role still exists and must be removed first.",
+        "roleHasAssignedUsers": "The role cannot be deleted because it still has assigned users.",
+        "roleNotMaterialized": "The role has not been materialized yet.",
+        "scopePropagationConfigNotFound": "The scope propagation configuration could not be found.",
+        "taskMutationNotAllowedOnTemplate": "Task modifications are not allowed on template matrices.",
+        "taskNotInTemplate": "The task does not exist in the template.",
+        "unknown": "An unexpected error occurred. Please try again."
+      },
+      "fixed": "System role (cannot be deleted)",
+      "groupColorLabel": "Color",
+      "groupDescriptionLabel": "Description",
+      "groupNameLabel": "Name",
+      "groupRowActionsLabel": "Row actions for \"{{name}}\"",
+      "groupSection": "Role Groups",
+      "groupSortOrderLabel": "Sort order",
+      "matrixNotFound": "Matrix not found.",
+      "matrixSection": "Template Matrices",
+      "noGroups": "No role groups defined yet.",
+      "noRoles": "No roles defined yet.",
+      "openMatrix": "Open matrix",
+      "readOnlyHint": "This matrix is read-only and cannot be edited at this time.",
+      "roleDescriptionLabel": "Description",
+      "roleGroupLabel": "Role group",
+      "roleNameLabel": "Name",
+      "roleShortTitleLabel": "Short title (max 10 chars)",
+      "rolesColumn": "Roles",
+      "setGroupForRole": "Set all \"{{groupName}}\" values for {{roleName}}",
+      "taskColumn": "Task",
+      "taskGroupBulkContext": "Task group:",
+      "title": "Role Management",
+      "ungroupedRoles": "Roles without group",
+      "validation": {
+        "pleaseSelect": "Please select a value.",
+        "required": "This field is required."
+      },
+      "rasciLegend": {
+        "R": "Responsible",
+        "A": "Accountable",
+        "S": "Supporting",
+        "C": "Consulted",
+        "I": "Informed",
+        "—": "No involvement"
+      },
+      "domainType": {
+        "PORTFOLIO": "Portfolio",
+        "PROGRAM": "Program",
+        "PROJECT": "Project",
+        "ADMIN": "Administration"
+      }
+    },
+    "settings": {
+      "description": "Application settings and preferences.",
+      "title": "Settings"
+    },
+    "stakeholderManagement": {
+      "title": "Stakeholder Management"
+    },
+    "stakeholderRegister": {
+      "access": {
+        "deniedMessage": "You do not have permission to view this stakeholder register.",
+        "deniedTitle": "Access denied"
+      },
+      "delete": {
+        "cancelButton": "Cancel",
+        "confirmButton": "Confirm",
+        "confirmMessage": "Delete stakeholder {{name}}?",
+        "dialogTitle": "Delete stakeholder"
+      },
+      "emptyState": "No stakeholders yet",
+      "filter": {
+        "allLabel": "All",
+        "groupLabel": "Affectedness filter",
+        "negativeLabel": "Negative",
+        "neutralLabel": "Neutral",
+        "positiveLabel": "Positive"
+      },
+      "form": {
+        "cancelButton": "Cancel",
+        "conflictPotentialClear": "— None —",
+        "conflictPotentialLabel": "Conflict potential",
+        "contactGroupLabel": "Contact group",
+        "contactGroupPlaceholder": "Select contact group …",
+        "createTitle": "New stakeholder",
+        "duplicateNameWarning": "A stakeholder with this name already exists.",
+        "duplicateNameWarningTitle": "Warning",
+        "editTitle": "Edit stakeholder",
+        "email2Label": "Email (2nd)",
+        "email3Label": "Email (3rd)",
+        "emailLabel": "Email",
+        "expectationsLabel": "Expectations",
+        "inclusionMeasuresLabel": "Inclusion measures",
+        "logs": {
+          "addNote": "Add note",
+          "contentPlaceholder": "Note text…",
+          "deleteNote": "Delete note",
+          "editNote": "Edit note",
+          "empty": "No notes yet",
+          "searchPlaceholder": "Search notes…",
+          "toggleSort": "Reverse sort order"
+        },
+        "memberLinkLabel": "Link to member",
+        "memberLinkNoResults": "No members found",
+        "memberLinkPlaceholder": "Search members…",
+        "nameLabel": "Name",
+        "phone2Label": "Phone (2nd)",
+        "phone3Label": "Phone (3rd)",
+        "phoneLabel": "Phone",
+        "preferredCommunicationTypeLabel": "Preferred Communication Type",
+        "preferredCommunicationTypePlaceholder": "e.g. Email, phone call, Facetime in the morning, mobile between 15:00–17:00",
+        "responsibleLabel": "Responsible",
+        "responsibleNoResults": "No members found",
+        "roleLabel": "Role",
+        "saveButton": "Save",
+        "tabContact": "Contact",
+        "tabGeneral": "General",
+        "tabLogs": "Stakeholder Notes",
+        "typeOfAffectednessLabel": "Type of affectedness",
+        "unsavedChanges": {
+          "discardCancel": "Keep editing",
+          "discardConfirm": "Discard",
+          "discardMessage": "You have unsaved changes. If you close now, all changes will be lost.",
+          "discardTitle": "Discard changes?",
+          "unsavedLogsCancel": "Go back",
+          "unsavedLogsConfirm": "Save without note",
+          "unsavedLogsMessage": "The note you are currently editing has not been confirmed. The note changes will not be saved. Do you want to continue?",
+          "unsavedLogsTitle": "Note not saved"
+        },
+        "validation": {
+          "contactGroupRequired": "Please select a contact group",
+          "emailInvalid": "Please enter a valid email address",
+          "expectationsTooLong": "Expectations must not exceed 300 characters",
+          "inclusionMeasuresTooLong": "Inclusion measures must not exceed 1000 characters",
+          "logContentRequired": "Note text is required",
+          "logDateRequired": "Date is required",
+          "nameRequired": "Name is required",
+          "nameTooLong": "Name must not exceed 100 characters",
+          "phoneInvalid": "Please enter a valid phone number (e.g. +49 30 12345678)",
+          "preferredCommunicationTypeTooLong": "Preferred Communication Type must not exceed 100 characters",
+          "roleRequired": "Role is required",
+          "roleTooLong": "Role must not exceed 100 characters"
+        },
+        "conflictPotentialOptions": {
+          "LOW": "Low",
+          "MEDIUM": "Medium",
+          "HIGH": "High"
+        },
+        "contactGroupOptions": {
+          "INTERNAL": "Internal",
+          "CUSTOMER": "Customer",
+          "SUPPLIER": "Supplier",
+          "PARTNER": "Partner"
+        },
+        "typeOfAffectednessOptions": {
+          "POSITIVE": "Positive",
+          "NEGATIVE": "Negative",
+          "NEUTRAL": "Neutral"
+        }
+      },
+      "matrix": {
+        "affectednessLabel": "Degree of affectedness",
+        "axisLabels": {
+          "HIGH": "High",
+          "LOW": "Low"
+        },
+        "cellAriaLabel": "Cell {{x}}, {{y}}",
+        "influenceLabel": "Degree of influence",
+        "sectionTitle": "Influence-Attitude Matrix",
+        "strategyLabel": "Behavioural strategy:",
+        "strategyValues": {
+          "KEEP_SATISFIED": "Keep satisfied",
+          "MANAGE_CLOSELY": "Manage closely",
+          "MONITOR": "Monitor",
+          "KEEP_INFORMED": "Keep informed"
+        }
+      },
+      "newButton": "New stakeholder",
+      "pageTitle": "Stakeholder Register",
+      "strategyConfig": {
+        "editButton": "Edit strategy descriptions",
+        "keepInformedLabel": "Keep informed",
+        "keepSatisfiedLabel": "Keep satisfied",
+        "manageCloselyLabel": "Manage closely",
+        "monitorLabel": "Monitor",
+        "saveButton": "Save",
+        "sectionTitle": "Strategy descriptions",
+        "toast": {
+          "error": "Failed to update strategy descriptions",
+          "success": "Strategy descriptions updated"
+        }
+      },
+      "table": {
+        "conflictPotentialColumn": "Conflict potential",
+        "contactGroupColumn": "Contact group",
+        "deleteButton": "Delete",
+        "editButton": "Edit",
+        "nameColumn": "Name",
+        "roleColumn": "Role",
+        "typeOfAffectednessColumn": "Type of affectedness"
+      },
+      "toast": {
+        "createError": "Failed to create stakeholder",
+        "createLoading": "Saving…",
+        "createSuccess": "Stakeholder created",
+        "deleteError": "Failed to delete stakeholder",
+        "deleteLoading": "Deleting…",
+        "deleteSuccess": "Stakeholder deleted",
+        "logSyncError": "Stakeholder saved, but some activity logs could not be synced. Please re-save to retry.",
+        "optimisticLockError": "Stakeholder was modified by someone else. Please reload and try again.",
+        "updateError": "Failed to update stakeholder",
+        "updateLoading": "Saving…",
+        "updateSuccess": "Stakeholder updated"
+      }
+    },
+    "taskManagement": {
+      "activePool": "Active Tasks",
+      "activeTaskBadge": "Active Task",
+      "archive": "Archived Tasks",
+      "archiveConfirm": {
+        "description": "The task will be moved to the archive. You can restore it at any time.",
+        "title": "Archive task?"
+      },
+      "archiveTask": "Archive task {{name}}",
+      "archive_action": "Archive",
+      "collapseActiveTasks": "Collapse Active Tasks",
+      "createTask": "Create task",
+      "deleteConfirm": {
+        "description": "This action cannot be undone. The task and all its data will be permanently deleted.",
+        "title": "Delete task?"
+      },
+      "deleteError": "Failed to delete task.",
+      "deleteSuccess": "Task \"{{name}}\" was deleted.",
+      "delete_action": "Delete",
+      "dragToReorder": "Drag to reorder",
+      "edit": "Edit",
+      "editTask": "Edit task {{name}}",
+      "expandActiveTasks": "Expand Active Tasks",
+      "noArchivedTasks": "No archived tasks.",
+      "noTasks": "No tasks found.",
+      "noTasksForFilter": "No tasks match the selected filter.",
+      "openDetail": "Open {{name}}",
+      "poolDragCancelled": "Dragging {{name}} was cancelled",
+      "poolDragEnd": "Task {{name}} moved before {{target}}",
+      "poolDragOver": "Task {{name}} is over {{target}}",
+      "poolDragOverNothing": "Task {{name}} is not over a drop target",
+      "poolDragStart": "Picked up task {{name}}",
+      "softLimit": "This scope has more than 500 tasks. Performance may be affected.",
+      "title": "Task Management",
+      "titleWithBoard": "Task Management — {{board}}",
+      "unarchive": "Restore",
+      "unarchiveTask": "Restore task {{name}}"
+    },
+    "users": {
+      "description": "Manage user accounts.",
+      "title": "Users"
+    }
+  },
+  "shared": {
+    "breadcrumb": {
+      "nav": "Breadcrumb navigation"
+    },
+    "colorPicker": {
+      "alphaLabel": "Alpha (0–255)",
+      "colorLabel": "Color",
+      "hexLabel": "Hex (#AARRGGBB)"
+    },
+    "combobox": {
+      "createPrefix": "Create",
+      "loading": "Loading…",
+      "noResults": "No results found.",
+      "placeholder": "Select an option…",
+      "searchPlaceholder": "Search…"
+    },
+    "datePicker": {
+      "calendarLabel": "Date picker calendar",
+      "nextMonth": "Next month",
+      "openCalendar": "Open calendar",
+      "previousMonth": "Previous month",
+      "today": "Today"
+    },
+    "fileUpload": {
+      "button": "Choose files",
+      "dropzoneDescription": "or use the button below to add one or more files.",
+      "dropzoneTitle": "Drag and drop files here",
+      "emptyState": "No files selected yet.",
+      "fileCount_one": "{{count}} file selected",
+      "fileCount_other": "{{count}} files selected",
+      "open": "Open file",
+      "remove": "Remove file",
+      "unknownType": "Unknown type",
+      "status": {
+        "added_one": "{{count}} file added. {{totalCount}} files selected.",
+        "added_other": "{{count}} files added. {{totalCount}} files selected.",
+        "removed_one": "{{count}} file removed. {{totalCount}} files selected.",
+        "removed_other": "{{count}} files removed. {{totalCount}} files selected."
+      }
+    },
+    "filterBar": {
+      "clearFilters": "Clear filters",
+      "dateFrom": "{{label}} from",
+      "dateTo": "{{label}} to"
+    },
+    "linksPanel": {
+      "empty": "No linked entries.",
+      "linkedIssues": "Linked Issues",
+      "linkedProblems": "Linked Problems",
+      "linkedRisks": "Linked Risks",
+      "remove": "Remove",
+      "removeAriaLabel": "Remove link to {{name}}"
+    },
+    "loading": "Loading…",
+    "personPicker": {
+      "allGroup": "All persons",
+      "loadMore": "Load more…",
+      "loading": "Loading…",
+      "noResults": "No persons found.",
+      "placeholder": "Select person…",
+      "recentsGroup": "Recently used",
+      "removeFromRecents": "Remove {{name}} from recents",
+      "resultsGroup": "Search results",
+      "searchPlaceholder": "Type name or email…",
+      "selected": "{{count}} selected",
+      "selected_one": "1 selected",
+      "selected_other": "{{count}} selected"
+    },
+    "table": {
+      "firstPage": "First page",
+      "lastPage": "Last page",
+      "nextPage": "Next page",
+      "noDataDescription": "There is nothing to show right now.",
+      "noDataTitle": "No data to display",
+      "pageSizeLabel": "Rows per page",
+      "paginationRange": "{{from}}–{{to}} of {{total}}",
+      "previousPage": "Previous page",
+      "reorderColumn": "Drag to reorder {{label}}",
+      "resizeColumn": "Drag to resize {{label}}",
+      "resizeColumnKeyboardHint": "Use ArrowLeft and ArrowRight to resize. Home sets the minimum width and End sets the maximum width.",
+      "selectAllRows": "Select all rows",
+      "selectRow": "Select row",
+      "sortBy": "Sort by {{label}}",
+      "sortedAscending": "Sorted by {{label}} ascending",
+      "sortedDescending": "Sorted by {{label}} descending"
+    },
+    "textEditor": {
+      "blockquote": "Blockquote",
+      "bold": "Bold",
+      "bulletList": "Bullet list",
+      "clearFormatting": "Clear formatting",
+      "codeBlock": "Code block",
+      "editorLabel": "Markdown editor",
+      "heading1": "Heading 1",
+      "heading2": "Heading 2",
+      "heading3": "Heading 3",
+      "inlineCode": "Inline code",
+      "italic": "Italic",
+      "link": "Link",
+      "linkPrompt": "Enter a link URL",
+      "orderedList": "Numbered list",
+      "placeholder": "Write your content in markdown...",
+      "redo": "Redo",
+      "strikethrough": "Strikethrough",
+      "toolbarLabel": "Text formatting toolbar",
+      "underline": "Underline",
+      "undo": "Undo"
+    },
+    "treeView": {
+      "collapseNode": "Collapse",
+      "dragHandle": "Drag {{name}}",
+      "expandNode": "Expand"
+    },
+    "yearPicker": {
+      "clear": "Clear selection",
+      "label": "Year picker",
+      "nextDecade": "Next decade",
+      "placeholder": "Select year",
+      "prevDecade": "Previous decade"
+    }
+  },
+  "showcase": {
+    "alert": {
+      "degradedDescription": "api.example.com is responding slowly (p95 > 2s).",
+      "degradedTitle": "Service degraded",
+      "headsUpDescription": "You can add monitors for any HTTP endpoint.",
+      "headsUpTitle": "Heads up",
+      "successDescription": "Your changes have been saved successfully.",
+      "successTitle": "Changes saved",
+      "title": "Alert",
+      "warningDescription": "You have used 90 % of your storage quota.",
+      "warningTitle": "Storage almost full"
+    },
+    "avatar": {
+      "title": "Avatar"
+    },
+    "badge": {
+      "danger": "Danger",
+      "default": "Default",
+      "destructive": "Destructive",
+      "dotActive": "Active",
+      "dotDanger": "Danger",
+      "dotSuccess": "Success",
+      "dotTitle": "With status dot",
+      "dotWarning": "Warning",
+      "neutral": "Neutral",
+      "outline": "Outline",
+      "success": "Success",
+      "title": "Badge",
+      "warning": "Warning"
+    },
+    "button": {
+      "default": "Default",
+      "destructive": "Destructive",
+      "disabled": "Disabled",
+      "ghost": "Ghost",
+      "large": "Large",
+      "link": "Link",
+      "outline": "Outline",
+      "secondary": "Secondary",
+      "settingsAriaLabel": "Settings",
+      "small": "Small",
+      "title": "Button",
+      "withIcon": "Add item",
+      "withIconGhost": "Add item"
+    },
+    "card": {
+      "cancel": "Cancel",
+      "dueDate": "Due date",
+      "inProgress": "In progress",
+      "progress": "Progress",
+      "projectDescription": "Real-time monitoring dashboard",
+      "projectTitle": "Project P1NG",
+      "save": "Save",
+      "standardTitle": "Card",
+      "statTitle": "Stat cards",
+      "status": "Status",
+      "vsLastWeek": "vs. last week"
+    },
+    "checkbox": {
+      "checked": "Terms accepted",
+      "disabled": "Disabled",
+      "label": "Accept terms and conditions",
+      "title": "Checkbox",
+      "unchecked": "Terms not accepted"
+    },
+    "combobox": {
+      "asyncPlaceholder": "Search countries…",
+      "asyncTitle": "Async (server search)",
+      "creatablePlaceholder": "Select or create a tag…",
+      "creatableTitle": "Creatable",
+      "createText": "Create \"{{query}}\"",
+      "groupedPlaceholder": "Select a technology…",
+      "groupedTitle": "Grouped",
+      "noneSelected": "None selected",
+      "selected": "Selected: {{value}}",
+      "staticPlaceholder": "Select a framework…",
+      "staticTitle": "Static (client-side filter)",
+      "title": "Combobox"
+    },
+    "componentShowcase": {
+      "description": "Browse the available shadcn/ui components and their variations.",
+      "title": "Component showcase"
+    },
+    "confirmDialog": {
+      "defaultDescription": "Are you sure you want to proceed? This action cannot be undone.",
+      "defaultTitle": "Confirm action",
+      "destructiveDescription": "This will permanently delete the item. This action cannot be undone.",
+      "destructiveTitle": "Delete item",
+      "openDefault": "Open confirm dialog",
+      "openDestructive": "Open destructive dialog",
+      "title": "Confirm Dialog"
+    },
+    "contextMenu": {
+      "copyLink": "Copy link",
+      "delete": "Delete",
+      "duplicate": "Duplicate",
+      "duplicateShortcut": "⌘D",
+      "label": "File actions",
+      "rename": "Rename",
+      "renameShortcut": "⌘R",
+      "share": "Share",
+      "shareViaEmail": "Via email",
+      "showHidden": "Show hidden files",
+      "title": "Context Menu",
+      "triggerLabel": "Right-click this area"
+    },
+    "datePicker": {
+      "labelWithToday": "With today button",
+      "labelWithoutToday": "Without today button",
+      "title": "Date picker"
+    },
+    "dialog": {
+      "cancel": "Cancel",
+      "confirmPermanentDelete": "Delete permanently",
+      "createProject": "Create project",
+      "delete": "Delete",
+      "deleteProjectAlertText": "All project data will be permanently removed. This cannot be undone.",
+      "deleteProjectConfirmLabel": "Type the project name to confirm",
+      "deleteProjectConfirmPlaceholder": "Project name",
+      "deleteProjectDesc": "Are you sure you want to delete this project?",
+      "deleteProjectTitle": "Delete project",
+      "newProjectDescLabel": "Description",
+      "newProjectDescPlaceholder": "What is this project about?",
+      "newProjectEndLabel": "End date",
+      "newProjectNameLabel": "Name",
+      "newProjectNamePlaceholder": "e.g. Digital Transformation",
+      "newProjectSizeLabel": "Size",
+      "newProjectSizeLarge": "Large",
+      "newProjectSizeMedium": "Medium",
+      "newProjectSizePlaceholder": "Select size…",
+      "newProjectSizeSmall": "Small",
+      "newProjectStartLabel": "Start date",
+      "newProjectTitle": "New project",
+      "openConfirmDialog": "Open confirm dialog",
+      "openDeleteDialog": "Delete project",
+      "openFormDialog": "New project",
+      "simpleConfirmText": "Are you sure you want to proceed? This action cannot be undone.",
+      "simpleConfirmTitle": "Confirm action",
+      "title": "Dialog"
+    },
+    "drawer": {
+      "demoDescription": "This example shows the drawer component used for the showcase shell.",
+      "demoTitle": "Drawer example",
+      "description": "A drawer is a side panel that slides in from the edge to reveal contextual content.",
+      "hint": "The component showcase itself is rendered inside this drawer.",
+      "openDrawer": "Open drawer",
+      "title": "Drawer"
+    },
+    "dropdown": {
+      "actions": "Actions",
+      "dangerZone": "Danger zone",
+      "delete": "Delete",
+      "deleteShortcut": "⌦",
+      "duplicate": "Duplicate",
+      "edit": "Edit",
+      "editShortcut": "⌘E",
+      "export": "Export",
+      "exportShortcut": "⇧⌘E",
+      "project": "Project",
+      "title": "Dropdown Menu"
+    },
+    "fileUpload": {
+      "button": "Choose files",
+      "description": "Add one or more files using the button or drag and drop.",
+      "dropzoneDescription": "or use the button below to add one or more files.",
+      "dropzoneTitle": "Drag and drop files here",
+      "emptyState": "No files selected yet.",
+      "fileCount_one": "{{count}} file selected",
+      "fileCount_other": "{{count}} files selected",
+      "hint": "This demo starts with two files so you can try opening or removing them right away.",
+      "open": "Open file",
+      "remove": "Remove file",
+      "title": "File upload"
+    },
+    "inputLabel": {
+      "currencyLabel": "Budget",
+      "currencyOptional": "(optional)",
+      "currencyPlaceholder": "0.00",
+      "disabledLabel": "Disabled",
+      "disabledPlaceholder": "Cannot edit",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "invalidError": "Please enter a valid value.",
+      "invalidLabel": "Company name",
+      "invalidValue": "123 Invalid!!!",
+      "requiredHint": "This field is required.",
+      "requiredLabel": "Full name",
+      "requiredPlaceholder": "e.g. Jane Doe",
+      "title": "Input & Label"
+    },
+    "labelBadge": {
+      "bug": "Bug",
+      "feature": "Feature",
+      "improvement": "Improvement",
+      "noColour": "No colour",
+      "title": "Label Badge"
+    },
+    "listView": {
+      "description": "A Table wrapped in a Card — drop-in replacement for the <Card><Table /> pattern used across list pages.",
+      "filterNamePlaceholder": "Filter by name…",
+      "title": "List View"
+    },
+    "markdownContent": {
+      "sample": "## Markdown Content\n\nRenders **bold**, *italic*, and `inline code`.\n\n- Bullet items work\n- As do [links](https://example.com)\n\n> Blockquotes are supported too.",
+      "title": "Markdown Content"
+    },
+    "matrixTable": {
+      "taskColumn": "Task",
+      "title": "Matrix Table"
+    },
+    "personBadge": {
+      "title": "PersonBadge"
+    },
+    "personPicker": {
+      "description": "Async person search with avatar, recents, and load-more pagination.",
+      "multiLabel": "Multi",
+      "preFilledLabel": "Pre-filled",
+      "selected": "Selected: {{name}}",
+      "singleLabel": "Single",
+      "title": "Person Picker"
+    },
+    "programStatus": {
+      "title": "Program Status Badge"
+    },
+    "radioGroup": {
+      "comfortable": "Comfortable",
+      "compact": "Compact",
+      "title": "Radio group"
+    },
+    "rasciValueBadge": {
+      "noAccess": "No access",
+      "readAccess": "Read access",
+      "title": "RASCI Value Badge",
+      "writeAccess": "Write access"
+    },
+    "riskLevelBadge": {
+      "title": "Risk Level Badge"
+    },
+    "select": {
+      "every30Seconds": "Every 30 seconds",
+      "every5Minutes": "Every 5 minutes",
+      "everyHour": "Every hour",
+      "everyMinute": "Every minute",
+      "placeholder": "Select interval",
+      "title": "Select"
+    },
+    "skeleton": {
+      "title": "Skeleton"
+    },
+    "switch": {
+      "disabled": "Disabled",
+      "notificationsOff": "Notifications off",
+      "notificationsOn": "Notifications on",
+      "title": "Switch"
+    },
+    "table": {
+      "active": "Active",
+      "columnReordering": "Column reordering",
+      "columnResizing": "Column resizing",
+      "description": "A server-side table example with sorting, paging, optional virtualization, column resizing, and row selection.",
+      "loading": "Loading",
+      "name": "Name",
+      "paused": "Paused",
+      "rowLabel": "Report {{id}}",
+      "scheduled": "Scheduled",
+      "score": "Score",
+      "selectionMode": "Row selection",
+      "selectionModeMultiple": "Multiple",
+      "selectionModeNone": "None",
+      "selectionModeSingle": "Single",
+      "status": "Status",
+      "stickyHeader": "Sticky header",
+      "title": "Table",
+      "updatedAt": "Updated at",
+      "virtualized": "Virtualized"
+    },
+    "tabs": {
+      "active": "Active",
+      "activeContent": "Active items are shown here.",
+      "all": "All",
+      "allContent": "All items are shown here.",
+      "archived": "Archived",
+      "archivedContent": "Archived items are shown here.",
+      "title": "Tabs"
+    },
+    "textEditor": {
+      "contentTitle": "Markdown content (read-only)",
+      "editorTitle": "Editor (interactive)",
+      "initialContent": "# Welcome to the editor\n\nUse **bold**, *italic*, and [links](https://example.com).\n\n- Bullet items\n- Work with `inline code`\n\n> Blockquotes and other common markdown formatting also work.",
+      "title": "Markdown editor"
+    },
+    "toast": {
+      "description": "Trigger the shared toast helpers to show success, info, warning, error, and promise notifications.",
+      "error": "Something went wrong.",
+      "errorButton": "Show error",
+      "errorPreviewTitle": "Error",
+      "hint": "Toasts are mounted globally in the top-right corner.",
+      "info": "Here is an informational update.",
+      "infoButton": "Show info",
+      "infoPreviewTitle": "Info",
+      "promiseButton": "Show promise",
+      "promiseError": "We could not save the changes.",
+      "promiseLoading": "Saving changes...",
+      "promiseSuccess": "Changes saved.",
+      "success": "Operation completed successfully.",
+      "successButton": "Show success",
+      "successPreviewTitle": "Success",
+      "title": "Toast",
+      "warning": "Please review this warning before continuing.",
+      "warningButton": "Show warning",
+      "warningPreviewTitle": "Warning"
+    },
+    "tooltip": {
+      "hoverMe": "Hover me",
+      "notifications": "Notifications",
+      "notificationsAriaLabel": "Notifications",
+      "rightTooltip": "I appear on the right",
+      "title": "Tooltip"
+    },
+    "treeView": {
+      "ariaLabel": "Demo tree",
+      "collapse": "Collapse",
+      "description": "A virtualised drag-and-drop tree for hierarchical data.",
+      "dragHandle": "Drag to reorder",
+      "expand": "Expand",
+      "loadingLabel": "Loading tree",
+      "title": "Tree View"
+    },
+    "yearPicker": {
+      "presetLabel": "Pre-selected year",
+      "title": "Year Picker",
+      "unsetLabel": "No year selected"
+    }
+  },
+  "sidebar": {
+    "collapse": "Collapse sidebar",
+    "expand": "Expand sidebar"
+  },
+  "theme": {
+    "dark": "Dark",
+    "darkMode": "Dark mode",
+    "light": "Light",
+    "lightMode": "Light mode",
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode",
+    "system": "System",
+    "toggle": "Toggle theme"
+  },
+  "validation": {
+    "maxLength": "Must be at most {{max}} characters."
+  },
+  "widgets": {
+    "taskManagement": {
+      "createBoard": "New Board",
+      "detail": {
+        "tabs": {
+          "attachments": "Attachments",
+          "comments": "Comments",
+          "details": "Details",
+          "history": "History",
+          "links": "Links"
+        }
+      },
+      "heading": "Tasks",
+      "labels": "Labels",
+      "noBoards": "No boards yet.",
+      "retry": "Retry",
+      "rightSidebar": {
+        "archiveTab": "Archive",
+        "close": "Close task panel",
+        "open": "Open task panel",
+        "resize": "Resize task panel"
+      },
+      "sectionError": "Something went wrong loading this section."
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export { RequirementStatusBadge } from './RequirementStatusBadge'

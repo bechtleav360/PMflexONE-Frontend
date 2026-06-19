@@ -1,0 +1,25 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "jsxSingleQuote": false,
+  "singleAttributePerLine": true,
+  "plugins": ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "importOrder": [
+    "<BUILTIN_MODULES>",
+    "^react$",
+    "^react-dom(.*)$",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@/(.*)$",
+    "",
+    "^[.]"
+  ]
+}

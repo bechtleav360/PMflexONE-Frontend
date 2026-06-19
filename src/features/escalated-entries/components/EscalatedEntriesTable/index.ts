@@ -1,0 +1,1 @@
+export { EscalatedEntriesTable } from './EscalatedEntriesTable'

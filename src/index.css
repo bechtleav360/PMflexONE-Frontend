@@ -1,0 +1,727 @@
+@import 'sonner/dist/styles.css';
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'BundesSans Web';
+  src:
+    url('./assets/fonts/pmflexone/BundesSansWeb-Regular.woff2') format('woff2'),
+    url('./assets/fonts/pmflexone/BundesSansWeb-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BundesSans Web';
+  src:
+    url('./assets/fonts/pmflexone/BundesSansWeb-Italic.woff2') format('woff2'),
+    url('./assets/fonts/pmflexone/BundesSansWeb-Italic.woff') format('woff');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BundesSans Web';
+  src:
+    url('./assets/fonts/pmflexone/BundesSansWeb-Bold.woff2') format('woff2'),
+    url('./assets/fonts/pmflexone/BundesSansWeb-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BundesSans Web';
+  src:
+    url('./assets/fonts/pmflexone/BundesSansWeb-BoldItalic.woff2') format('woff2'),
+    url('./assets/fonts/pmflexone/BundesSansWeb-BoldItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BundesSerif Web';
+  src:
+    url('./assets/fonts/pmflexone/BundesSerifWeb-Regular.woff2') format('woff2'),
+    url('./assets/fonts/pmflexone/BundesSerifWeb-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BundesSerif Web';
+  src:
+    url('./assets/fonts/pmflexone/BundesSerifWeb-Italic.woff2') format('woff2'),
+    url('./assets/fonts/pmflexone/BundesSerifWeb-Italic.woff') format('woff');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BundesSerif Web';
+  src:
+    url('./assets/fonts/pmflexone/BundesSerifWeb-Bold.woff2') format('woff2'),
+    url('./assets/fonts/pmflexone/BundesSerifWeb-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BundesSerif Web';
+  src:
+    url('./assets/fonts/pmflexone/BundesSerifWeb-BoldItalic.woff2') format('woff2'),
+    url('./assets/fonts/pmflexone/BundesSerifWeb-BoldItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/*
+ * Bundesregierung Styleguide — Petrol colour scheme
+ * https://styleguide.bundesregierung.gov.de/sg-de/basiselemente/farben
+ *
+ * Primary    : Petrol      #007194  (80 % #338DA9 · 60 % #66AABF · 40 % #99C6D4 · 20 % #CCE3EA)
+ * Destructive: Rot         #C0003C  (80 % #CD3363)
+ * Warning    : Hellorange  #F7BB3D  (80 % #F9C964)
+ * Success    : Grün        #00854A  (80 % #339D6E)
+ * Info       : Blau        #0077B6  (80 % #3392C5)
+ * Neutrals   : Dunkelgrau  #576164  · Hellgrau #BEC5C9 / #F2F3F4
+ */
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* Geometric scale aligned with Tailwind's default 0.25 rem unit — use via gap-xs, p-sm, px-lg, or var(--space-*). */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 0.75rem;
+    --space-lg: 1rem;
+    --space-xl: 1.5rem;
+    --space-2xl: 2rem;
+    --space-3xl: 2.5rem;
+
+    --font-family-sans: 'BundesSans Web', 'Noto Sans', system-ui, sans-serif;
+    --font-family-serif: 'BundesSerif Web', 'Noto Serif', Georgia, serif;
+    --font-family-condensed: 'BundesSans Condensed Web', 'Noto Sans', system-ui, sans-serif;
+
+    --background: #f2f3f4; /* Hellgrau 20 % — page bg */
+    --foreground: #1b2326; /* Design text — petrol-tinted near-black */
+
+    --card: #ffffff;
+    --card-foreground: #1b2326;
+
+    --popover: #ffffff;
+    --popover-foreground: #1b2326;
+
+    --overlay: #0f1518;
+
+    --primary: #007194; /* Petrol 100 % */
+    --primary-foreground: #ffffff;
+    --primary-hover: #00607f; /* Petrol mid */
+    --primary-soft: #cce3ea; /* Petrol 20 % */
+
+    --secondary: #f2f3f4; /* Hellgrau 20 % */
+    --secondary-foreground: #1b2326;
+
+    --muted: #f8f9fa;
+    --muted-foreground: #4a5256; /* Design text-muted — darker than Dunkelgrau 100 % for contrast */
+
+    --accent: #cce3ea; /* Petrol 20 % */
+    --accent-foreground: #007194; /* Petrol 100 % */
+    --accent-active: #f7bb3d; /* Hellorange 100 % — nav active bar */
+
+    --destructive: #c0003c; /* Rot 100 % */
+    --destructive-foreground: #ffffff;
+    --destructive-hover: #96002e; /* Rot dark — button hover */
+    --destructive-emphasis: #9b0030; /* Rot dark — text on light destructive-soft bg */
+
+    --warning: #f7bb3d; /* Hellorange 100 % */
+    --warning-foreground: #1c1c1c;
+    --warning-dark: #cd5038; /* Orange 100 % */
+
+    --success: #00854a; /* Grün 100 % */
+    --success-foreground: #ffffff;
+    --success-emphasis: #16692e; /* Grün dark — text on light success-soft bg */
+
+    --info: #0077b6; /* Blau 100 % */
+    --info-foreground: #ffffff;
+
+    --border: #c8cdcf;
+    --border-strong: #9aa0a2;
+    --input: #d8dcdf; /* Hellgrau 60 % */
+    --ring: #007194; /* Petrol 100 % */
+    --focus: 0 0 0 3px rgba(0, 113, 148, 0.35);
+
+    --shadow-token-sm: 0 1px 0 rgba(0, 50, 70, 0.04), 0 1px 2px rgba(0, 50, 70, 0.04);
+    --shadow-token-md: 0 2px 8px rgba(0, 50, 70, 0.06), 0 8px 24px rgba(0, 50, 70, 0.04);
+    --shadow-token-lg: 0 12px 32px rgba(0, 50, 70, 0.18), 0 4px 12px rgba(0, 50, 70, 0.08);
+    --shadow-drop-indicator: 0 0 4px rgba(0, 113, 148, 0.4); /* Petrol 100 % glow for column drop line */
+
+    /* Sidebar resize handle glow — references --accent-active so it adapts to dark theme */
+    --shadow-accent-glow: 0 0 8px 2px color-mix(in srgb, var(--accent-active) 70%, transparent);
+
+    /* Header */
+    --header: #cce3ea; /* Petrol 20 % */
+
+    /* Sidebar */
+    --sidebar: #007194; /* Petrol 100 % */
+    --sidebar-foreground: #ffffff;
+    --sidebar-foreground-muted: #e6f0f4;
+    --sidebar-card: #004b76; /* Dunkelblau 100 % */
+
+    /* Tooltip — dark petrol tint bg, near-white text */
+    --tooltip-bg: #1a2d35;
+    --tooltip-fg: #f0f4f5;
+
+    /* Dialog */
+    --dialog-padding-x: 1.25rem;
+
+    /* Soft tints for alert backgrounds */
+    --info-soft: #cce4f0; /* Blau 20 % */
+    --success-soft: #ddfbe9; /* Grün 20 % */
+    --warning-soft: #fef5d6; /* Hellorange 20 % */
+    --warning-emphasis: #7a5800; /* Hellorange dark — text on light warning bg */
+
+    /* Destructive soft — hover background for destructive menu items */
+    --destructive-soft: #ffe3ec;
+
+    /* Risk level color tokens (Constitution Principle V — no hardcoded hex) */
+    --risk-level-green: var(--color-success);
+    --risk-level-yellow: var(--color-warning);
+    --risk-level-red: var(--color-destructive);
+    --risk-level-gray: var(--color-muted-foreground);
+
+    /* Dot shadow overlay — used by matrix dots to avoid hardcoded rgba() */
+    --shadow-overlay: rgba(0, 0, 0, 0.3);
+
+    /* RASCI task-group header row — fixed warm dark grey, white foreground (WCAG AA ✓) */
+    --rasci-task-group-header: #5c524d;
+    --rasci-task-group-header-foreground: #ffffff;
+
+    /* RASCI matrix group palette — 6 index-stable colour bands.
+       Each band has a saturated header variant and a light cell variant.
+       Derived from Bundesregierung palette; WCAG AA verified for dark text on light bg. */
+    --rasci-group-0-header: #780f2d; /* Dunkelrot — Bundesregierung Styleguide */
+    --rasci-group-0-cell: #fce8ee;
+    --rasci-group-1-header: #007194; /* Petrol 100 % — Bundesregierung Styleguide */
+    --rasci-group-1-cell: #e6f4f8;
+    --rasci-group-2-header: #5f316e; /* Violett — Bundesregierung Styleguide */
+    --rasci-group-2-cell: #f0e8f4;
+    --rasci-group-3-header: #00854a; /* Grün 100 % — Bundesregierung Styleguide */
+    --rasci-group-3-cell: #e6f5ef;
+    --rasci-group-4-header: #c0003c; /* Rot 100 % — Bundesregierung Styleguide */
+    --rasci-group-4-cell: #fce8ee;
+    --rasci-group-5-header: #cd5038; /* Orange — Bundesregierung Styleguide */
+    --rasci-group-5-cell: #fdf0ec;
+
+    /* Avatar palette — 8 deterministic background colours for person initials.
+       All values derived from the Bundesregierung Styleguide palette. */
+    --avatar-palette-0: #0077b6; /* Blau */
+    --avatar-palette-1: #00854a; /* Grün */
+    --avatar-palette-2: #5f316e; /* Violett */
+    --avatar-palette-3: #c0003c; /* Rot */
+    --avatar-palette-4: #00818b; /* Türkis */
+    --avatar-palette-5: #cd5038; /* Orange */
+    --avatar-palette-6: #780f2d; /* Dunkelrot */
+    --avatar-palette-7: #004b76; /* Dunkelblau */
+  }
+
+  .dark {
+    --background: #0e1518;
+    --foreground: #f2f4f5; /* AAA ~16:1 */
+
+    --card: #161f23;
+    --card-foreground: #f2f4f5;
+
+    --popover: #161f23;
+    --popover-foreground: #f2f4f5;
+
+    --overlay: #0e1518;
+
+    --primary: #99c6d4; /* Petrol 40 % — AAA on dark ~9:1 */
+    --primary-foreground: #0e1518;
+    --primary-hover: #cce3ea; /* Petrol 20 % — brighter hover */
+
+    --secondary: #1e2f33;
+    --secondary-foreground: #f2f4f5;
+
+    --muted: #121a1d;
+    --muted-foreground: #bcc0c1; /* Hellgrau 40 % */
+
+    --accent: #1e2f33;
+    --accent-foreground: #99c6d4; /* Petrol 40 % */
+    --accent-active: #f7bb3d; /* Hellorange 100 % */
+
+    --destructive: #cd3363; /* Rot 80 % */
+    --destructive-foreground: #ffffff;
+    --destructive-hover: #aa2b52; /* Rot dark — button hover on dark bg */
+    --destructive-emphasis: #e699b1; /* Rot 40 % — text on dark destructive-soft bg */
+
+    --warning: #f9c964; /* Hellorange 80 % */
+    --warning-foreground: #1c1c1c;
+    --warning-dark: #d77360; /* Orange 80 % */
+
+    --success: #339d6e; /* Grün 80 % */
+    --success-foreground: #0e1518;
+    --success-emphasis: #66b692; /* Grün 60 % — text on dark success-soft bg */
+
+    --info: #3392c5; /* Blau 80 % */
+    --info-foreground: #0e1518;
+
+    --border: #2f3a3e;
+    --border-strong: #4a5559;
+    --input: #263b40;
+    --ring: #99c6d4; /* Petrol 40 % */
+    --focus: 0 0 0 3px rgba(102, 170, 191, 0.4);
+
+    --shadow-token-sm: 0 1px 0 rgba(0, 0, 0, 0.4);
+    --shadow-token-md: 0 2px 8px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.3);
+    --shadow-token-lg: 0 12px 32px rgba(0, 0, 0, 0.6);
+    --shadow-drop-indicator: 0 0 4px rgba(153, 198, 212, 0.5); /* Petrol 40 % glow for column drop line */
+
+    /* Header */
+    --header: #0d1e2a;
+
+    /* Sidebar */
+    --sidebar: #004b76; /* Dunkelblau 100 % */
+    --sidebar-foreground: #ffffff;
+    --sidebar-foreground-muted: #c5dce4;
+    --sidebar-card: #336f91; /* Dunkelblau 80 % */
+
+    /* Tooltip — Petrol 20 % bg (high contrast on dark), near-black text */
+    --tooltip-bg: #cce3ea;
+    --tooltip-fg: #0f1518;
+
+    /* Primary soft — Petrol 40 % at 18 % opacity on dark bg */
+    --primary-soft: rgba(153, 198, 212, 0.18);
+
+    /* Soft tints — rgba overlays (match design app.jsx dark-mode status pills) */
+    --info-soft: rgba(0, 113, 148, 0.18); /* Petrol 100 % @ 18 % */
+    --success-soft: rgba(0, 133, 74, 0.2); /* Grün 100 % @ 20 % */
+    --warning-soft: rgba(247, 187, 61, 0.18); /* Hellorange 100 % @ 18 % */
+    --warning-emphasis: #fad68b; /* Hellorange light — readable on dark warning bg */
+
+    /* Destructive soft — Rot 100 % @ 18 % opacity */
+    --destructive-soft: rgba(192, 0, 60, 0.18);
+
+    /* Risk level color tokens */
+    --risk-level-green: var(--color-success);
+    --risk-level-yellow: var(--color-warning);
+    --risk-level-red: var(--color-destructive);
+    --risk-level-gray: var(--color-muted-foreground);
+
+    /* Dot shadow overlay — darker on dark backgrounds */
+    --shadow-overlay: rgba(0, 0, 0, 0.5);
+
+    /* RASCI task-group header row — dark theme variant */
+    --rasci-task-group-header: #3d3530;
+    --rasci-task-group-header-foreground: #ffffff;
+
+    /* RASCI group palette — dark theme variants */
+    --rasci-group-0-header: #c4415a;
+    --rasci-group-0-cell: #2a0d15;
+    --rasci-group-1-header: #66aabf;
+    --rasci-group-1-cell: #0d2126;
+    --rasci-group-2-header: #9b6aaf;
+    --rasci-group-2-cell: #1e1228;
+    --rasci-group-3-header: #339d6e;
+    --rasci-group-3-cell: #0d2019;
+    --rasci-group-4-header: #cd3363;
+    --rasci-group-4-cell: #2a0d15;
+    --rasci-group-5-header: #d97a63;
+    --rasci-group-5-cell: #2a1710;
+
+    /* Avatar palette — dark theme: same values as light theme, sufficient on dark backgrounds */
+    --avatar-palette-0: #0077b6; /* Blau */
+    --avatar-palette-1: #00854a; /* Grün */
+    --avatar-palette-2: #5f316e; /* Violett */
+    --avatar-palette-3: #c0003c; /* Rot */
+    --avatar-palette-4: #00818b; /* Türkis */
+    --avatar-palette-5: #cd5038; /* Orange */
+    --avatar-palette-6: #780f2d; /* Dunkelrot */
+    --avatar-palette-7: #004b76; /* Dunkelblau */
+  }
+}
+
+@theme inline {
+  --spacing-xs: var(--space-xs);
+  --spacing-sm: var(--space-sm);
+  --spacing-md: var(--space-md);
+  --spacing-lg: var(--space-lg);
+  --spacing-xl: var(--space-xl);
+  --spacing-2xl: var(--space-2xl);
+  --spacing-3xl: var(--space-3xl);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: var(--font-family-sans);
+  --font-serif: var(--font-family-serif);
+  --font-condensed: var(--font-family-condensed);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-overlay: var(--overlay);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-active: var(--accent-active);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-hover: var(--destructive-hover);
+  --color-destructive-emphasis: var(--destructive-emphasis);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-dark: var(--warning-dark);
+  --color-shadow-overlay: var(--shadow-overlay);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-emphasis: var(--success-emphasis);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-header: var(--header);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-foreground-muted: var(--sidebar-foreground-muted);
+  --color-sidebar-card: var(--sidebar-card);
+  --color-tooltip: var(--tooltip-bg);
+  --color-tooltip-foreground: var(--tooltip-fg);
+  --color-info-soft: var(--info-soft);
+  --color-success-soft: var(--success-soft);
+  --color-warning-soft: var(--warning-soft);
+  --color-warning-emphasis: var(--warning-emphasis);
+  --color-destructive-soft: var(--destructive-soft);
+  --spacing-dialog-x: var(--dialog-padding-x);
+  --shadow-sm: var(--shadow-token-sm);
+  --shadow-md: var(--shadow-token-md);
+  --shadow-lg: var(--shadow-token-lg);
+  /* Risk level color tokens */
+  --color-risk-level-green: var(--risk-level-green);
+  --color-risk-level-yellow: var(--risk-level-yellow);
+  --color-risk-level-red: var(--risk-level-red);
+  --color-risk-level-gray: var(--risk-level-gray);
+
+  /* RASCI task-group header tokens */
+  --color-rasci-task-group-header: var(--rasci-task-group-header);
+  --color-rasci-task-group-header-foreground: var(--rasci-task-group-header-foreground);
+
+  /* RASCI group palette tokens */
+  --color-rasci-group-0-header: var(--rasci-group-0-header);
+  --color-rasci-group-0-cell: var(--rasci-group-0-cell);
+  --color-rasci-group-1-header: var(--rasci-group-1-header);
+  --color-rasci-group-1-cell: var(--rasci-group-1-cell);
+  --color-rasci-group-2-header: var(--rasci-group-2-header);
+  --color-rasci-group-2-cell: var(--rasci-group-2-cell);
+  --color-rasci-group-3-header: var(--rasci-group-3-header);
+  --color-rasci-group-3-cell: var(--rasci-group-3-cell);
+  --color-rasci-group-4-header: var(--rasci-group-4-header);
+  --color-rasci-group-4-cell: var(--rasci-group-4-cell);
+  --color-rasci-group-5-header: var(--rasci-group-5-header);
+  --color-rasci-group-5-cell: var(--rasci-group-5-cell);
+
+  /* Avatar palette tokens */
+  --color-avatar-palette-0: var(--avatar-palette-0);
+  --color-avatar-palette-1: var(--avatar-palette-1);
+  --color-avatar-palette-2: var(--avatar-palette-2);
+  --color-avatar-palette-3: var(--avatar-palette-3);
+  --color-avatar-palette-4: var(--avatar-palette-4);
+  --color-avatar-palette-5: var(--avatar-palette-5);
+  --color-avatar-palette-6: var(--avatar-palette-6);
+  --color-avatar-palette-7: var(--avatar-palette-7);
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+  * {
+    border-color: var(--color-border);
+    scrollbar-width: thin;
+    scrollbar-color: var(--muted-foreground) var(--background);
+  }
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--muted-foreground);
+    border-radius: 4px;
+    border: 2px solid var(--background);
+  }
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+  button:not(:disabled),
+  a {
+    cursor: pointer;
+  }
+
+  /* Override browser autofill highlight — uses inset box-shadow because
+     browsers block direct background-color overrides on :-webkit-autofill.
+     References --card / --card-foreground so it adapts to both themes.
+     :-webkit-autofill covers Chrome/Edge/Safari; :autofill covers the CSS4 standard.
+     :is() collapses element × pseudo-class × state; forgiving parsing drops unknown selectors safely. */
+  :is(input, textarea, select):is(:-webkit-autofill, :autofill),
+  :is(input, textarea, select):is(:-webkit-autofill, :autofill):hover,
+  :is(input, textarea, select):is(:-webkit-autofill, :autofill):focus,
+  :is(input, textarea):is(:-webkit-autofill, :autofill):active {
+    -webkit-box-shadow: 0 0 0 1000px var(--card) inset !important;
+    box-shadow: 0 0 0 1000px var(--card) inset !important;
+    -webkit-text-fill-color: var(--card-foreground) !important;
+    caret-color: var(--card-foreground);
+  }
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ── Sonner overrides ─────────────────────────────────────────────────────────
+   Sonner CSS is @imported first in this file, so equal-specificity rules below
+   win via source order; prefixing with [data-sonner-toaster] adds +1 attribute
+   to beat Sonner's own selectors wherever needed.
+   ──────────────────────────────────────────────────────────────────────────── */
+
+/* Same selector as Sonner's — wins via source order */
+[data-sonner-toaster] {
+  --border-radius: 10px;
+}
+
+/* [0,3,0] > Sonner's [0,2,0]: layout, colors, shadow */
+[data-sonner-toaster] [data-sonner-toast][data-styled='true'] {
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  color: var(--color-card-foreground);
+  box-shadow: var(--shadow-md);
+}
+
+/* Content column takes remaining width */
+[data-sonner-toaster] [data-sonner-toast][data-styled='true'] [data-content] {
+  order: 2;
+  flex: 1;
+  min-width: 0;
+  gap: 2px;
+}
+
+/* Title */
+[data-sonner-toaster] [data-sonner-toast][data-styled='true'] [data-title] {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 2px;
+}
+
+/* Description */
+[data-sonner-toaster] [data-sonner-toast][data-styled='true'] [data-description] {
+  color: var(--color-muted-foreground);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Icon container — reset Sonner's negative SVG margins, align to top */
+[data-sonner-toaster] [data-sonner-toast][data-styled='true'] [data-icon] {
+  order: 1;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-sonner-toaster] [data-sonner-toast][data-styled='true'] [data-icon] svg {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Close button — convert from absolute/round to inline/square.
+   order:3 is needed because Sonner renders the button as first DOM child;
+   without it the button appears on the left instead of the right. */
+[data-sonner-toaster] [data-sonner-toast][data-styled='true'] [data-close-button] {
+  position: static !important;
+  transform: none !important;
+  order: 3;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--color-muted-foreground) !important;
+  margin: -2px -4px 0 0;
+  flex-shrink: 0;
+  align-self: flex-start;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  transition: background 120ms;
+}
+
+[data-sonner-toaster] [data-sonner-toast][data-styled='true'] [data-close-button]:hover {
+  background: var(--color-muted);
+  color: var(--color-foreground);
+  border-color: transparent;
+}
+
+/* Per-variant colored left border */
+[data-sonner-toast][data-type='success'] {
+  border-left: 3px solid #16a34a;
+}
+[data-sonner-toast][data-type='error'] {
+  border-left: 3px solid #c0003c;
+}
+[data-sonner-toast][data-type='warning'] {
+  border-left: 3px solid #d97706;
+}
+[data-sonner-toast][data-type='info'] {
+  border-left: 3px solid var(--primary);
+}
+
+/* Per-variant icon color */
+[data-sonner-toast][data-type='success'] [data-icon] {
+  color: #16a34a;
+}
+[data-sonner-toast][data-type='error'] [data-icon] {
+  color: #c0003c;
+}
+[data-sonner-toast][data-type='warning'] [data-icon] {
+  color: #d97706;
+}
+[data-sonner-toast][data-type='info'] [data-icon] {
+  color: var(--primary);
+}
+
+/* Restore Tailwind v4 container max-widths that are overridden by our --spacing-* tokens.
+   In Tailwind v4, --spacing-{key} also replaces max-w-{key}. These overrides must live in
+   @layer utilities so they appear after the generated utilities and win via source order. */
+@layer utilities {
+  .max-w-xs {
+    max-width: 20rem;
+  }
+  .max-w-sm {
+    max-width: 24rem;
+  }
+  .max-w-md {
+    max-width: 28rem;
+  }
+  .max-w-lg {
+    max-width: 32rem;
+  }
+  .max-w-xl {
+    max-width: 36rem;
+  }
+  .max-w-2xl {
+    max-width: 42rem;
+  }
+  .max-w-3xl {
+    max-width: 48rem;
+  }
+  .max-w-4xl {
+    max-width: 56rem;
+  }
+  .max-w-5xl {
+    max-width: 64rem;
+  }
+  .max-w-6xl {
+    max-width: 72rem;
+  }
+  .max-w-7xl {
+    max-width: 80rem;
+  }
+}
+
+/* ── RASCI matrix ────────────────────────────────────────────────────────── */
+
+.rasci-task-th {
+  min-width: 180px;
+}
+
+/* Group colour classes — used in both role-header cells and group-label row */
+.rasci-group-header-0 {
+  background-color: var(--color-rasci-group-0-header);
+  color: #ffffff;
+}
+.rasci-group-header-1 {
+  background-color: var(--color-rasci-group-1-header);
+  color: #ffffff;
+}
+.rasci-group-header-2 {
+  background-color: var(--color-rasci-group-2-header);
+  color: #ffffff;
+}
+.rasci-group-header-3 {
+  background-color: var(--color-rasci-group-3-header);
+  color: #ffffff;
+}
+.rasci-group-header-4 {
+  background-color: var(--color-rasci-group-4-header);
+  color: #ffffff;
+}
+.rasci-group-header-5 {
+  background-color: var(--color-rasci-group-5-header);
+  color: #ffffff;
+}
+
+.rasci-group-cell-0 {
+  background-color: var(--color-rasci-group-0-cell);
+}
+.rasci-group-cell-1 {
+  background-color: var(--color-rasci-group-1-cell);
+}
+.rasci-group-cell-2 {
+  background-color: var(--color-rasci-group-2-cell);
+}
+.rasci-group-cell-3 {
+  background-color: var(--color-rasci-group-3-cell);
+}
+.rasci-group-cell-4 {
+  background-color: var(--color-rasci-group-4-cell);
+}
+.rasci-group-cell-5 {
+  background-color: var(--color-rasci-group-5-cell);
+}
+
+/* Task group separator row — warm dark grey, white text, WCAG AA ✓ */
+.rasci-task-group-header {
+  background-color: var(--rasci-task-group-header);
+  color: var(--rasci-task-group-header-foreground);
+}
